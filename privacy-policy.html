@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add('js')</script>
+  <title>Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --dot: #e6e6ec;
+      --heading: #0c0c10;
+      --subheading: #15151a;
+      --body-text: #5a5a66;
+      --meta: #9d9da6;
+      --accent: #0369a1;
+      --accent-soft: rgba(3, 105, 161, 0.12);
+      --divider: #ececf1;
+      --max-width: 680px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--body-text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--accent-soft);
+      color: var(--heading);
+    }
+
+    .dots-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image: radial-gradient(circle, var(--dot) 1px, transparent 1px);
+      background-size: 26px 26px;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 88%, transparent 100%);
+      mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 88%, transparent 100%);
+    }
+
+    .policy {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 128px 24px 150px;
+      animation: rise 0.6s ease-out both;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .policy {
+        animation: none;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .dome {
+        stroke-dashoffset: 0;
+      }
+
+      .pop {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 0;
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      font-size: 46px;
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--heading);
+    }
+
+    .meta {
+      margin: 12px 0 0;
+      font-size: 15px;
+      color: var(--meta);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--divider);
+      border: none;
+      margin: 36px 0 0;
+    }
+
+    .intro {
+      margin: 32px 0 0;
+      font-size: 16.5px;
+      line-height: 1.75;
+      color: var(--body-text);
+      max-width: 62ch;
+    }
+
+    section {
+      margin-top: 64px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--subheading);
+    }
+
+    h2::before {
+      content: "";
+      width: 6px;
+      height: 14px;
+      flex: none;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #1ea0e0, #0a3f68);
+      transform: rotate(-30deg);
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--body-text);
+      max-width: 62ch;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(3, 105, 161, 0.35);
+      transition: text-decoration-color 0.15s ease;
+    }
+
+    a:hover {
+      text-decoration-color: var(--accent);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ---------- Bot drawing (used by the footer bot) ---------- */
+    .dome {
+      fill: none;
+      stroke: var(--sky);
+      stroke-width: var(--stroke-width);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke .3s;
+      animation: draw 1.8s ease-in-out forwards;
+    }
+
+    .df {
+      fill: var(--fill);
+    }
+
+    .js .pop {
+      opacity: 0;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    /* ---------- Title bot: same bot as the About page, standing on the right end of the divider ---------- */
+    .rule {
+      position: relative;
+      margin-top: 36px;
+    }
+
+    .rule .divider {
+      margin: 0;
+    }
+
+    .bot {
+      position: absolute;
+      right: 0;
+      bottom: 1px;
+      width: 128px;
+      aspect-ratio: 2 / 1;
+      --stroke-width: 6.3px;
+      --sky: #2b8cc4;
+      --sky-deep: #0369a1;
+      --eye1: #5ccbfb;
+      --eye2: #0369a1;
+      --fill: rgba(14, 165, 233, .1);
+      --glow: rgba(14, 165, 233, .2);
+    }
+
+    .bot .glow {
+      position: absolute;
+      inset: -20% -14% 0;
+      pointer-events: none;
+      background: radial-gradient(closest-side, var(--glow), transparent);
+      animation: breathe 5s ease-in-out infinite;
+    }
+
+    .bot svg {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+      shape-rendering: geometricPrecision;
+    }
+
+    .bot:hover .dome {
+      stroke: var(--sky-deep);
+    }
+
+    .js .bot:not(.go) * {
+      animation-play-state: paused;
+    }
+
+    @keyframes breathe {
+
+      0%,
+      100% {
+        opacity: .67;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* ---------- Footer bot: big, light outline, sits on the footer line ---------- */
+    .js .fbot:not(.go) * {
+      animation-play-state: paused;
+    }
+
+    .site-foot {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .fbot {
+      display: block;
+      width: min(76%, 780px);
+      aspect-ratio: 2 / 1;
+      margin: 0 auto;
+      --fb: #d1d1d8;
+      --sw: .65;
+    }
+
+    .fbot svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      shape-rendering: geometricPrecision;
+    }
+
+    .fbot .dome {
+      stroke: var(--fb);
+      stroke-width: var(--sw);
+    }
+
+    .fbot .eye {
+      fill: none;
+      stroke: var(--fb);
+      stroke-width: var(--sw);
+      stroke-linejoin: round;
+    }
+
+    .foot {
+      border-top: 1px solid var(--divider);
+      padding: 22px 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+      color: #6b6b76;
+    }
+
+    .foot ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .foot a {
+      color: inherit;
+      text-decoration: none;
+      transition: color .25s;
+    }
+
+    .foot a:hover {
+      color: var(--heading);
+    }
+
+    .foot .dv {
+      color: var(--divider);
+    }
+
+    .foot p {
+      margin: 0;
+      max-width: none;
+      font-size: inherit;
+      line-height: 1.5;
+      color: inherit;
+    }
+
+    @media (max-width: 900px) {
+      .fbot {
+        --sw: .95;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .policy {
+        padding: 84px 20px 100px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      section {
+        margin-top: 48px;
+      }
+
+
+      .bot {
+        width: 92px;
+        --stroke-width: 7.7px;
+      }
+
+      .fbot {
+        width: 92%;
+        --sw: 1.3;
+      }
+
+      .foot {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="dots-bg"></div>
+
+  <main class="policy">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 29 July 2026</p>
+    <div class="rule">
+      <hr class="divider">
+      <div class="bot" aria-hidden="true">
+        <div class="glow"></div>
+        <svg viewBox="38 68 324 162" focusable="false">
+          <defs>
+            <linearGradient id="eg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" style="stop-color:var(--eye1)" />
+              <stop offset="1" style="stop-color:var(--eye2)" />
+            </linearGradient>
+            <linearGradient id="mg" gradientUnits="userSpaceOnUse" x1="0" y1="198" x2="0" y2="230">
+              <stop offset="0" stop-color="#fff" />
+              <stop offset="1" stop-color="#000" />
+            </linearGradient>
+            <mask id="mk" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="240">
+              <rect width="400" height="240" fill="url(#mg)" />
+            </mask>
+          </defs>
+          <g mask="url(#mk)">
+            <path class="df" d="M40 230A160 160 0 0 1 360 230Z" />
+            <path class="dome" pathLength="1" d="M40 230A160 160 0 0 1 360 230" />
+          </g>
+          <g class="pop">
+            <g class="look">
+              <g class="blink">
+                <rect transform="translate(232 160) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"
+                  fill="url(#eg)" />
+                <rect transform="translate(298 146) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"
+                  fill="url(#eg)" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <p class="intro">This Privacy Policy explains what information is collected when you visit this site, how it is
+      used, and the choices you have. This is a personal portfolio, so data collection is kept to a minimum.</p>
+
+    <section>
+      <h2>Information I collect</h2>
+      <p>You don't need an account or any personal details to browse this site. Basic, non-identifying analytics — such
+        as pages visited, approximate location, browser type and referring site — may be collected to understand how the
+        site is used.</p>
+    </section>
+
+    <section>
+      <h2>Cookies and analytics</h2>
+      <p>This site may use privacy-friendly analytics and essential cookies to keep things running and to measure
+        traffic in aggregate. You can block or delete cookies in your browser settings at any time without breaking the
+        site.</p>
+    </section>
+
+    <section>
+      <h2>How your information is used</h2>
+      <p>Any data collected is used only to operate and improve the site — for example, to see which projects people are
+        drawn to. It is never sold, rented or traded.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <p>This site is built and hosted on Framer, and may embed content from third parties such as fonts or media. Those
+        providers have their own privacy policies governing the data they process.</p>
+    </section>
+
+    <section>
+      <h2>Data retention</h2>
+      <p>Aggregate analytics data is kept only for as long as it is useful for understanding how the site performs, and
+        is deleted or anonymised after that.</p>
+    </section>
+
+    <section>
+      <h2>Your rights</h2>
+      <p>Depending on where you live, you may have the right to access, correct or delete any personal data relating to
+        you. Get in touch and I'll be happy to help.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy? Reach me at <a href="mailto:hello@araf.dev">hello@araf.dev</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="fbot" aria-hidden="true">
+      <svg viewBox="38 68 324 162" focusable="false">
+        <defs>
+          <linearGradient id="fg" gradientUnits="userSpaceOnUse" x1="0" y1="198" x2="0" y2="230">
+            <stop offset="0" stop-color="#fff" />
+            <stop offset="1" stop-color="#000" />
+          </linearGradient>
+          <mask id="fm" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="240">
+            <rect width="400" height="240" fill="url(#fg)" />
+          </mask>
+        </defs>
+        <g mask="url(#fm)">
+          <path class="dome" pathLength="1" d="M40 230A160 160 0 0 1 360 230" />
+        </g>
+        <g class="pop">
+          <g class="look">
+            <g class="blink">
+              <rect class="eye" transform="translate(232 160) rotate(-30)" x="-13" y="-29" width="26" height="58"
+                rx="13" />
+              <rect class="eye" transform="translate(298 146) rotate(-30)" x="-13" y="-29" width="26" height="58"
+                rx="13" />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="foot">
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Bangladesh" target="_blank" rel="noopener noreferrer">
+            Bangladesh 🇧🇩
+          </a>
+        </li>
+        <li class="dv" aria-hidden="true">|</li>
+        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+        <li class="dv" aria-hidden="true">|</li>
+        <li><a href="./terms-of-service.html">Terms &amp; Conditions</a></li>
+      </ul>
+      <p>Copyright &copy; <span id="cpYear"></span> Nayeem Araf. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+      /* Bots. Everything that moves (float, glance, blink, pop-in, FAQ-ball eyes) is driven from this one loop by writing
+         SVG transform ATTRIBUTES, not CSS transforms/transitions. Browsers cache CSS-animated SVG groups as bitmaps, which
+         makes the eyes blurry while they move; attribute transforms are redrawn as crisp vectors on every frame. */
+      (() => {
+        const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches,
+          T = (x, y) => `translate(${x.toFixed(2)} ${y.toFixed(2)})`,
+          S = (cx, cy, sx, sy) => `translate(${cx} ${cy}) scale(${sx.toFixed(3)} ${sy.toFixed(3)}) translate(${-cx} ${-cy})`,
+          back = t => { const c = 1.70158, u = t - 1; return 1 + (c + 1) * u * u * u + c * u * u };
+        const bots = [...document.querySelectorAll('.bot,.fbot')].map(el => ({ el, fl: el.querySelector('.fl'), pop: el.querySelector('.pop'), look: el.querySelector('.look'), blink: el.querySelector('.blink'), t0: null, vis: true, x: 0, y: 0, sq: 1, hover: false, done: false }));
+        const start = b => { if (b.t0 === null) b.t0 = performance.now() };
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver(es => es.forEach(e => { const b = bots.find(o => o.el === e.target); b.vis = e.isIntersecting; if (e.isIntersecting) { start(b); b.el.classList.add('go') } }), { threshold: .12 });
+          bots.forEach(b => io.observe(b.el));
+        } else bots.forEach(start);
+        bots.forEach(b => { b.el.addEventListener('pointerenter', () => b.hover = true); b.el.addEventListener('pointerleave', () => b.hover = false); if (reduce) b.pop.style.opacity = 1 });
+        const orb = { fl: document.querySelector('.orb-fl'), look: document.querySelector('.orb-look'), blink: document.querySelector('.orb-eyes'), x: 0, y: 0 };
+        /* one shared timeline: all bots glance the same way and blink together */
+        const P = { right: [0, 0], center: [-65, 5], left: [-121, 1], up: [-65, -19] }, pool = ['right', 'right', 'left', 'left', 'center', 'up'];
+        let cur = 'right', tx = 0, ty = 0, blinkAt = -1e9, last = performance.now();
+        const next = () => { let k; do { k = pool[Math.floor(Math.random() * pool.length)] } while (k === cur); cur = k; tx = P[k][0]; ty = P[k][1]; setTimeout(next, 1600 + Math.random() * 1600) };
+        const blinkLoop = () => setTimeout(() => { blinkAt = performance.now(); blinkLoop() }, 3500 + Math.random() * 2500);
+        if (!reduce) { setTimeout(next, 2800); blinkLoop() }
+        const bob = (now, a) => a * (.5 - .5 * Math.cos(now / 4500 * 2 * Math.PI));
+        const frame = now => {
+          const dt = Math.min(64, now - last); last = now;
+          const k = reduce ? 1 : 1 - Math.exp(-dt / 210), bp = (now - blinkAt) / 240, bl = bp >= 0 && bp <= 1 ? 1 - .9 * Math.sin(Math.PI * bp) : 1;
+          for (const b of bots) {
+            if (!b.vis) continue;
+            b.sq += ((b.hover ? .55 : 1) - b.sq) * (reduce ? 1 : 1 - Math.exp(-dt / 90));
+            if (!reduce && b.fl) b.fl.setAttribute('transform', T(0, bob(now, -7)));
+            b.x += (tx - b.x) * k; b.y += (ty - b.y) * k;
+            b.look.setAttribute('transform', T(b.x, b.y));
+            b.blink.setAttribute('transform', S(265, 153, 1, Math.min(bl, b.sq)));
+            if (!b.done) {
+              if (reduce) b.done = true;
+              else if (b.t0 !== null) {
+                const t = (now - b.t0 - 1700) / 800;
+                if (t >= 1) { b.done = true; b.pop.style.opacity = 1; b.pop.removeAttribute('transform') }
+                else if (t > 0) { const p = back(t), s = .5 + .5 * p; b.pop.style.opacity = Math.min(1, p); b.pop.setAttribute('transform', S(265, 153, s, s)) }
+              }
+            }
+          }
+          if (orb.look && typeof orbEye !== 'undefined') {
+            const ko = reduce ? 1 : 1 - Math.exp(-dt / 110);
+            orb.x += (orbEye.x - orb.x) * ko; orb.y += (orbEye.y - orb.y) * ko;
+            orb.look.setAttribute('transform', T(orb.x, orb.y));
+            orb.blink.setAttribute('transform', S(100, 102, 1, bl));
+            if (!reduce && orb.fl) orb.fl.setAttribute('transform', T(0, bob(now, -9)));
+          }
+          requestAnimationFrame(frame);
+        };
+        requestAnimationFrame(frame);
+      })();
+    const yr = document.getElementById('cpYear'); if (yr) yr.textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

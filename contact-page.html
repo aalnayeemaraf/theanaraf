@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html
+  class="js no-touch no-reduced-motion enhanced no-safari inline-media inline-media-alpha form-mouseuser desktop no-ar-quicklook no-small-breakpoint no-firefox"
+  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" dir="ltr" prefix="og: http://ogp.me/ns#"
+  style="--r-localnav-text-zoom-factor: 1; --global-scrollbar-width: 15px;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <!-- Apple navbar (same as the journal page) -->
+  <link rel="stylesheet" type="text/css" href="./styles/ac_localnav.built.css">
+  <link rel="stylesheet" href="wss/fonts">
+  <script src="./scripts/head.built.js" type="text/javascript" charset="utf-8"></script>
+  <title>Contact — Abdullah Al Nayeem Araf</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ---------- Tokens (black + white by default; set data-theme="dark" on <html> for dark) ---------- */
+    :root {
+      color-scheme: only light;
+      --sky-light: light-dark(#737373, #a3a3a3);
+      --sky: light-dark(#262626, #e5e5e5);
+      --sky-deep: light-dark(#000, #fff);
+      --eye1: light-dark(#4b4b4b, #fff);
+      --eye2: light-dark(#000, #bfbfbf);
+      --stroke-width: 3px;
+      --speed: 1;
+      --glow: light-dark(rgba(0, 0, 0, .07), rgba(255, 255, 255, .1));
+      --bg1: light-dark(#f8f8f9, #0a0a0a);
+      --bg2: light-dark(#ffffff, #111111);
+      --ink: light-dark(#0a0a0a, #fafafa);
+      --mut: light-dark(#555555, #a3a3a3);
+      --card: light-dark(rgba(255, 255, 255, .85), rgba(20, 20, 20, .7));
+      --line: light-dark(rgba(0, 0, 0, .12), rgba(255, 255, 255, .14));
+      --fill: light-dark(rgba(0, 0, 0, .04), rgba(255, 255, 255, .06));
+      --accent: light-dark(#0369a1, #7dd3fc);
+      --accent-deep: light-dark(#075985, #7dd3fc)
+    }
+
+    :root[data-theme=dark] {
+      color-scheme: dark
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--ink);
+      font: 400 16px/1.65 Inter, 'Hind Siliguri', system-ui, sans-serif;
+      background: linear-gradient(180deg, var(--bg1), var(--bg2) 60%) fixed
+    }
+
+    h1,
+    h2,
+    h3,
+    .num {
+      font-family: 'Space Grotesk', Inter, sans-serif
+    }
+
+    .bn {
+      font-family: 'Hind Siliguri', sans-serif
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    section {
+      padding: 52px 0
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--sky-deep);
+      outline-offset: 3px;
+      border-radius: 8px
+    }
+
+    .eyebrow {
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 14px
+    }
+
+    h2.sec {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 600;
+      margin-bottom: 26px;
+      letter-spacing: -.01em
+    }
+
+    .small {
+      font-size: .85rem;
+      color: var(--mut)
+    }
+
+    /* ---------- Scroll reveal ---------- */
+    .js .rv {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .5s ease-out, transform .5s ease-out;
+      transition-delay: calc(var(--i, 0)*70ms)
+    }
+
+    .js .rv.in {
+      opacity: 1;
+      transform: none
+    }
+
+
+    /* ---------- Contact hero ---------- */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 36px;
+      align-items: center;
+      padding-top: 56px
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 6.4vw, 4.4rem);
+      line-height: 1.02;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      margin: 6px 0 18px
+    }
+
+    .hero h1 span {
+      background: linear-gradient(100deg, var(--sky-deep), var(--sky-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .hero .lead {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      line-height: 1.65;
+      color: light-dark(#475467, #a3a3a3);
+      max-width: 42ch
+    }
+
+    .vis {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    .bot.lg {
+      width: min(100%, 400px);
+      --stroke-width: 3.5px
+    }
+
+    /* ---------- Animated bot ---------- */
+    .bot {
+      position: relative;
+      width: min(100%, 440px);
+      aspect-ratio: 400/240;
+      z-index: 2;
+      --sky: light-dark(#1a74a8, #7dd3fc);
+      --sky-light: light-dark(#7cc4ea, #bae6fd);
+      --sky-deep: light-dark(#0a4a75, #e0f2fe);
+      --eye1: light-dark(#1ea0e0, #e0f2fe);
+      --eye2: light-dark(#0a3f68, #38bdf8);
+      --fill: light-dark(rgba(14, 165, 233, .08), rgba(125, 211, 252, .1));
+      --glow: light-dark(rgba(14, 165, 233, .12), rgba(125, 211, 252, .18))
+    }
+
+    .bot.sm {
+      width: 190px;
+      margin-top: 26px;
+      --stroke-width: 4.5px;
+      --fy: -14px
+    }
+
+    .js .bot:not(.go) * {
+      animation-play-state: paused
+    }
+
+    .bot .glow {
+      position: absolute;
+      inset: -12% -6% -30%;
+      background: radial-gradient(closest-side, var(--glow), transparent);
+      transition: transform .5s;
+      animation: breathe calc(5s/var(--speed)) ease-in-out infinite
+    }
+
+    .bot svg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      shape-rendering: geometricPrecision
+    }
+
+    .dome {
+      fill: none;
+      stroke: var(--sky);
+      stroke-width: var(--stroke-width);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke .3s;
+      animation: draw calc(1.8s/var(--speed)) ease-in-out forwards
+    }
+
+    .df {
+      fill: var(--fill)
+    }
+
+    .js .pop {
+      opacity: 0
+    }
+
+    .bot:hover .dome {
+      stroke: var(--sky-deep)
+    }
+
+    .bot:hover .glow {
+      transform: scale(1.1);
+      opacity: 1
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0
+      }
+    }
+
+    @keyframes breathe {
+
+      0%,
+      100% {
+        opacity: .67
+      }
+
+      50% {
+        opacity: 1
+      }
+    }
+
+    /* ---------- Stats ---------- */
+    .sec-head {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 28px
+    }
+
+    .sec-head h2 {
+      font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin-bottom: 12px;
+      color: light-dark(#0f1c2e, #fafafa)
+    }
+
+    .sec-head h2 em {
+      font-style: normal;
+      color: var(--accent-deep)
+    }
+
+    .sec-head p:not(.eyebrow) {
+      color: light-dark(#475467, #a3a3a3);
+      font-size: 1.02rem;
+      line-height: 1.7
+    }
+
+    .sec-head .eyebrow {
+      color: var(--accent-deep)
+    }
+
+    .sec-head .bar {
+      display: block;
+      width: 56px;
+      height: 3px;
+      border-radius: 3px;
+      margin: 18px auto 0;
+      background: linear-gradient(90deg, #8bb8e0, #8fcba7, #e8b878)
+    }
+
+    .st {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      padding: 26px 24px 96px;
+      transition: transform .35s ease, box-shadow .35s ease;
+      box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .08), 0 12px 28px -22px rgba(20, 33, 51, .28)
+    }
+
+    .st:hover {
+      transform: translateY(-6px);
+      box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .08), 0 18px 36px -22px rgba(20, 33, 51, .32)
+    }
+
+    .st small {
+      display: block;
+      font-size: .7rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 600;
+      opacity: .7;
+      margin-bottom: 14px
+    }
+
+    .num {
+      display: block;
+      font-weight: 700;
+      font-size: clamp(2rem, 4.2vw, 2.8rem);
+      line-height: 1.05;
+      margin-bottom: 10px
+    }
+
+    .st .l {
+      font-weight: 600;
+      font-size: .98rem;
+      max-width: 22ch
+    }
+
+    .st .d {
+      font-size: .86rem;
+      opacity: .85;
+      margin-top: 8px;
+      max-width: 26ch
+    }
+
+    .st .m {
+      font-size: .86rem;
+      opacity: .85;
+      margin-top: 14px;
+      max-width: 28ch
+    }
+
+    .st svg {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      width: 64px;
+      height: 64px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: .45;
+      transition: transform .35s
+    }
+
+    .st:hover svg {
+      transform: scale(1.1) rotate(-4deg)
+    }
+
+    .st.p {
+      min-height: 340px;
+      background: linear-gradient(180deg, #e1eefb, #a3c8ec);
+      color: #0f3556
+    }
+
+    .st.o {
+      min-height: 380px;
+      background: linear-gradient(180deg, #e0f3e7, #9dd2b3);
+      color: #12402a
+    }
+
+    .st.v {
+      min-height: 420px;
+      background: linear-gradient(180deg, #fcecd3, #efc088);
+      color: #55300c
+    }
+
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 860px;
+      margin-inline: auto
+    }
+
+    .cell {
+      display: flex
+    }
+
+    .cell>.st {
+      flex: 1;
+      min-width: 0
+    }
+
+    .info .st {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 0;
+      padding: 20px 20px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+      box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .06), 0 8px 22px -18px rgba(20, 33, 51, .22)
+    }
+
+    .info .st:hover {
+      transform: translateY(-3px);
+      box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .06), 0 14px 28px -18px rgba(20, 33, 51, .28)
+    }
+
+    .info .st svg {
+      order: -1;
+      position: static;
+      width: 36px;
+      height: 36px;
+      padding: 8px;
+      margin-bottom: 16px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .55);
+      stroke-width: 1.7;
+      opacity: .9
+    }
+
+    .info .st:hover svg {
+      transform: scale(1.06)
+    }
+
+    .info .st small {
+      font-size: .8rem;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 500;
+      opacity: .68;
+      margin: 0 0 3px
+    }
+
+    .val {
+      display: block;
+      font-family: Inter, 'Hind Siliguri', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1.02rem;
+      line-height: 1.4;
+      letter-spacing: -.01em;
+      overflow-wrap: anywhere
+    }
+
+    .info .st:focus-visible {
+      border-radius: 20px
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq {
+      max-width: 980px;
+      margin-inline: auto
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 56px;
+      align-items: center;
+      max-width: 980px;
+      margin: 0 auto
+    }
+
+    .faq-side {
+      display: grid;
+      place-items: center;
+      position: sticky;
+      top: 96px
+    }
+
+    .orb-c {
+      position: relative;
+      width: min(100%, 240px);
+      aspect-ratio: 1
+    }
+
+    .orb-c::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      translate: -50% 0;
+      bottom: -15%;
+      width: 62%;
+      height: 9%;
+      border-radius: 50%;
+      background: radial-gradient(closest-side, rgba(60, 70, 85, .14), transparent);
+      animation: osh calc(4.5s/var(--speed)) ease-in-out infinite
+    }
+
+    .orb {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      --glow: rgba(190, 196, 206, .22)
+    }
+
+    .orb::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      border-radius: 50%;
+      background: radial-gradient(closest-side, var(--glow), transparent);
+      animation: breathe calc(5s/var(--speed)) ease-in-out infinite
+    }
+
+    .orb svg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: visible
+    }
+
+    .orb-ring {
+      fill: none;
+      stroke: #d3d3d3;
+      stroke-width: 1.5
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .fqi {
+      background: rgba(255, 255, 255, .72);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      transition: translate .3s ease, box-shadow .3s ease, border-color .3s, background .3s
+    }
+
+    .fqi:hover {
+      translate: 0 -2px;
+      border-color: rgba(3, 105, 161, .22);
+      box-shadow: 0 14px 30px -24px rgba(20, 33, 51, .35)
+    }
+
+    .fqi.on {
+      background: #fff;
+      border-color: rgba(3, 105, 161, .28);
+      box-shadow: 0 16px 34px -26px rgba(20, 33, 51, .35)
+    }
+
+    .qb {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 17px 20px;
+      background: none;
+      border: 0;
+      color: inherit;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 18px
+    }
+
+    .qb:focus-visible {
+      border-radius: 18px
+    }
+
+    .qn {
+      flex: none;
+      font: 600 .74rem/1 'Space Grotesk', Inter, sans-serif;
+      letter-spacing: .08em;
+      color: light-dark(#98a2b3, #737373);
+      transition: color .3s
+    }
+
+    .ql {
+      flex: 1;
+      font: 600 .98rem/1.4 Inter, 'Hind Siliguri', system-ui, sans-serif;
+      letter-spacing: -.01em;
+      color: var(--ink);
+      transition: color .3s
+    }
+
+    .qi {
+      flex: none;
+      position: relative;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      transition: background .3s, border-color .3s, rotate .35s cubic-bezier(.34, 1.56, .64, 1)
+    }
+
+    .qi::before,
+    .qi::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 10px;
+      height: 1.6px;
+      border-radius: 2px;
+      background: var(--accent-deep);
+      translate: -50% -50%;
+      transition: background .3s, rotate .3s
+    }
+
+    .qi::after {
+      rotate: 90deg
+    }
+
+    .qb:hover .qi {
+      border-color: rgba(3, 105, 161, .35)
+    }
+
+    .fqi.on .qn,
+    .fqi.on .ql {
+      color: var(--accent-deep)
+    }
+
+    .fqi.on .qi {
+      background: var(--accent-deep);
+      border-color: var(--accent-deep);
+      rotate: 180deg
+    }
+
+    .fqi.on .qi::before {
+      background: #fff
+    }
+
+    .fqi.on .qi::after {
+      background: #fff;
+      rotate: 0deg
+    }
+
+    .fap {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .4s cubic-bezier(.16, .8, .24, 1)
+    }
+
+    .fqi.on .fap {
+      grid-template-rows: 1fr
+    }
+
+    .fap>div {
+      overflow: hidden;
+      min-height: 0
+    }
+
+    .fa {
+      padding: 0 20px 20px 62px;
+      font-size: .94rem;
+      line-height: 1.72;
+      color: light-dark(#475467, #a3a3a3);
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: opacity .3s, transform .3s
+    }
+
+    .fqi.on .fa {
+      opacity: 1;
+      transform: none;
+      transition-delay: .1s
+    }
+
+    @keyframes osh {
+      50% {
+        transform: scale(.82);
+        opacity: .7
+      }
+    }
+
+    @media(max-width:860px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        max-width: 560px
+      }
+
+      .faq-side {
+        position: static
+      }
+
+      .orb-c {
+        width: 150px
+      }
+    }
+
+    @media(max-width:520px) {
+      .qb {
+        padding: 15px 16px;
+        gap: 12px
+      }
+
+      .fa {
+        padding: 0 16px 18px 16px
+      }
+
+      .qn {
+        display: none
+      }
+    }
+
+    @media(hover:none) {
+      .fqi:hover {
+        translate: none
+      }
+    }
+
+    /* ---------- Follow box + footer ---------- */
+    .cta {
+      text-align: center;
+      overflow: hidden;
+      border-radius: 30px;
+      padding: 34px 24px 44px;
+      color: #16202c;
+      background: linear-gradient(155deg, #eef4fb, #c3d7ee);
+      box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .08);
+      --sky: #16202c;
+      --sky-light: #3d4a5a;
+      --sky-deep: #0b121b;
+      --fill: rgba(20, 33, 51, .05);
+      --glow: rgba(255, 255, 255, .5);
+      --ink: #16202c;
+      --bg2: #fff;
+      --mut: rgba(22, 32, 44, .78);
+      --line: rgba(20, 33, 51, .16);
+      --card: rgba(255, 255, 255, .55)
+    }
+
+    .cta .bot {
+      width: min(100%, 360px);
+      margin: 0 auto -34px;
+      --sky: #1a74a8;
+      --sky-light: #7cc4ea;
+      --sky-deep: #0a4a75;
+      --fill: rgba(14, 165, 233, .08);
+      --glow: rgba(14, 165, 233, .12)
+    }
+
+    .cta h2 {
+      position: relative;
+      z-index: 3;
+      font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+      font-weight: 600;
+      margin-bottom: 6px
+    }
+
+    .srow-list {
+      position: relative;
+      z-index: 3;
+      list-style: none;
+      padding: 0;
+      margin: 26px auto 0;
+      max-width: 720px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      text-align: left
+    }
+
+    .srow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .7);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .25s, box-shadow .25s, background .25s
+    }
+
+    .srow:hover {
+      transform: translateY(-3px);
+      background: #fff;
+      box-shadow: 0 14px 28px -18px rgba(20, 33, 51, .4)
+    }
+
+    .srow:focus-visible {
+      border-radius: 16px
+    }
+
+    .srow-l {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0
+    }
+
+    .srow-i {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent-deep);
+      color: #fff;
+      transition: transform .3s cubic-bezier(.34, 1.56, .64, 1), background .25s
+    }
+
+    .srow-i svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor
+    }
+
+    .srow:hover .srow-i {
+      transform: scale(1.1) rotate(-6deg);
+      background: var(--ink)
+    }
+
+    .srow b {
+      display: block;
+      font-family: Inter, 'Hind Siliguri', system-ui, sans-serif;
+      font-size: .95rem;
+      font-weight: 600;
+      letter-spacing: -.01em
+    }
+
+    .srow small {
+      display: block;
+      font-size: .85rem;
+      color: var(--mut)
+    }
+
+    .srow-a {
+      width: 17px;
+      height: 17px;
+      flex: none;
+      fill: none;
+      stroke: var(--accent-deep);
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0;
+      transform: translate(-4px, 4px);
+      transition: opacity .3s, transform .3s
+    }
+
+    .srow:hover .srow-a {
+      opacity: 1;
+      transform: none
+    }
+
+    .foot {
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+      padding: 22px 0 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: .88rem;
+      color: var(--mut)
+    }
+
+    .foot ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 0
+    }
+
+    .foot a {
+      color: var(--mut);
+      text-decoration: none;
+      transition: color .25s
+    }
+
+    .foot a:hover {
+      color: var(--ink)
+    }
+
+    .foot .dv {
+      color: var(--line)
+    }
+
+    /* ---------- Responsive ---------- */
+    @media(max-width:860px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding-top: 36px
+      }
+
+      .hero>* {
+        min-width: 0
+      }
+
+      .vis {
+        order: -1
+      }
+
+      .hero .lead {
+        margin-inline: auto
+      }
+
+      .hero h1 {
+        text-wrap: balance
+      }
+
+      .hero h1 span {
+        background: none;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-text-fill-color: currentColor;
+        color: var(--accent-deep)
+      }
+
+      .bot.lg {
+        width: min(80%, 320px)
+      }
+
+      .info {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 12px
+      }
+
+      .info .st {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "i l" "i v";
+        column-gap: 14px;
+        align-items: center;
+        padding: 16px 18px;
+        border-radius: 18px
+      }
+
+      .info .st svg {
+        grid-area: i;
+        margin: 0
+      }
+
+      .info .st small {
+        grid-area: l;
+        align-self: end
+      }
+
+      .val {
+        grid-area: v;
+        align-self: start
+      }
+
+      .info .st:focus-visible {
+        border-radius: 18px
+      }
+
+      .srow-list {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(hover:none) {
+
+      .st:hover,
+      .srow:hover {
+        transform: none
+      }
+
+      .st:hover svg {
+        transform: none
+      }
+    }
+
+    @media(max-width:520px) {
+      section {
+        padding: 44px 0
+      }
+
+      .hero h1 {
+        font-size: clamp(2.4rem, 13vw, 3rem)
+      }
+
+      .fa-box {
+        padding: 18px 20px
+      }
+
+      .cta {
+        padding: 28px 18px 32px;
+        border-radius: 26px
+      }
+
+      .cta .bot {
+        width: min(100%, 300px);
+        margin-bottom: -28px
+      }
+
+      .foot {
+        flex-direction: column;
+        align-items: flex-start
+      }
+    }
+
+    /* ---------- Reduced motion: static, complete, polished ---------- */
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important
+      }
+
+      .js .rv {
+        opacity: 1;
+        transform: none
+      }
+
+      .dome {
+        stroke-dashoffset: 0
+      }
+
+      .pop {
+        opacity: 1
+      }
+
+      .bot .glow {
+        opacity: .85
+      }
+    }
+  </style>
+</head>
+
+<body class="page-overview globalheader-dark" data-component-list="FocusManager" data-anim-scroll-group="body">
+  <meta name="globalnav-store-key" content="SFX9YPYY9PPXCU9KH">
+
+  <!-- ==================== APPLE NAVBAR ==================== -->
+  <input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate" aria-controls="ac-ln-menustate-tray"
+    aria-expanded="false">
+  <div id="ac-ln-sticky-placeholder" class="css-sticky"></div>
+  <nav id="ac-localnav" class="ac-localnav-scrim ac-localnav-dark js no-touch css-sticky ac-ln-allow-transitions"
+    lang="en-US" dir="ltr" data-sticky="" data-analytics-activitymap-region-id="local nav" role="navigation"
+    aria-label="Local">
+    <div class="ac-ln-wrapper">
+      <div class="ac-ln-background"></div>
+      <div class="ac-ln-content">
+        <div class="ac-ln-title">
+          <a href="./index.html" data-analytics-title="product index">
+            Nayeem Araf
+          </a>
+        </div>
+        <div class="ac-ln-menu">
+          <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open"
+            role="button" aria-controls="ac-ln-menustate-tray" aria-expanded="false">
+            <span class="ac-ln-menucta-anchor-label">Local Nav Menu</span>
+          </a>
+          <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close" role="button"
+            aria-controls="ac-ln-menustate-tray" aria-expanded="true">
+            <span class="ac-ln-menucta-anchor-label">Local Nav Menu</span>
+          </a>
+          <div class="ac-ln-menu-tray" id="ac-ln-menustate-tray" style="--r-localnav-menu-tray-natural-height: 40px;">
+            <ul class="ac-ln-menu-items">
+              <li class="ac-ln-menu-item">
+                <a href="./about.html" class="ac-ln-menu-link" data-analytics-title="About">About</a>
+              </li>
+              <li class="ac-ln-menu-item">
+                <a href="./projects.html" class="ac-ln-menu-link" data-analytics-title="Projects">Projects</a>
+              </li>
+              <li class="ac-ln-menu-item">
+                <a href="./journal.html" class="ac-ln-menu-link" data-analytics-title="Journal">Journal</a>
+              </li>
+              <li class="ac-ln-menu-item">
+                <a href="./contact-page.html" class="ac-ln-menu-link" data-analytics-title="Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ac-ln-actions">
+            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+              <label for="ac-ln-menustate" class="ac-ln-menucta">
+                <span class="ac-ln-menucta-chevron">
+                  <svg viewBox="0 0 16 9" data-chevron-icon="" xmlns="http://www.w3.org/2000/svg">
+                    <polyline shape-rendering="geometricPrecision" data-chevron-icon-shape="" stroke="currentColor"
+                      stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-linejoin="round" fill="none"
+                      fill-rule="evenodd" points="15.265 .835 8 8.167 .735 .835">
+                      <animate data-chevron-animate="expand" attributeName="points" values="15.265 .835 8 8.167 .735 .835;
+					15.25 4.5 8 4.5 .75 4.5;
+					15.265 8.165 8 .835 .735 8.165" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+					0.5;
+					1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+						0.2, 1, 0.68, 1"></animate>
+                      <animate data-chevron-animate="collapse" attributeName="points" values="15.265 8.165 8 .835 .735 8.165;
+					15.25 4.5 8 4.5 .75 4.5;
+					15.265 .835 8 8.167 .735 .835" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+					0.5;
+					1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+						0.2, 1, 0.68, 1"></animate>
+                    </polyline>
+                  </svg></span>
+              </label>
+            </div>
+
+            <div class="ac-ln-action ac-ln-action-button">
+              <a class="ac-ln-button" href="#" download="My-CV/Resume.pdf" aria-label=" CV/Resume">
+                CV/Resume
+                <span class="ac-ln-action-product">Education</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <label id="ac-ln-curtain" for="ac-ln-menustate"></label>
+
+  <script type="text/javascript" src="./scripts/ac_localnav.built.js"></script>
+  <span style="visibility: hidden; position: absolute; top: 0px; z-index: -1;">&nbsp;</span>
+
+  <main class="wrap">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="name">
+      <div class="rv">
+        <h1 id="name">Let&rsquo;s <span>talk.</span></h1>
+        <p class="lead">Tell us about your project, and we&rsquo;ll help define the right direction with a thoughtful
+          and structured approach.</p>
+      </div>
+      <div class="vis">
+        <div class="bot lg">
+          <div class="glow"></div>
+          <svg viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="eg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" style="stop-color:var(--eye1)" />
+                <stop offset="1" style="stop-color:var(--eye2)" />
+              </linearGradient>
+              <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset=".5" stop-color="#fff" />
+                <stop offset="1" stop-color="#000" />
+              </linearGradient>
+              <mask id="mk">
+                <rect width="400" height="240" fill="url(#mg)" />
+              </mask>
+            </defs>
+            <g class="fl">
+              <g mask="url(#mk)">
+                <path class="df" d="M40 230A160 160 0 0 1 360 230Z" />
+                <path class="dome" pathLength="1" d="M40 230A160 160 0 0 1 360 230" />
+              </g>
+              <g class="pop">
+                <g class="look">
+                  <g class="blink">
+                    <rect transform="translate(232 160) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"
+                      fill="url(#eg)" />
+                    <rect transform="translate(298 146) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"
+                      fill="url(#eg)" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" aria-labelledby="faqh">
+      <div class="sec-head rv">
+        <p class="eyebrow">FAQs</p>
+        <h2 id="faqh">Quick answers <em>before we talk</em>.</h2>
+        <span class="bar" aria-hidden="true"></span>
+      </div>
+      <div class="faq-grid" id="orbit" role="group" aria-label="Frequently asked questions">
+        <div class="faq-side rv">
+          <div class="orb-c">
+            <div class="orb" aria-hidden="true">
+              <svg viewBox="0 0 200 200" focusable="false">
+                <defs>
+                  <radialGradient id="ob" cx=".34" cy=".28" r=".9">
+                    <stop offset="0" stop-color="#fff" />
+                    <stop offset=".6" stop-color="#f6f7f8" />
+                    <stop offset="1" stop-color="#e4e6e9" />
+                  </radialGradient>
+                  <linearGradient id="oe" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#d3d3d3" />
+                    <stop offset="1" stop-color="#bfc4ca" />
+                  </linearGradient>
+                </defs>
+                <g class="orb-fl">
+                  <circle cx="100" cy="100" r="92" fill="url(#ob)" />
+                  <circle class="orb-ring" cx="100" cy="100" r="92" />
+                  <ellipse cx="66" cy="50" rx="24" ry="11" transform="rotate(-32 66 50)" fill="#fff" opacity=".6" />
+                  <g class="orb-look">
+                    <g class="orb-eyes">
+                      <rect transform="translate(78 106) rotate(-30)" x="-8.5" y="-20" width="17" height="40" rx="8.5"
+                        fill="url(#oe)" />
+                      <rect transform="translate(122 98) rotate(-30)" x="-8.5" y="-20" width="17" height="40" rx="8.5"
+                        fill="url(#oe)" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list" data-s>
+          <div class="fqw">
+            <div class="fqi"><button class="qb" aria-expanded="false" aria-controls="fa1"><span class="qn"
+                  aria-hidden="true">01</span><span class="ql">How do we get started?</span><span class="qi"
+                  aria-hidden="true"></span></button>
+              <div class="fap" id="fa1" role="region">
+                <div>
+                  <p class="fa">Send a short brief with your goals, timeline, and budget range. We&rsquo;ll set up a
+                    call within a few days to talk through the details and see if we&rsquo;re a good fit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fqw">
+            <div class="fqi"><button class="qb" aria-expanded="false" aria-controls="fa2"><span class="qn"
+                  aria-hidden="true">02</span><span class="ql">What types of projects do you take on?</span><span
+                  class="qi" aria-hidden="true"></span></button>
+              <div class="fap" id="fa2" role="region">
+                <div>
+                  <p class="fa">We work on brand identity, websites, and product design for teams that care about craft.
+                    Most projects come from founders and marketing leads who want something built to last, not just
+                    launched.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fqw">
+            <div class="fqi"><button class="qb" aria-expanded="false" aria-controls="fa3"><span class="qn"
+                  aria-hidden="true">03</span><span class="ql">How does the pricing work?</span><span class="qi"
+                  aria-hidden="true"></span></button>
+              <div class="fap" id="fa3" role="region">
+                <div>
+                  <p class="fa">Every project is scoped and quoted individually, based on complexity and timeline.
+                    We&rsquo;ll share a clear proposal before any work begins, so there are no surprises later.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fqw">
+            <div class="fqi"><button class="qb" aria-expanded="false" aria-controls="fa4"><span class="qn"
+                  aria-hidden="true">04</span><span class="ql">How long does a project usually take?</span><span
+                  class="qi" aria-hidden="true"></span></button>
+              <div class="fap" id="fa4" role="region">
+                <div>
+                  <p class="fa">A typical website or brand project runs six to ten weeks from kickoff to launch. Larger
+                    or multi-phase work is scheduled together once we understand the full scope.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fqw">
+            <div class="fqi"><button class="qb" aria-expanded="false" aria-controls="fa5"><span class="qn"
+                  aria-hidden="true">05</span><span class="ql">Can we request revisions?</span><span class="qi"
+                  aria-hidden="true"></span></button>
+              <div class="fap" id="fa5" role="region">
+                <div>
+                  <p class="fa">Yes. Every project includes structured rounds of feedback at key milestones, so changes
+                    are easy to fold in before we move forward.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact details (REPLACE: email / phone / address) -->
+    <section aria-labelledby="touch">
+      <div class="sec-head rv">
+        <p class="eyebrow">Contact details</p>
+        <h2 id="touch">Get in <em>touch</em>.</h2>
+        <span class="bar" aria-hidden="true"></span>
+      </div>
+      <div class="info" data-s>
+        <div class="cell"><a class="st p" href="mailto:hello@araf.dev"><small>Email</small><span
+              class="val">hello@araf.dev</span><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 7l-10 6L2 7" />
+            </svg></a></div>
+        <div class="cell"><a class="st o" href="tel:+8801533991050"><small>Phone</small><span
+              class="val">+8801533991050</span><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg></a></div>
+        <div class="cell">
+          <div class="st v"><small>Address</small><span class="val">Dhanmondi 32, Dhaka, Bangladesh 🇧🇩</span><svg
+              viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Follow along (REPLACE: social links) -->
+    <section aria-labelledby="follow">
+      <div class="cta rv">
+        <div class="bot">
+          <div class="glow"></div>
+          <svg viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+
+            <g class="fl">
+              <g mask="url(#mk)">
+                <path class="df" d="M40 230A160 160 0 0 1 360 230Z" />
+                <path class="dome" pathLength="1" d="M40 230A160 160 0 0 1 360 230" />
+              </g>
+              <g class="pop">
+                <g class="look">
+                  <g class="blink">
+                    <rect transform="translate(232 160) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"
+                      fill="url(#eg)" />
+                    <rect transform="translate(298 146) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"
+                      fill="url(#eg)" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <h2 id="follow">Follow along</h2>
+        <ul class="srow-list" data-s aria-label="Social links">
+          <li><a class="srow" href="https://www.facebook.com/abdullahalnayeem2k23" target="_blank" rel="noopener"
+              aria-label="Facebook"><span class="srow-l"><span class="srow-i"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                  </svg></span><span><b>Facebook</b><small>@theanaraf</small></span></span><svg class="srow-a"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg></a></li>
+          <li><a class="srow" href="https://www.instagram.com/a.alnayeemaraf" target="_blank" rel="noopener"
+              aria-label="Instagram"><span class="srow-l"><span class="srow-i"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                  </svg></span><span><b>Instagram</b><small>@theanaraf</small></span></span><svg class="srow-a"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg></a></li>
+          <li><a class="srow" href="https://www.linkedin.com/in/abdullah-al-nayeem-araf-b57a352a6/" target="_blank"
+              rel="noopener" aria-label="LinkedIn"><span class="srow-l"><span class="srow-i"><svg viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z" />
+                  </svg></span><span><b>LinkedIn</b><small>@theanaraf</small></span></span><svg class="srow-a"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg></a></li>
+          <li><a class="srow" href="https://x.com/hlw_mrA23" target="_blank" rel="noopener"
+              aria-label="X (Twitter)"><span class="srow-l"><span class="srow-i"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
+                  </svg></span><span><b>X</b><small>@theanaraf</small></span></span><svg class="srow-a"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer class="wrap">
+    <div class="foot">
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Bangladesh" target="_blank" rel="noopener noreferrer">
+            Bangladesh 🇧🇩
+          </a>
+        </li>
+        <li class="dv" aria-hidden="true">|</li>
+        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+        <li class="dv" aria-hidden="true">|</li>
+        <li><a href="./terms-of-service.html">Terms &amp; Conditions</a></li>
+      </ul>
+      <p>Copyright &copy; <span id="cpYear"></span> Nayeem Araf. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    /* FAQ accordion */
+    /* FAQ: bot ball on the left, questions on the right. The eyes follow the pointer in every direction,
+       glance around on their own when idle, and look at whichever question is picked. */
+    const orbEye = { x: 0, y: 0 };
+    (() => {
+      const o = document.getElementById('orbit'); if (!o) return;
+      const orb = o.querySelector('.orb'), items = [...o.querySelectorAll('.fqi')], qs = items.map(x => x.querySelector('.qb'));
+      const RX = 30, RY = 26; let hold = 0, raf = 0;
+      const look = (a, r) => { orbEye.x = Math.cos(a) * r * RX; orbEye.y = Math.sin(a) * r * RY };
+      const lookAt = (x, y) => { const b = orb.getBoundingClientRect(), dx = x - (b.left + b.width / 2), dy = y - (b.top + b.height / 2); look(Math.atan2(dy, dx), Math.min(1, Math.hypot(dx, dy) / 180)) };
+      qs.forEach((b, i) => b.addEventListener('click', () => { items.forEach((it, j) => { const on = j === i && !it.classList.contains('on'); it.classList.toggle('on', on); qs[j].setAttribute('aria-expanded', on) }); const r = b.getBoundingClientRect(); hold = Date.now() + 2400; lookAt(r.left + r.width / 2, r.top + r.height / 2) }));
+      addEventListener('pointermove', e => { if (e.pointerType === 'touch') return; hold = Date.now() + 2500; cancelAnimationFrame(raf); raf = requestAnimationFrame(() => lookAt(e.clientX, e.clientY)) }, { passive: true });
+      if (!matchMedia('(prefers-reduced-motion:reduce)').matches) { const wander = () => { if (Date.now() > hold && !document.hidden) look(Math.random() * Math.PI * 2, Math.random() < .18 ? 0 : .6 + Math.random() * .4); setTimeout(wander, 1300 + Math.random() * 1500) }; setTimeout(wander, 1200) }
+    })();
+    const yr = document.getElementById('cpYear'); if (yr) yr.textContent = new Date().getFullYear();
+
+    /* Scroll reveal with stagger */
+    document.querySelectorAll('[data-s]').forEach(g => [...g.children].forEach((c, i) => { c.classList.add('rv'); c.style.setProperty('--i', i) }));
+    const els = document.querySelectorAll('.rv,.bot');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in', 'go'); io.unobserve(e.target) } }), { threshold: .12 });
+      els.forEach(el => io.observe(el));
+    } else els.forEach(el => el.classList.add('in', 'go'));
+
+    /* Bots. Everything that moves (float, glance, blink, pop-in, FAQ-ball eyes) is driven from this one loop by writing
+       SVG transform ATTRIBUTES, not CSS transforms/transitions. Browsers cache CSS-animated SVG groups as bitmaps, which
+       makes the eyes blurry while they move; attribute transforms are redrawn as crisp vectors on every frame. */
+    (() => {
+      const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches,
+        T = (x, y) => `translate(${x.toFixed(2)} ${y.toFixed(2)})`,
+        S = (cx, cy, sx, sy) => `translate(${cx} ${cy}) scale(${sx.toFixed(3)} ${sy.toFixed(3)}) translate(${-cx} ${-cy})`,
+        back = t => { const c = 1.70158, u = t - 1; return 1 + (c + 1) * u * u * u + c * u * u };
+      const bots = [...document.querySelectorAll('.bot')].map(el => ({ el, fl: el.querySelector('.fl'), pop: el.querySelector('.pop'), look: el.querySelector('.look'), blink: el.querySelector('.blink'), t0: null, vis: true, x: 0, y: 0, sq: 1, hover: false, done: false }));
+      const start = b => { if (b.t0 === null) b.t0 = performance.now() };
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(es => es.forEach(e => { const b = bots.find(o => o.el === e.target); b.vis = e.isIntersecting; if (e.isIntersecting) start(b) }), { threshold: .12 });
+        bots.forEach(b => io.observe(b.el));
+      } else bots.forEach(start);
+      bots.forEach(b => { b.el.addEventListener('pointerenter', () => b.hover = true); b.el.addEventListener('pointerleave', () => b.hover = false); if (reduce) b.pop.style.opacity = 1 });
+      const orb = { fl: document.querySelector('.orb-fl'), look: document.querySelector('.orb-look'), blink: document.querySelector('.orb-eyes'), x: 0, y: 0 };
+      /* one shared timeline: all bots glance the same way and blink together */
+      const P = { right: [0, 0], center: [-65, 5], left: [-121, 1], up: [-65, -19] }, pool = ['right', 'right', 'left', 'left', 'center', 'up'];
+      let cur = 'right', tx = 0, ty = 0, blinkAt = -1e9, last = performance.now();
+      const next = () => { let k; do { k = pool[Math.floor(Math.random() * pool.length)] } while (k === cur); cur = k; tx = P[k][0]; ty = P[k][1]; setTimeout(next, 1600 + Math.random() * 1600) };
+      const blinkLoop = () => setTimeout(() => { blinkAt = performance.now(); blinkLoop() }, 3500 + Math.random() * 2500);
+      if (!reduce) { setTimeout(next, 2800); blinkLoop() }
+      const bob = (now, a) => a * (.5 - .5 * Math.cos(now / 4500 * 2 * Math.PI));
+      const frame = now => {
+        const dt = Math.min(64, now - last); last = now;
+        const k = reduce ? 1 : 1 - Math.exp(-dt / 210), bp = (now - blinkAt) / 240, bl = bp >= 0 && bp <= 1 ? 1 - .9 * Math.sin(Math.PI * bp) : 1;
+        for (const b of bots) {
+          if (!b.vis) continue;
+          b.sq += ((b.hover ? .55 : 1) - b.sq) * (reduce ? 1 : 1 - Math.exp(-dt / 90));
+          if (!reduce) b.fl.setAttribute('transform', T(0, bob(now, -7)));
+          b.x += (tx - b.x) * k; b.y += (ty - b.y) * k;
+          b.look.setAttribute('transform', T(b.x, b.y));
+          b.blink.setAttribute('transform', S(265, 153, 1, Math.min(bl, b.sq)));
+          if (!b.done) {
+            if (reduce) b.done = true;
+            else if (b.t0 !== null) {
+              const t = (now - b.t0 - 1700) / 800;
+              if (t >= 1) { b.done = true; b.pop.style.opacity = 1; b.pop.removeAttribute('transform') }
+              else if (t > 0) { const p = back(t), s = .5 + .5 * p; b.pop.style.opacity = Math.min(1, p); b.pop.setAttribute('transform', S(265, 153, s, s)) }
+            }
+          }
+        }
+        if (orb.look && typeof orbEye !== 'undefined') {
+          const ko = reduce ? 1 : 1 - Math.exp(-dt / 110);
+          orb.x += (orbEye.x - orb.x) * ko; orb.y += (orbEye.y - orb.y) * ko;
+          orb.look.setAttribute('transform', T(orb.x, orb.y));
+          orb.blink.setAttribute('transform', S(100, 102, 1, bl));
+          if (!reduce && orb.fl) orb.fl.setAttribute('transform', T(0, bob(now, -9)));
+        }
+        requestAnimationFrame(frame);
+      };
+      requestAnimationFrame(frame);
+    })();
+  </script>
+</body>
+
+</html>

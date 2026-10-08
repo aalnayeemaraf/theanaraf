@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html
+	class="js no-touch no-reduced-motion enhanced no-safari inline-media inline-media-alpha form-mouseuser desktop no-ar-quicklook no-small-breakpoint no-firefox"
+	xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" dir="ltr" prefix="og: http://ogp.me/ns#"
+	style="--r-localnav-text-zoom-factor: 1; --global-scrollbar-width: 15px;">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="color-scheme" content="only light">
+	<link rel="canonical" href="https://www.theanaraf.com/projects.html">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<!-- Same navbar + base CSS as index.html -->
+	<link rel="stylesheet" type="text/css" href="./styles/ac_localnav.built.css">
+	<link rel="stylesheet" href="wss/fonts">
+	<link rel="stylesheet" href="./styles/overview.built.css" type="text/css">
+	<link rel="stylesheet" href="./styles/overview2.built.css" type="text/css">
+
+	<meta name="referrer" content="no-referrer-when-downgrade">
+	<title>Projects | Nayeem Araf</title>
+	<meta name="Description"
+		content="Projects by Abdullah Al Nayeem Araf: design, campaigns, study guides, front-end work, and the brands he founded.">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+		rel="stylesheet">
+
+	<script src="./scripts/head.built.js" type="text/javascript" charset="utf-8"></script>
+
+	<style>
+		.my-portfolio,
+		.my-portfolio * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.my-portfolio {
+			--ink: #0a0a0a;
+			--mut: #555;
+			--line: rgba(0, 0, 0, .12);
+			--accent: #0369a1;
+			--fd: 'Space Grotesk', Inter, sans-serif;
+			position: relative;
+			overflow-x: hidden;
+			isolation: isolate;
+			color: var(--ink);
+			font: 400 16px/1.65 Inter, 'Hind Siliguri', system-ui, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-webkit-tap-highlight-color: transparent;
+			color-scheme: only light;
+			background-image: linear-gradient(180deg, #f8f8f9, #fff 55%);
+
+			a {
+				color: inherit;
+			}
+
+			:focus-visible {
+				outline: 2px solid var(--accent);
+				outline-offset: 4px;
+				border-radius: 8px;
+			}
+
+			.wrap {
+				max-width: 1180px;
+				margin-inline: auto;
+				padding-inline: clamp(20px, 5vw, 64px);
+			}
+
+			/* ---- Bot (same drawing as About / Privacy pages) ---- */
+			.bot {
+				position: relative;
+				aspect-ratio: 2/1;
+				--sw: 6.3px;
+				--sky: #2b8cc4;
+				--deep: #0369a1;
+				--fill: rgba(14, 165, 233, .1);
+				--glow: rgba(14, 165, 233, .2);
+			}
+
+			.bot .glow {
+				position: absolute;
+				inset: -20% -14% 0;
+				pointer-events: none;
+				background: radial-gradient(closest-side, var(--glow), transparent);
+				animation: breathe 5s ease-in-out infinite;
+			}
+
+			.bot svg {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				overflow: visible;
+				shape-rendering: geometricPrecision;
+			}
+
+			.dome {
+				fill: none;
+				stroke: var(--sky);
+				stroke-width: var(--sw);
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-dasharray: 1;
+				stroke-dashoffset: 1;
+				transition: stroke .3s;
+				animation: draw 1.8s ease-in-out forwards;
+			}
+
+			.df {
+				fill: var(--fill);
+			}
+
+			.eye {
+				fill: url(#eg);
+			}
+
+			/* Everything that moves (glance, blink, pop-in) is written as SVG transform attributes by the script below.
+	   CSS-animated SVG groups get cached as blurry bitmaps; attribute transforms stay razor sharp. */
+			.bot:hover .dome {
+				stroke: var(--deep);
+			}
+
+			.bot:not(.go) * {
+				animation-play-state: paused;
+			}
+
+			.bot.sm {
+				position: absolute;
+				right: 0;
+				bottom: 1px;
+				width: 156px;
+				--sw: 5.4px;
+			}
+
+			/* Footer bot: same light outline bot as the bottom of the Terms / Privacy pages */
+			.bot.fb {
+				width: min(76%, 780px);
+				margin: 24px auto 0;
+				--sky: #d1d1d8;
+				--deep: #d1d1d8;
+				--sw: .65px;
+			}
+
+			.bot.fb .df {
+				display: none;
+			}
+
+			.bot.fb .eye {
+				fill: none;
+				stroke: #d1d1d8;
+				stroke-width: var(--sw);
+				stroke-linejoin: round;
+			}
+
+			/* ---- Header: same layout as the Privacy Policy page (title, text, rule with the bot standing on it) ---- */
+			.pj-head {
+				padding-top: clamp(56px, 9vh, 96px);
+			}
+
+			.pj-head h1 {
+				font: 600 46px/1.1 var(--fd);
+				letter-spacing: -.02em;
+				color: #0c0c10;
+				text-wrap: balance;
+			}
+
+			.pj-head h1 span {
+				color: var(--accent);
+			}
+
+			.pj-head p {
+				margin-top: 14px;
+				max-width: 52ch;
+				font-size: 1rem;
+				line-height: 1.75;
+				color: #5a5a66;
+			}
+
+			.rule {
+				position: relative;
+				margin-top: 36px;
+			}
+
+			.rule hr {
+				height: 1px;
+				border: 0;
+				background: #ececf1;
+			}
+
+			.chips {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				margin-top: 28px;
+			}
+
+			.chip {
+				font: 500 .86rem Inter, sans-serif;
+				padding: 8px 16px;
+				border-radius: 999px;
+				border: 1px solid #dcdbd8;
+				background: #fff;
+				color: var(--ink);
+				cursor: pointer;
+				transition: background .25s, color .25s, border-color .25s;
+
+				&:hover {
+					border-color: var(--ink);
+				}
+
+				&[aria-pressed=true] {
+					background: var(--ink);
+					color: #fff;
+					border-color: var(--ink);
+				}
+			}
+
+			/* ---- Grid: 3 columns, every row the same height, cards are 1 or 2 columns wide ---- */
+			.pj-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-auto-rows: 1fr;
+				grid-auto-flow: dense;
+				gap: 18px;
+				margin-top: 24px;
+				padding-bottom: 8px;
+			}
+
+			.w2 {
+				grid-column: span 2;
+			}
+
+			.pj-grid.filtered .pc {
+				grid-column: auto;
+			}
+
+			.pc {
+				display: flex;
+				flex-direction: column;
+				padding: 12px;
+				border-radius: 28px;
+				color: var(--fg);
+				background: var(--bg);
+				box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .08), 0 12px 28px -22px rgba(20, 33, 51, .28);
+				transition: translate .35s ease, box-shadow .35s ease;
+
+				&[hidden] {
+					display: none;
+				}
+
+				&:hover {
+					translate: 0 -6px;
+					box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .08), 0 18px 36px -22px rgba(20, 33, 51, .32);
+				}
+
+				:focus-visible {
+					outline-color: var(--fg);
+				}
+
+				/* Image / thumbnail area: fixed height, any image is cropped to fit */
+				.thumb {
+					position: relative;
+					display: grid;
+					place-items: center;
+					height: 168px;
+					overflow: hidden;
+					border-radius: 18px;
+					background: color-mix(in srgb, var(--fg) 9%, transparent);
+					box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--fg) 14%, transparent);
+				}
+
+				.thumb img {
+					position: absolute;
+					inset: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+				}
+
+				.thumb>svg {
+					width: 44px;
+					height: 44px;
+					fill: none;
+					stroke: var(--fg);
+					stroke-width: 1.4;
+					stroke-linecap: round;
+					stroke-linejoin: round;
+					opacity: .5;
+				}
+
+				.tag {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+					z-index: 2;
+					padding: 4px 11px;
+					border-radius: 999px;
+					font-size: .74rem;
+					font-weight: 600;
+					line-height: 1.5;
+					color: #0a0a0a;
+					background: rgba(255, 255, 255, .9);
+					box-shadow: 0 2px 8px -4px rgba(0, 0, 0, .3);
+				}
+
+				.stats {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					gap: 6px;
+					width: 100%;
+					padding: 26px 12px 0;
+					text-align: center;
+				}
+
+				.stats b {
+					display: block;
+					font: 700 clamp(1.15rem, 2vw, 1.5rem)/1.1 var(--fd);
+				}
+
+				.stats span {
+					display: block;
+					margin-top: 4px;
+					font-size: .74rem;
+					line-height: 1.3;
+					opacity: .7;
+				}
+
+				.body {
+					display: flex;
+					flex: 1;
+					flex-direction: column;
+					padding: 18px 12px 12px;
+				}
+
+				h3 {
+					font: 600 1.25rem/1.25 var(--fd);
+					letter-spacing: -.01em;
+					margin-bottom: 6px;
+				}
+
+				p {
+					font-size: .95rem;
+					line-height: 1.6;
+					opacity: .85;
+					max-width: 52ch;
+				}
+
+				.act {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					margin-top: auto;
+					padding-top: 18px;
+				}
+			}
+
+			.c1 {
+				--bg: radial-gradient(90% 80% at 100% 0%, rgba(120, 170, 220, .2), transparent 60%), linear-gradient(145deg, #16283f, #0b1625);
+				--fg: #fff;
+				--bt: #0b1625;
+			}
+
+			.c2 {
+				--bg: linear-gradient(180deg, #e1eefb, #a3c8ec);
+				--fg: #0f3556;
+				--bt: #fff;
+			}
+
+			.c3 {
+				--bg: linear-gradient(180deg, #fcecd3, #efc088);
+				--fg: #55300c;
+				--bt: #fff;
+			}
+
+			.c4 {
+				--bg: linear-gradient(180deg, #e0f3e7, #9dd2b3);
+				--fg: #12402a;
+				--bt: #fff;
+			}
+
+			.c5 {
+				--bg: linear-gradient(135deg, #bd7c57, #84492f);
+				--fg: #fff;
+				--bt: #4a2410;
+			}
+
+			.c6 {
+				--bg: radial-gradient(90% 70% at 100% 0%, rgba(170, 214, 236, .32), transparent 62%), radial-gradient(70% 60% at 0% 100%, rgba(186, 228, 208, .28), transparent 62%), linear-gradient(165deg, #fff, #f3f7fa);
+				--fg: #0a0a0a;
+				--bt: #fff;
+			}
+
+			.c7 {
+				--bg: linear-gradient(135deg, #3f78a6, #1f4a72);
+				--fg: #fff;
+				--bt: #1f4a72;
+			}
+
+			/* ---- Buttons ---- */
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				padding: 11px 20px;
+				border-radius: 999px;
+				font-weight: 600;
+				font-size: .88rem;
+				text-decoration: none;
+				background: var(--fg);
+				color: var(--bt);
+				transition: transform .25s, box-shadow .25s;
+
+				&::after {
+					content: "";
+					width: 12px;
+					height: 12px;
+					background: currentColor;
+					transition: transform .25s;
+					-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12L12 4M12 4H5M12 4V11'/%3E%3C/svg%3E") center/contain no-repeat;
+					mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12L12 4M12 4H5M12 4V11'/%3E%3C/svg%3E") center/contain no-repeat;
+				}
+
+				&:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 12px 24px -12px rgba(0, 0, 0, .45);
+				}
+
+				&:hover::after {
+					transform: translate(2px, -2px);
+				}
+			}
+
+			.gh {
+				display: grid;
+				place-items: center;
+				flex: none;
+				width: 42px;
+				height: 42px;
+				border-radius: 50%;
+				border: 1px solid color-mix(in srgb, var(--fg) 30%, transparent);
+				transition: transform .25s, background .25s, color .25s;
+
+				svg {
+					width: 18px;
+					height: 18px;
+					fill: currentColor;
+				}
+
+				&:hover {
+					transform: translateY(-2px);
+					background: var(--fg);
+					color: var(--bt);
+				}
+			}
+
+			/* ---- Footer ---- */
+			.foot {
+				border-top: 1px solid #ececf1;
+				padding: 22px 0 36px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				gap: 12px;
+				font-size: .88rem;
+				color: var(--mut);
+
+				ul {
+					list-style: none;
+					display: flex;
+					gap: 12px;
+					flex-wrap: wrap;
+				}
+
+				a {
+					color: var(--mut);
+					text-decoration: none;
+					transition: color .25s;
+				}
+
+				a:hover {
+					color: var(--ink);
+				}
+
+				.dv {
+					color: var(--line);
+				}
+			}
+
+			/* ---- Motion ---- */
+			.rv {
+				opacity: 0;
+				transform: translateY(18px);
+				transition: opacity .5s ease-out, transform .5s ease-out;
+				transition-delay: calc(var(--i, 0) * 70ms);
+			}
+
+			.rv.in {
+				opacity: 1;
+				transform: none;
+			}
+
+			/* .rv's transition (declared later) used to override the card's own, so hover lift had no easing. Combine them. */
+			.pc.rv {
+				transition: opacity .5s ease-out, transform .5s ease-out, translate .5s cubic-bezier(.22, 1, .36, 1), box-shadow .5s cubic-bezier(.22, 1, .36, 1);
+				transition-delay: calc(var(--i, 0) * 70ms), calc(var(--i, 0) * 70ms), 0s, 0s;
+			}
+
+			/* ---- Drag: card follows the cursor on a soft spring (see script) ---- */
+			.pc {
+				cursor: grab;
+				-webkit-user-select: none;
+				user-select: none;
+
+				a {
+					cursor: pointer;
+					-webkit-user-drag: none;
+				}
+
+				img {
+					-webkit-user-drag: none;
+					pointer-events: none;
+				}
+			}
+
+			.pc.rv.moving {
+				transition: box-shadow .3s ease;
+				transition-delay: 0s;
+				will-change: translate, rotate, scale;
+			}
+
+			.pc.rv.drag {
+				position: relative;
+				z-index: 5;
+				cursor: grabbing;
+				box-shadow: inset 0 0 0 1px rgba(20, 33, 51, .08), 0 30px 54px -24px rgba(20, 33, 51, .42);
+			}
+
+			@media (max-width: 900px) {
+				.pj-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+
+				.pc.w2:not(.c1) {
+					grid-column: auto;
+				}
+
+				.bot.sm {
+					width: 140px;
+					--sw: 5.8px;
+				}
+
+				.bot.fb {
+					--sw: .95px;
+				}
+			}
+
+			@media (max-width: 760px) {
+				.bot.sm {
+					width: 120px;
+					--sw: 6.8px;
+				}
+
+				.rule {
+					margin-top: 64px;
+				}
+			}
+
+			@media (max-width: 640px) {
+				.pj-head {
+					padding-top: 48px;
+				}
+
+				.pj-head h1 {
+					font-size: 32px;
+				}
+
+				.pj-grid {
+					grid-template-columns: 1fr;
+					grid-auto-rows: auto;
+				}
+
+				.pc.w2 {
+					grid-column: auto;
+				}
+
+				.bot.sm {
+					width: 108px;
+					--sw: 7.2px;
+				}
+
+				.bot.fb {
+					--sw: 1.3px;
+				}
+
+				.rule {
+					margin-top: 60px;
+				}
+
+				.foot {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+			}
+
+			@media (hover: none) {
+				.pc:hover {
+					translate: none;
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+
+				*,
+				*::before,
+				*::after {
+					animation: none !important;
+					transition: none !important;
+				}
+
+				.rv {
+					opacity: 1;
+					transform: none;
+				}
+
+				.dome {
+					stroke-dashoffset: 0;
+					stroke-dasharray: none;
+				}
+
+				.pop {
+					opacity: 1;
+				}
+			}
+		}
+
+		@keyframes draw {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+
+		@keyframes pop {
+			from {
+				opacity: 0;
+				transform: scale(.5);
+			}
+
+			to {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+
+		@keyframes breathe {
+
+			0%,
+			100% {
+				opacity: .67;
+			}
+
+			50% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes blink {
+			50% {
+				transform: scaleY(.1);
+			}
+		}
+	</style>
+</head>
+
+<body class="page-overview globalheader-dark" data-component-list="FocusManager" data-anim-scroll-group="body">
+
+	<!-- ==================== NAVBAR (same as index.html; Projects marked current) ==================== -->
+	<input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate" aria-controls="ac-ln-menustate-tray"
+		aria-expanded="false">
+	<div id="ac-ln-sticky-placeholder" class="css-sticky"></div>
+	<nav id="ac-localnav" class="ac-localnav-scrim ac-localnav-dark js no-touch css-sticky ac-ln-allow-transitions"
+		lang="en-US" dir="ltr" data-sticky="" data-analytics-activitymap-region-id="local nav" role="navigation"
+		aria-label="Local">
+		<div class="ac-ln-wrapper">
+			<div class="ac-ln-background"></div>
+			<div class="ac-ln-content">
+				<div class="ac-ln-title">
+					<a href="./index.html" data-analytics-title="product index">Nayeem Araf</a>
+				</div>
+				<div class="ac-ln-menu">
+					<a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open"
+						id="ac-ln-menustate-open" role="button" aria-controls="ac-ln-menustate-tray"
+						aria-expanded="false">
+						<span class="ac-ln-menucta-anchor-label">Local Nav Menu</span>
+					</a>
+					<a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close"
+						role="button" aria-controls="ac-ln-menustate-tray" aria-expanded="true">
+						<span class="ac-ln-menucta-anchor-label">Local Nav Menu</span>
+					</a>
+					<div class="ac-ln-menu-tray" id="ac-ln-menustate-tray"
+						style="--r-localnav-menu-tray-natural-height: 40px;">
+						<ul class="ac-ln-menu-items">
+							<li class="ac-ln-menu-item">
+								<a href="./about.html" class="ac-ln-menu-link" data-analytics-title="About">About</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<a href="./projects.html" class="ac-ln-menu-link" aria-current="page"
+									data-analytics-title="Projects">Projects</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<a href="./journal.html" class="ac-ln-menu-link"
+									data-analytics-title="Journal">Journal</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<a href="./contact-page.html" class="ac-ln-menu-link"
+									data-analytics-title="Contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ac-ln-actions">
+						<div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+							<label for="ac-ln-menustate" class="ac-ln-menucta">
+								<span class="ac-ln-menucta-chevron">
+									<svg viewBox="0 0 16 9" data-chevron-icon="" xmlns="http://www.w3.org/2000/svg">
+										<polyline shape-rendering="geometricPrecision" data-chevron-icon-shape=""
+											stroke="currentColor" stroke-linecap="round"
+											vector-effect="non-scaling-stroke" stroke-linejoin="round" fill="none"
+											fill-rule="evenodd" points="15.265 .835 8 8.167 .735 .835">
+											<animate data-chevron-animate="expand" attributeName="points"
+												values="15.265 .835 8 8.167 .735 .835;15.25 4.5 8 4.5 .75 4.5;15.265 8.165 8 .835 .735 8.165"
+												dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;0.5;1"
+												calcMode="spline" keySplines="0.12, 0, 0.38, 0; 0.2, 1, 0.68, 1">
+											</animate>
+											<animate data-chevron-animate="collapse" attributeName="points"
+												values="15.265 8.165 8 .835 .735 8.165;15.25 4.5 8 4.5 .75 4.5;15.265 .835 8 8.167 .735 .835"
+												dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;0.5;1"
+												calcMode="spline" keySplines="0.2, 0, 0.68, 0; 0.2, 1, 0.68, 1">
+											</animate>
+										</polyline>
+									</svg></span>
+							</label>
+						</div>
+
+						<div class="ac-ln-action ac-ln-action-button">
+							<a class="ac-ln-button" href="#" download="My-CV/Resume.pdf" aria-label=" CV/Resume">
+								CV/Resume
+								<span class="ac-ln-action-product">Education</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<label id="ac-ln-curtain" for="ac-ln-menustate"></label>
+	<script type="text/javascript" src="./scripts/ac_localnav.built.js"></script>
+
+	<!-- ==================== MAIN CONTENT ==================== -->
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+		<defs>
+			<linearGradient id="eg" x1="0" y1="0" x2="1" y2="1">
+				<stop offset="0" stop-color="#5ccbfb" />
+				<stop offset="1" stop-color="#0369a1" />
+			</linearGradient>
+			<linearGradient id="mg" gradientUnits="userSpaceOnUse" x1="0" y1="198" x2="0" y2="230">
+				<stop offset="0" stop-color="#fff" />
+				<stop offset="1" stop-color="#000" />
+			</linearGradient>
+			<mask id="mk" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="240">
+				<rect width="400" height="240" fill="url(#mg)" />
+			</mask>
+			<symbol id="gh" viewBox="0 0 16 16">
+				<path
+					d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+			</symbol>
+		</defs>
+	</svg>
+
+	<main id="main" class="main" role="main" data-page-type="overview">
+		<div class="my-portfolio">
+			<section class="wrap" aria-labelledby="projects-title">
+
+				<!-- Heading + rule with the bot standing on it (same as the Privacy Policy page) -->
+				<header class="pj-head rv">
+					<h1 id="projects-title">Questions I turned into <span>things.</span></h1>
+					<p>An agency, a clothing brand, study guides and a community of learners. Each one began with
+						something I wanted to understand, and grew into something other people could use.</p>
+				</header>
+				<div class="rule">
+					<hr>
+					<div class="bot sm" aria-hidden="true"></div>
+				</div>
+
+				<div class="chips" role="group" aria-label="Filter projects">
+					<button class="chip" data-f="all" aria-pressed="true">All</button>
+					<button class="chip" data-f="design" aria-pressed="false">Design</button>
+					<button class="chip" data-f="learning" aria-pressed="false">Learning</button>
+					<button class="chip" data-f="business" aria-pressed="false">Business</button>
+					<button class="chip" data-f="development" aria-pressed="false">Development</button>
+				</div>
+
+				<!-- TO ADD A PROJECT IMAGE: put <img src="images/name.jpg" alt="..." loading="lazy"> inside a card's .thumb (see the commented examples).
+			     It is cropped to fit automatically. Replace each href="#" with the real project / GitHub link. -->
+				<div class="pj-grid">
+
+					<article class="pc c1 w2 rv" data-cat="business">
+						<div class="thumb"><span class="tag">Agency</span>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+								<path d="M9 18h6M10 22h4" />
+							</svg>
+							<!-- <img src="images/liberate-minds.jpg" alt="Liberate Minds preview" loading="lazy"> -->
+						</div>
+						<div class="body">
+							<h3>Liberate Minds</h3>
+							<p>A digital IT agency focused on technology, creativity, and digital solutions. I founded
+								it alongside my studies.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Liberate Minds on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+					<article class="pc c2 rv" data-cat="design" style="--i:1">
+						<div class="thumb"><span class="tag">Design</span>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<rect x="3" y="3" width="18" height="18" rx="5" />
+								<circle cx="9" cy="9" r="1.8" />
+								<path d="M21 15l-4.5-4.5L8 19" />
+							</svg>
+							<!-- <img src="images/news-graphics.jpg" alt="News and social graphics" loading="lazy"> -->
+						</div>
+						<div class="body">
+							<h3>News &amp; social graphics</h3>
+							<p>Graphics made for news stories and social media feeds.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="News and social graphics on GitHub"><svg viewBox="0 0 16 16"
+										aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+					<article class="pc c3 rv" data-cat="design">
+						<div class="thumb"><span class="tag">Campaign</span>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<circle cx="12" cy="12" r="9.5" />
+								<path d="M15.5 8.5l-2 5-5 2 2-5z" />
+							</svg>
+							<!-- <img src="images/travel-campaigns.jpg" alt="Travel campaigns" loading="lazy"> -->
+						</div>
+						<div class="body">
+							<h3>Travel campaigns</h3>
+							<p>Campaign work built around travel and destinations.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Travel campaigns on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+					<article class="pc c4 rv" data-cat="learning" style="--i:1">
+						<div class="thumb"><span class="tag">Guide</span>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M12 2.8l6.6 2.3v7.6c0 4-3 6.3-6.6 8.5-3.6-2.2-6.6-4.5-6.6-8.5V5.1z" />
+								<path d="M9 12l2.2 2.2L15 10.4" />
+							</svg>
+							<!-- <img src="images/it-study-guide.jpg" alt="IT study guide" loading="lazy"> -->
+						</div>
+						<div class="body">
+							<h3>IT study guide</h3>
+							<p>A study guide for learning IT, built from my own path toward IT support.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="IT study guide on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+					<article class="pc c5 rv" data-cat="business" style="--i:2">
+						<div class="thumb"><span class="tag">Brand</span>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M8 3L3 6l2 4 3-1.5V21h8V8.5L19 10l2-4-5-3a4 4 0 0 1-8 0z" />
+							</svg>
+							<!-- <img src="images/duor.jpg" alt="DUOR clothing brand" loading="lazy"> -->
+						</div>
+						<div class="body">
+							<h3>DUOR</h3>
+							<p>A clothing brand where I explore fashion, creativity, and brand building.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="DUOR on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+					<article class="pc c7 rv" data-cat="development">
+						<div class="thumb"><span class="tag">Development</span>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16" />
+							</svg>
+							<!-- <img src="images/front-end.jpg" alt="Front-end interfaces" loading="lazy"> -->
+						</div>
+						<div class="body">
+							<h3>Front-end interfaces</h3>
+							<p>Clean, responsive interfaces built with HTML, CSS, JavaScript, and React.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Front-end interfaces on GitHub"><svg viewBox="0 0 16 16"
+										aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+					<article class="pc c6 w2 rv" data-cat="learning" style="--i:1">
+						<div class="thumb"><span class="tag">Community</span>
+							<div class="stats">
+								<div><b>12,590+</b><span>Learners</span></div>
+								<div><b>2,00,000+</b><span>Questions solved</span></div>
+								<div><b>87%</b><span>Satisfied with answers</span></div>
+							</div>
+							<!-- <img src="images/community.jpg" alt="Learner community" loading="lazy"> (replaces the stats) -->
+						</div>
+						<div class="body">
+							<h3>Learner community</h3>
+							<p>Learners use it to clear their doubts and get clear, simple answers.</p>
+							<div class="act"><a class="btn" href="#" target="_blank" rel="noopener noreferrer">Visit
+									Website</a><a class="gh" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Learner community on GitHub"><svg viewBox="0 0 16 16"
+										aria-hidden="true">
+										<use href="#gh" />
+									</svg></a></div>
+						</div>
+					</article>
+
+				</div>
+			</section>
+
+			<footer class="wrap">
+				<!-- Large outline bot standing on the footer line (unchanged) -->
+				<div class="bot fb" aria-hidden="true"></div>
+				<div class="foot">
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Bangladesh" target="_blank"
+								rel="noopener noreferrer">Bangladesh 🇧🇩</a></li>
+						<li class="dv" aria-hidden="true">|</li>
+						<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						<li class="dv" aria-hidden="true">|</li>
+						<li><a href="./terms-of-service.html">Terms &amp; Conditions</a></li>
+					</ul>
+					<p>Copyright &copy; <span id="cpYear"></span> Nayeem Araf. All rights reserved.</p>
+				</div>
+			</footer>
+		</div>
+	</main>
+
+	<script>
+		(function () {
+			var $ = function (s) { return document.querySelectorAll('.my-portfolio ' + s); };
+			var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+			document.getElementById('cpYear').textContent = new Date().getFullYear();
+
+			/* Bots: one loop writes SVG transform ATTRIBUTES (not CSS), same as the Terms page.
+			   CSS-animated SVG groups get cached as blurry bitmaps; attribute transforms are redrawn as crisp vectors every frame. */
+			var BOT = '<svg viewBox="38 68 324 162" aria-hidden="true" focusable="false"><g mask="url(#mk)"><path class="df" d="M40 230A160 160 0 0 1 360 230Z"/><path class="dome" pathLength="1" d="M40 230A160 160 0 0 1 360 230"/></g><g class="pop"><g class="look"><g class="blink"><rect class="eye" transform="translate(232 160) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"/><rect class="eye" transform="translate(298 146) rotate(-30)" x="-13" y="-29" width="26" height="58" rx="13"/></g></g></g></svg>';
+			var T = function (x, y) { return 'translate(' + x.toFixed(2) + ' ' + y.toFixed(2) + ')'; };
+			var S = function (cx, cy, sx, sy) { return 'translate(' + cx + ' ' + cy + ') scale(' + sx.toFixed(3) + ' ' + sy.toFixed(3) + ') translate(' + (-cx) + ' ' + (-cy) + ')'; };
+			var back = function (t) { var c = 1.70158, u = t - 1; return 1 + (c + 1) * u * u * u + c * u * u; };
+			var bots = Array.prototype.map.call($('.bot'), function (el) {
+				el.innerHTML = (el.classList.contains('fb') ? '' : '<div class="glow"></div>') + BOT;
+				var b = { el: el, look: el.querySelector('.look'), blink: el.querySelector('.blink'), pop: el.querySelector('.pop'), dome: el.querySelector('.dome'), t0: null, vis: false, x: 0, y: 0, sq: 1, hover: false, done: reduce };
+				b.pop.style.opacity = reduce ? 1 : 0;
+				/* once drawn, switch the outline to a plain solid stroke */
+				b.dome.addEventListener('animationend', function () { b.dome.style.animation = 'none'; b.dome.style.strokeDasharray = 'none'; b.dome.style.strokeDashoffset = '0'; });
+				el.addEventListener('pointerenter', function () { b.hover = true; });
+				el.addEventListener('pointerleave', function () { b.hover = false; });
+				return b;
+			});
+			var startBot = function (b) { b.vis = true; if (b.t0 === null) b.t0 = performance.now(); b.el.classList.add('go'); };
+			if ('IntersectionObserver' in window) {
+				var bio = new IntersectionObserver(function (es) { es.forEach(function (e) { var b = bots.filter(function (o) { return o.el === e.target; })[0]; if (e.isIntersecting) startBot(b); else b.vis = false; }); }, { threshold: .12 });
+				bots.forEach(function (b) { bio.observe(b.el); });
+			} else bots.forEach(startBot);
+
+			/* The big footer bot gets a whole, even pixel width so its edges land exactly on the pixel grid */
+			var fit = function () {
+				bots.forEach(function (b) {
+					if (!b.el.classList.contains('fb')) return;
+					var p = b.el.parentNode, cs = getComputedStyle(p), pw = p.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+					b.el.style.width = 2 * Math.round(Math.min(pw * (innerWidth <= 640 ? .92 : .76), 780) / 2) + 'px';
+				});
+			};
+			fit(); addEventListener('resize', fit);
+
+			/* All bots glance the same way and blink together */
+			var P = { right: [0, 0], center: [-65, 5], left: [-121, 1], up: [-65, -19] }, pool = ['right', 'right', 'left', 'left', 'center', 'up'];
+			var cur = 'right', tx = 0, ty = 0, blinkAt = -1e9, last = performance.now();
+			var next = function () { var k; do { k = pool[Math.floor(Math.random() * pool.length)]; } while (k === cur); cur = k; tx = P[k][0]; ty = P[k][1]; setTimeout(next, 1600 + Math.random() * 1600); };
+			var blinkLoop = function () { setTimeout(function () { blinkAt = performance.now(); blinkLoop(); }, 3500 + Math.random() * 2500); };
+			if (!reduce) { setTimeout(next, 2800); blinkLoop(); }
+			var frame = function (now) {
+				var dt = Math.min(64, now - last); last = now;
+				var k = reduce ? 1 : 1 - Math.exp(-dt / 210), bp = (now - blinkAt) / 240, bl = bp >= 0 && bp <= 1 ? 1 - .9 * Math.sin(Math.PI * bp) : 1;
+				bots.forEach(function (b) {
+					if (!b.vis) return;
+					b.sq += ((b.hover ? .55 : 1) - b.sq) * (reduce ? 1 : 1 - Math.exp(-dt / 90));
+					b.x += (tx - b.x) * k; b.y += (ty - b.y) * k;
+					b.look.setAttribute('transform', T(b.x, b.y));
+					b.blink.setAttribute('transform', S(265, 153, 1, Math.min(bl, b.sq)));
+					if (!b.done && b.t0 !== null) {
+						var t = (now - b.t0 - 1700) / 800;
+						if (t >= 1) { b.done = true; b.pop.style.opacity = 1; b.pop.removeAttribute('transform'); }
+						else if (t > 0) { var p = back(t), sc = .5 + .5 * p; b.pop.style.opacity = Math.min(1, p); b.pop.setAttribute('transform', S(265, 153, sc, sc)); }
+					}
+				});
+				requestAnimationFrame(frame);
+			};
+			requestAnimationFrame(frame);
+
+			/* Scroll reveal */
+			var rv = $('.rv');
+			if ('IntersectionObserver' in window) {
+				var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
+				rv.forEach(function (el) { io.observe(el); });
+			} else rv.forEach(function (el) { el.classList.add('in'); });
+
+			/* Category filter */
+			var grid = $('.pj-grid')[0], cards = Array.prototype.slice.call(grid.children), chips = $('.chip');
+			chips.forEach(function (c) {
+				c.addEventListener('click', function () {
+					var f = c.dataset.f;
+					chips.forEach(function (x) { x.setAttribute('aria-pressed', x === c); });
+					grid.classList.toggle('filtered', f !== 'all');
+					cards.forEach(function (k) { k.hidden = f !== 'all' && k.dataset.cat !== f; k.classList.add('in'); });
+				});
+			});
+
+			/* Smooth card drag: the card follows the cursor on a soft spring, tilts a little with speed,
+			   and settles back into its slot with a gentle overshoot. Links and buttons still click normally. */
+			if (!reduce && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+				var LIFT = -6, running = false, lastT = 0, live = [];
+				var rb = function (d) { return d / (1 + Math.abs(d) / 1100); }; /* soft rubber-band at long distances */
+				var step = function (s, gx, gy, k, c, dt) {
+					var n = Math.ceil(dt / .008), h = dt / n;
+					for (var i = 0; i < n; i++) {
+						s.vx += (-k * (s.x - gx) - c * s.vx) * h; s.vy += (-k * (s.y - gy) - c * s.vy) * h;
+						s.x += s.vx * h; s.y += s.vy * h;
+					}
+				};
+				var tick = function (now) {
+					var dt = Math.min(.032, (now - lastT) / 1000 || .016); lastT = now;
+					live = live.filter(function (c) {
+						var s = c._s, held = s.held && s.started;
+						step(s, s.tx, s.ty, held ? 520 : 170, held ? 44 : 21, dt);
+						var f = Math.min(1, dt * 12);
+						s.rot += (Math.max(-5, Math.min(5, s.vx * .0045)) - s.rot) * f;
+						s.sc += ((held ? 1.025 : 1) - s.sc) * f;
+						c.style.translate = s.x.toFixed(2) + 'px ' + s.y.toFixed(2) + 'px';
+						c.style.rotate = s.rot.toFixed(3) + 'deg';
+						c.style.scale = s.sc.toFixed(4);
+						var rest = !held && Math.abs(s.x - s.tx) < .15 && Math.abs(s.y - s.ty) < .15 && Math.abs(s.vx) < 2 && Math.abs(s.vy) < 2 && Math.abs(s.rot) < .02 && Math.abs(s.sc - 1) < .001;
+						if (rest) { c.style.translate = c.style.rotate = c.style.scale = ''; c.classList.remove('moving'); s.started = false; return false; }
+						return true;
+					});
+					if (live.length) requestAnimationFrame(tick); else running = false;
+				};
+				cards.forEach(function (c) {
+					var s = c._s = { x: 0, y: 0, vx: 0, vy: 0, tx: 0, ty: 0, rot: 0, sc: 1, held: false, started: false, id: null, ox: 0, oy: 0 };
+					c.addEventListener('pointerdown', function (e) {
+						if (e.button !== 0 || e.target.closest('a, button')) return;
+						s.held = true; s.id = e.pointerId; s.ox = e.clientX; s.oy = e.clientY;
+					});
+					c.addEventListener('pointermove', function (e) {
+						if (!s.held || e.pointerId !== s.id) return;
+						var dx = e.clientX - s.ox, dy = e.clientY - s.oy;
+						if (!s.started) {
+							if (Math.hypot(dx, dy) < 5) return; /* small movement = a click, not a drag */
+							s.started = true;
+							try { c.setPointerCapture(e.pointerId); } catch (_) { }
+							if (!c.classList.contains('moving')) { s.x = 0; s.y = LIFT; s.vx = s.vy = 0; s.rot = 0; s.sc = 1; } /* start from the hover-lift position, no jump */
+							c.classList.add('moving', 'drag');
+							if (live.indexOf(c) < 0) live.push(c);
+							if (!running) { running = true; lastT = performance.now(); requestAnimationFrame(tick); }
+						}
+						s.tx = rb(dx); s.ty = LIFT + rb(dy);
+					});
+					var release = function (e) {
+						if (e.pointerId !== s.id) return;
+						s.held = false; c.classList.remove('drag');
+						s.tx = 0; s.ty = c.matches(':hover') ? LIFT : 0;
+					};
+					c.addEventListener('pointerup', release); c.addEventListener('pointercancel', release);
+				});
+			}
+
+			/* Placeholder links do nothing until you add a real URL */
+			$('a[href="#"]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); }); });
+		})();
+	</script>
+</body>
+
+</html>

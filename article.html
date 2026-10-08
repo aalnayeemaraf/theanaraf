@@ -1,0 +1,3688 @@
+<html
+	class="js no-touch no-reduced-motion enhanced no-safari inline-media inline-media-alpha form-mouseuser desktop no-ar-quicklook no-small-breakpoint no-firefox"
+	xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" dir="ltr" prefix="og: http://ogp.me/ns#"
+	style="--r-localnav-text-zoom-factor: 1; --global-scrollbar-width: 15px;">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="color-scheme" content="only light">
+	<link rel="canonical" href="https://www.theanaraf.com/journal.html">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<link rel="stylesheet" href="wss/fonts">
+	<link rel="stylesheet" href="./styles/overview.built.css" type="text/css">
+	<link rel="stylesheet" href="./styles/overview2.built.css" type="text/css">
+
+	<meta name="referrer" content="no-referrer-when-downgrade">
+	<title>Article — Nayeem Araf</title>
+	<meta name="Description"
+		content="Abdullah Al Nayeem Araf — Computer Science student, IT expert, front-end developer, and Founder of Liberate Minds.">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+		rel="stylesheet">
+
+	<script src="./scripts/head.built.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- ============ PORTFOLIO CSS (scoped under .my-portfolio) ============ -->
+	<style>
+		.my-portfolio,
+		.my-portfolio * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.my-portfolio {
+			--black: #0b0b0c;
+			--white: #ffffff;
+			--off-white: #f5f4f1;
+			--gray-600: #68676c;
+			--gray-300: #dcdbd8;
+			--indigo: #5b4fff;
+			--indigo-dark: #372bd6;
+			--amber: #ffc845;
+			--mint: #35d0a6;
+			--orange: #ff7a3d;
+			--orange-2: #ffb648;
+			--teal: #0fa37d;
+			--teal-2: #2fd4b0;
+			--pink: #e8348e;
+			--pink-2: #ff5fa8;
+			--steel: #3b6ea5;
+			--steel-dark: #1c3f66;
+			--slate: #5b6472;
+			--slate-dark: #2b313a;
+			--wine: #8a3245;
+			--wine-dark: #4a1a26;
+			--radius-lg: 28px;
+			--radius-md: 20px;
+			--font-display: 'Space Grotesk', sans-serif;
+			--font-body: 'Inter', sans-serif;
+
+			position: relative;
+			background: var(--white);
+			color: var(--black);
+			font-family: var(--font-body);
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			overflow-x: hidden;
+			isolation: isolate;
+		}
+
+		.my-portfolio a {
+			color: inherit;
+		}
+
+		.my-portfolio :focus-visible {
+			outline: 2px solid var(--indigo);
+			outline-offset: 4px;
+			border-radius: 8px;
+		}
+
+		.my-portfolio .wrap {
+			max-width: 1180px;
+			margin-inline: auto;
+			padding-inline: clamp(20px, 5vw, 64px);
+		}
+
+		/* ---------- HERO ---------- */
+		.my-portfolio .hero {
+			position: relative;
+			min-height: 82vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-top: clamp(64px, 10vh, 120px);
+			padding-bottom: 56px;
+			overflow: hidden;
+		}
+
+		.my-portfolio .hero-blob {
+			position: absolute;
+			border-radius: 50%;
+			filter: blur(90px);
+			opacity: .45;
+			pointer-events: none;
+			animation: myfloat 16s ease-in-out infinite;
+		}
+
+		.my-portfolio .blob-1 {
+			width: 480px;
+			height: 480px;
+			background: radial-gradient(circle at 30% 30%, var(--indigo), transparent 70%);
+			top: -140px;
+			right: -120px;
+		}
+
+		.my-portfolio .blob-2 {
+			width: 360px;
+			height: 360px;
+			background: radial-gradient(circle at 60% 40%, var(--amber), transparent 70%);
+			bottom: -160px;
+			left: -100px;
+			opacity: .35;
+			animation-duration: 20s;
+			animation-delay: -6s;
+		}
+
+		.my-portfolio .hero::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+			opacity: .035;
+			mix-blend-mode: overlay;
+			pointer-events: none;
+		}
+
+		.my-portfolio .hero-inner {
+			position: relative;
+			z-index: 1;
+			max-width: 820px;
+		}
+
+		.my-portfolio .hero-title {
+			font-family: var(--font-display);
+			font-weight: 600;
+			font-size: clamp(2.1rem, 5.4vw, 4rem);
+			line-height: 1.08;
+			letter-spacing: -0.02em;
+			color: var(--black);
+			animation: myfadeUp .8s ease both;
+		}
+
+		.my-portfolio .hero-sub {
+			margin-top: 22px;
+			max-width: 56ch;
+			font-size: clamp(1rem, 1.3vw, 1.12rem);
+			line-height: 1.6;
+			color: var(--gray-600);
+			animation: myfadeUp .8s ease both;
+			animation-delay: .12s;
+		}
+
+		.my-portfolio .hero-meta {
+			margin-top: 32px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 16px;
+			animation: myfadeUp .8s ease both;
+			animation-delay: .24s;
+		}
+
+		.my-portfolio .badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 9px;
+			padding: 9px 16px;
+			border: 1px solid var(--gray-300);
+			border-radius: 999px;
+			font-size: .86rem;
+			font-weight: 500;
+		}
+
+		.my-portfolio .dot {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--amber);
+			flex-shrink: 0;
+		}
+
+		.my-portfolio .dot.pulse {
+			animation: mypulse 2.2s ease-in-out infinite;
+		}
+
+		.my-portfolio .dot-indigo {
+			background: var(--indigo);
+		}
+
+		.my-portfolio .dot-mint {
+			background: var(--mint);
+		}
+
+		.my-portfolio .hero-location {
+			font-size: .86rem;
+			color: var(--gray-600);
+		}
+
+		.my-portfolio .scroll-cue {
+			position: absolute;
+			bottom: 28px;
+			left: clamp(20px, 5vw, 64px);
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			font-size: .8rem;
+			color: var(--gray-600);
+			animation: myfadeUp .8s ease both;
+			animation-delay: .4s;
+		}
+
+		.my-portfolio .scroll-cue svg {
+			animation: mybounce 2s ease-in-out infinite;
+		}
+
+		/* ---------- GLANCE / BENTO ---------- */
+		.my-portfolio .glance {
+			padding-block: 20px 100px;
+		}
+
+		.my-portfolio .glance-heading {
+			font-family: var(--font-display);
+			font-weight: 600;
+			font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+			margin-bottom: 8px;
+		}
+
+		.my-portfolio .glance-sub {
+			color: var(--gray-600);
+			font-size: .98rem;
+			margin-bottom: 32px;
+		}
+
+		.my-portfolio .bento {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: minmax(190px, auto);
+			gap: 18px;
+		}
+
+		.my-portfolio .card {
+			--mx: 50%;
+			--my: 38%;
+			--rx: 0deg;
+			--ry: 0deg;
+			--ty: 0px;
+			position: relative;
+			border-radius: var(--radius-md);
+			padding: clamp(20px, 3vw, 28px);
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			text-decoration: none;
+			overflow: hidden;
+			transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(var(--ty));
+			transition: transform .5s cubic-bezier(.22, .85, .32, 1.1), box-shadow .4s ease, border-color .35s ease;
+			animation: myfadeUp .7s ease both;
+		}
+
+		.my-portfolio a.card {
+			padding-bottom: clamp(46px, 6vw, 56px);
+		}
+
+		.my-portfolio a.card:hover {
+			--ty: -6px;
+		}
+
+		.my-portfolio .card::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+			background: radial-gradient(380px circle at var(--mx) var(--my), rgba(255, 255, 255, .16), transparent 62%);
+			opacity: 0;
+			transition: opacity .4s ease;
+			pointer-events: none;
+		}
+
+		.my-portfolio .card:hover::after {
+			opacity: 1;
+		}
+
+		.my-portfolio .card-projects::after {
+			background: radial-gradient(380px circle at var(--mx) var(--my), rgba(91, 79, 255, .07), transparent 62%);
+		}
+
+		.my-portfolio .card-top {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			align-items: center;
+			gap: 13px;
+		}
+
+		.my-portfolio .card-icon {
+			position: relative;
+			width: 44px;
+			height: 44px;
+			flex-shrink: 0;
+			border-radius: 14px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: color-mix(in srgb, currentColor 13%, transparent);
+			border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+			box-shadow: inset 0 1px 0 color-mix(in srgb, currentColor 22%, transparent);
+			transition: transform .5s cubic-bezier(.34, 1.56, .64, 1), box-shadow .35s ease, background .35s ease;
+		}
+
+		.my-portfolio .card-icon svg {
+			width: 22px;
+			height: 22px;
+			position: relative;
+			z-index: 1;
+			overflow: visible;
+		}
+
+		.my-portfolio .card:hover .card-icon {
+			transform: translateY(-3px) scale(1.08) rotate(-6deg);
+			background: color-mix(in srgb, currentColor 23%, transparent);
+			box-shadow: inset 0 1px 0 color-mix(in srgb, currentColor 30%, transparent), 0 8px 16px color-mix(in srgb, currentColor 22%, transparent);
+		}
+
+		.my-portfolio .card-contact .card-icon {
+			overflow: visible;
+		}
+
+		.my-portfolio .card-contact .card-icon::after {
+			content: "";
+			position: absolute;
+			left: -2px;
+			top: 52%;
+			width: 13px;
+			height: 2px;
+			border-radius: 2px;
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .75));
+			opacity: 0;
+			transform: translateY(-50%);
+			transition: opacity .3s ease, transform .3s ease;
+		}
+
+		.my-portfolio .card-contact:hover .card-icon {
+			transform: translate(4px, -4px) scale(1.08) rotate(20deg);
+		}
+
+		.my-portfolio .card-contact:hover .card-icon::after {
+			opacity: 1;
+			transform: translateY(-50%) translateX(-9px);
+		}
+
+		.my-portfolio .card-about {
+			grid-column: 1 / 3;
+			grid-row: 1 / 3;
+			background: var(--black);
+			color: var(--white);
+			border-radius: var(--radius-lg);
+			animation-delay: .08s;
+		}
+
+		.my-portfolio .card-projects {
+			grid-column: 3 / 5;
+			grid-row: 1 / 3;
+			background: var(--white);
+			color: var(--black);
+			border: 1px solid var(--gray-300);
+			border-radius: var(--radius-lg);
+			animation-delay: .16s;
+		}
+
+		.my-portfolio .card-focus {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+			background: linear-gradient(135deg, var(--steel), var(--steel-dark));
+			color: var(--white);
+			animation-delay: .24s;
+		}
+
+		.my-portfolio .card-journal {
+			grid-column: 2 / 3;
+			grid-row: 3 / 4;
+			background: linear-gradient(135deg, var(--orange-2), var(--orange));
+			color: var(--white);
+			animation-delay: .32s;
+		}
+
+		.my-portfolio .card-status {
+			grid-column: 3 / 4;
+			grid-row: 3 / 4;
+			background: linear-gradient(135deg, var(--slate), var(--slate-dark));
+			color: var(--white);
+			animation-delay: .4s;
+		}
+
+		.my-portfolio .card-contact {
+			grid-column: 4 / 5;
+			grid-row: 3 / 4;
+			background: linear-gradient(135deg, var(--wine), var(--wine-dark));
+			color: var(--white);
+			animation-delay: .48s;
+		}
+
+		.my-portfolio .card-focus,
+		.my-portfolio .card-journal,
+		.my-portfolio .card-status,
+		.my-portfolio .card-contact {
+			background-size: 160% 160%;
+			background-position: 0% 0%;
+			transition: background-position .6s ease, transform .5s cubic-bezier(.22, .85, .32, 1.1), box-shadow .4s ease;
+		}
+
+		.my-portfolio .card-focus::before,
+		.my-portfolio .card-journal::before,
+		.my-portfolio .card-status::before,
+		.my-portfolio .card-contact::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(circle at 85% 15%, rgba(255, 255, 255, .35), transparent 55%);
+			pointer-events: none;
+		}
+
+		.my-portfolio .card-about:hover,
+		.my-portfolio .card-focus:hover,
+		.my-portfolio .card-journal:hover,
+		.my-portfolio .card-status:hover,
+		.my-portfolio .card-contact:hover {
+			box-shadow: 0 18px 38px rgba(0, 0, 0, .35);
+		}
+
+		.my-portfolio .card-focus:hover,
+		.my-portfolio .card-journal:hover,
+		.my-portfolio .card-status:hover,
+		.my-portfolio .card-contact:hover {
+			background-position: 100% 100%;
+		}
+
+		.my-portfolio .card-projects:hover {
+			box-shadow: 0 16px 34px rgba(0, 0, 0, .1);
+			border-color: var(--black);
+		}
+
+		.my-portfolio .card-label {
+			font-family: var(--font-body);
+			font-weight: 600;
+			font-size: .78rem;
+			letter-spacing: .01em;
+			opacity: .55;
+		}
+
+		.my-portfolio .card-about .card-label,
+		.my-portfolio .card-projects .card-label {
+			font-family: var(--font-display);
+			font-size: 1.15rem;
+			font-weight: 600;
+			opacity: 1;
+		}
+
+		.my-portfolio .card-label-light {
+			color: var(--white);
+			opacity: .8;
+		}
+
+		.my-portfolio .card-body {
+			position: relative;
+			z-index: 1;
+			margin-top: 16px;
+		}
+
+		.my-portfolio .card-about .card-body,
+		.my-portfolio .card-projects .card-body {
+			margin-top: 20px;
+		}
+
+		.my-portfolio .card-body p {
+			font-size: .95rem;
+			line-height: 1.55;
+			opacity: .85;
+		}
+
+		.my-portfolio .card-about .card-body p,
+		.my-portfolio .card-projects .card-body p {
+			font-size: 1rem;
+			opacity: .9;
+		}
+
+		.my-portfolio .skill-pills {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin-top: 22px;
+		}
+
+		.my-portfolio .skill-pill {
+			display: inline-flex;
+			align-items: center;
+			gap: 7px;
+			padding: 7px 13px;
+			border-radius: 999px;
+			font-size: .8rem;
+			font-weight: 500;
+			background: rgba(255, 255, 255, .06);
+			border: 1px solid rgba(255, 255, 255, .14);
+			transition: background .3s ease, border-color .3s ease, transform .3s ease;
+		}
+
+		.my-portfolio .card-about:hover .skill-pill {
+			background: rgba(255, 255, 255, .1);
+			border-color: rgba(255, 255, 255, .24);
+		}
+
+		.my-portfolio .skill-pill:hover {
+			transform: translateY(-2px);
+		}
+
+		.my-portfolio .skill-pill .pill-dot {
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			flex-shrink: 0;
+		}
+
+		.my-portfolio .card-watermark {
+			position: absolute;
+			right: 0;
+			bottom: -34px;
+			z-index: 0;
+			font-family: var(--font-display);
+			font-weight: 600;
+			font-size: clamp(6rem, 13vw, 9.5rem);
+			line-height: 1;
+			letter-spacing: -.03em;
+			color: rgba(255, 255, 255, .045);
+			pointer-events: none;
+			transition: color .5s ease, transform .6s ease;
+			user-select: none;
+		}
+
+		.my-portfolio .card-about:hover .card-watermark {
+			color: rgba(255, 255, 255, .075);
+			transform: translateX(-6px);
+		}
+
+		.my-portfolio .project-list {
+			list-style: none;
+			position: relative;
+			z-index: 1;
+			margin-top: 16px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.my-portfolio .project-row {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 11px 10px;
+			margin-inline: -10px;
+			border-radius: 12px;
+			border-top: 1px solid var(--gray-300);
+			transition: background .3s ease, transform .3s ease;
+		}
+
+		.my-portfolio .project-list li:first-child .project-row {
+			border-top: none;
+		}
+
+		.my-portfolio .project-row:hover {
+			background: var(--off-white);
+			transform: translateX(3px);
+		}
+
+		.my-portfolio .project-icon {
+			width: 32px;
+			height: 32px;
+			flex-shrink: 0;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform .4s cubic-bezier(.34, 1.56, .64, 1);
+		}
+
+		.my-portfolio .project-icon svg {
+			width: 16px;
+			height: 16px;
+		}
+
+		.my-portfolio .project-row:hover .project-icon {
+			transform: scale(1.12) rotate(-6deg);
+		}
+
+		.my-portfolio .icon-indigo {
+			color: var(--indigo);
+			background: color-mix(in srgb, var(--indigo) 14%, transparent);
+		}
+
+		.my-portfolio .icon-amber {
+			color: var(--amber);
+			background: color-mix(in srgb, var(--amber) 22%, transparent);
+		}
+
+		.my-portfolio .icon-mint {
+			color: var(--mint);
+			background: color-mix(in srgb, var(--mint) 16%, transparent);
+		}
+
+		.my-portfolio .project-text {
+			flex: 1;
+			font-size: .96rem;
+			font-weight: 500;
+		}
+
+		.my-portfolio .project-tag {
+			font-size: .7rem;
+			font-weight: 600;
+			padding: 4px 10px;
+			border-radius: 999px;
+			color: var(--black);
+			opacity: .65;
+			white-space: nowrap;
+		}
+
+		.my-portfolio .tag-indigo {
+			background: color-mix(in srgb, var(--indigo) 12%, white);
+		}
+
+		.my-portfolio .tag-amber {
+			background: color-mix(in srgb, var(--amber) 24%, white);
+		}
+
+		.my-portfolio .tag-mint {
+			background: color-mix(in srgb, var(--mint) 16%, white);
+		}
+
+		.my-portfolio .card-meta {
+			font-size: .78rem;
+			opacity: .6;
+			margin-bottom: 4px;
+		}
+
+		.my-portfolio .status-city {
+			font-family: var(--font-display);
+			font-size: 1.25rem;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+
+		.my-portfolio .status-line {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-size: .92rem;
+			opacity: .85;
+		}
+
+		.my-portfolio .card-email {
+			margin-top: 10px;
+			font-family: var(--font-display);
+			font-size: 1.05rem;
+			font-weight: 600;
+		}
+
+		.my-portfolio .card-arrow {
+			position: absolute;
+			z-index: 1;
+			bottom: 20px;
+			right: 20px;
+			display: flex;
+			transition: transform .35s ease;
+		}
+
+		.my-portfolio a.card:hover .card-arrow {
+			transform: translate(3px, -3px);
+		}
+
+		.my-portfolio .cert-pills {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 7px;
+			margin-top: 16px;
+		}
+
+		.my-portfolio .cert-pill {
+			padding: 6px 12px;
+			border-radius: 999px;
+			font-size: .75rem;
+			font-weight: 600;
+			background: rgba(255, 255, 255, .14);
+			border: 1px solid rgba(255, 255, 255, .2);
+			transition: background .3s ease, transform .3s ease;
+		}
+
+		.my-portfolio .card-focus:hover .cert-pill {
+			background: rgba(255, 255, 255, .2);
+			transform: translateY(-2px);
+		}
+
+		.my-portfolio .mini-network {
+			position: absolute;
+			right: 18px;
+			bottom: 18px;
+			z-index: 0;
+			opacity: .45;
+			pointer-events: none;
+			transition: opacity .35s ease;
+		}
+
+		.my-portfolio .card-focus:hover .mini-network {
+			opacity: .7;
+		}
+
+		.my-portfolio .journal-tag {
+			position: relative;
+			z-index: 1;
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			margin-top: 14px;
+			padding: 5px 11px;
+			border-radius: 999px;
+			font-size: .74rem;
+			font-weight: 600;
+			background: rgba(255, 255, 255, .16);
+			border: 1px solid rgba(255, 255, 255, .22);
+			width: fit-content;
+		}
+
+		.my-portfolio .journal-squiggle {
+			position: absolute;
+			right: 18px;
+			top: 20px;
+			z-index: 0;
+			opacity: .4;
+			pointer-events: none;
+		}
+
+		.my-portfolio .journal-squiggle path {
+			stroke-dasharray: 150;
+			stroke-dashoffset: 150;
+			transition: stroke-dashoffset .9s ease;
+		}
+
+		.my-portfolio .card-journal:hover .journal-squiggle path {
+			stroke-dashoffset: 0;
+		}
+
+		.my-portfolio .beacon-ring {
+			position: absolute;
+			inset: 0;
+			border-radius: 14px;
+			border: 1.5px solid rgba(255, 255, 255, .6);
+			opacity: 0;
+			animation: mypulseRing 2.6s ease-out infinite;
+			pointer-events: none;
+		}
+
+		.my-portfolio .beacon-ring:nth-child(2) {
+			animation-delay: 1.3s;
+		}
+
+		.my-portfolio .map-dots {
+			position: absolute;
+			right: -14px;
+			bottom: -14px;
+			width: 150px;
+			height: 150px;
+			z-index: 0;
+			opacity: .5;
+			pointer-events: none;
+			background-image: radial-gradient(rgba(255, 255, 255, .55) 1.3px, transparent 1.3px);
+			background-size: 16px 16px;
+			mask-image: radial-gradient(circle at 70% 30%, black, transparent 72%);
+			-webkit-mask-image: radial-gradient(circle at 70% 30%, black, transparent 72%);
+		}
+
+		/* ---------- ANIMATIONS ---------- */
+		@keyframes myfadeUp {
+			from {
+				opacity: 0;
+				transform: translateY(18px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes myfloat {
+
+			0%,
+			100% {
+				transform: translate(0, 0) scale(1);
+			}
+
+			50% {
+				transform: translate(24px, -28px) scale(1.05);
+			}
+		}
+
+		@keyframes mypulse {
+
+			0%,
+			100% {
+				box-shadow: 0 0 0 0 rgba(255, 200, 69, .5);
+			}
+
+			50% {
+				box-shadow: 0 0 0 6px rgba(255, 200, 69, 0);
+			}
+		}
+
+		@keyframes mybounce {
+
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(6px);
+			}
+		}
+
+		@keyframes mypulseRing {
+			0% {
+				transform: scale(1);
+				opacity: .55;
+			}
+
+			100% {
+				transform: scale(1.6);
+				opacity: 0;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.my-portfolio * {
+				animation: none !important;
+				transition: none !important;
+			}
+		}
+
+		/* ---------- RESPONSIVE ---------- */
+		@media (max-width:900px) {
+			.my-portfolio .bento {
+				grid-template-columns: repeat(2, 1fr);
+				grid-auto-rows: minmax(200px, auto);
+			}
+
+			.my-portfolio .card-about {
+				grid-column: 1 / 3;
+				grid-row: 1 / 3;
+			}
+
+			.my-portfolio .card-projects {
+				grid-column: 1 / 3;
+				grid-row: 3 / 5;
+			}
+
+			.my-portfolio .card-focus {
+				grid-column: 1 / 2;
+				grid-row: 5 / 6;
+			}
+
+			.my-portfolio .card-journal {
+				grid-column: 2 / 3;
+				grid-row: 5 / 6;
+			}
+
+			.my-portfolio .card-status {
+				grid-column: 1 / 2;
+				grid-row: 6 / 7;
+			}
+
+			.my-portfolio .card-contact {
+				grid-column: 2 / 3;
+				grid-row: 6 / 7;
+			}
+		}
+
+		@media (max-width:640px) {
+			.my-portfolio .hero {
+				min-height: auto;
+				padding-top: 56px;
+				padding-bottom: 40px;
+			}
+
+			.my-portfolio .scroll-cue {
+				display: none;
+			}
+
+			.my-portfolio .bento {
+				grid-template-columns: 1fr;
+				grid-auto-rows: auto;
+			}
+
+			.my-portfolio .card-about,
+			.my-portfolio .card-projects,
+			.my-portfolio .card-focus,
+			.my-portfolio .card-journal,
+			.my-portfolio .card-status,
+			.my-portfolio .card-contact {
+				grid-column: 1;
+				grid-row: auto;
+				min-height: 200px;
+			}
+
+			.my-portfolio .card-watermark {
+				font-size: clamp(4.5rem, 24vw, 7rem);
+				bottom: -22px;
+			}
+
+			.my-portfolio .mini-network,
+			.my-portfolio .map-dots {
+				opacity: .3;
+			}
+		}
+
+		/* ===== refinements ===== */
+		.my-portfolio {
+			background-image: linear-gradient(180deg, #f8f8f9, #fff 55%);
+			color-scheme: only light;
+			--sky-light: light-dark(#737373, #a3a3a3);
+			--sky: light-dark(#262626, #e5e5e5);
+			--sky-deep: light-dark(#000, #fff);
+			--eye1: light-dark(#4b4b4b, #fff);
+			--eye2: light-dark(#000, #bfbfbf);
+			--stroke-width: 3px;
+			--speed: 1;
+			--glow: light-dark(rgba(0, 0, 0, .07), rgba(255, 255, 255, .1));
+			--bg1: light-dark(#f8f8f9, #0a0a0a);
+			--bg2: light-dark(#ffffff, #111111);
+			--ink: light-dark(#0a0a0a, #fafafa);
+			--mut: light-dark(#555555, #a3a3a3);
+			--card: light-dark(rgba(255, 255, 255, .85), rgba(20, 20, 20, .7));
+			--line: light-dark(rgba(0, 0, 0, .12), rgba(255, 255, 255, .14));
+			--fill: light-dark(rgba(0, 0, 0, .04), rgba(255, 255, 255, .06));
+			--accent: light-dark(#0369a1, #7dd3fc);
+			--accent-deep: light-dark(#075985, #7dd3fc)
+		}
+
+		.my-portfolio .bot {
+			position: relative;
+			width: min(100%, 440px);
+			aspect-ratio: 400/240;
+			z-index: 2;
+			--sky: light-dark(#1a74a8, #7dd3fc);
+			--sky-light: light-dark(#7cc4ea, #bae6fd);
+			--sky-deep: light-dark(#0a4a75, #e0f2fe);
+			--eye1: light-dark(#1ea0e0, #e0f2fe);
+			--eye2: light-dark(#0a3f68, #38bdf8);
+			--fill: light-dark(rgba(14, 165, 233, .08), rgba(125, 211, 252, .1));
+			--glow: light-dark(rgba(14, 165, 233, .12), rgba(125, 211, 252, .18))
+		}
+
+		.my-portfolio .bot.sm {
+			width: 190px;
+			margin-top: 26px;
+			--stroke-width: 4.5px;
+			--fy: -14px
+		}
+
+		.js .my-portfolio .bot:not(.go) * {
+			animation-play-state: paused
+		}
+
+		.my-portfolio .bot .glow {
+			position: absolute;
+			inset: -12% -6% -30%;
+			background: radial-gradient(closest-side, var(--glow), transparent);
+			transition: transform .5s;
+			animation: bbreathe calc(5s/var(--speed)) ease-in-out infinite
+		}
+
+		.my-portfolio .bot svg {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			shape-rendering: geometricPrecision
+		}
+
+		.my-portfolio .dome {
+			fill: none;
+			stroke: var(--sky);
+			stroke-width: var(--stroke-width);
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-dasharray: 1;
+			stroke-dashoffset: 1;
+			transition: stroke .3s;
+			animation: bdraw calc(1.8s/var(--speed)) ease-in-out forwards
+		}
+
+		.my-portfolio .df {
+			fill: var(--fill)
+		}
+
+		.my-portfolio .pop {
+			transform-box: fill-box;
+			transform-origin: center
+		}
+
+		.my-portfolio .pop {
+			opacity: 0;
+			animation: bpop calc(.8s/var(--speed)) cubic-bezier(.34, 1.56, .64, 1) calc(1.7s/var(--speed)) forwards
+		}
+
+		.my-portfolio .bot:hover .dome {
+			stroke: var(--sky-deep)
+		}
+
+		.my-portfolio .bot:hover .glow {
+			transform: scale(1.1);
+			opacity: 1
+		}
+
+		@keyframes bdraw {
+			to {
+				stroke-dashoffset: 0
+			}
+		}
+
+		@keyframes bpop {
+			from {
+				opacity: 0;
+				transform: scale(.5)
+			}
+
+			to {
+				opacity: 1;
+				transform: none
+			}
+		}
+
+		@keyframes bfloat {
+			50% {
+				transform: translateY(var(--fy, -7px))
+			}
+		}
+
+		@keyframes bbreathe {
+
+			0%,
+			100% {
+				opacity: .67
+			}
+
+			50% {
+				opacity: 1
+			}
+		}
+
+		@keyframes bblink {
+			50% {
+				transform: scaleY(.1)
+			}
+		}
+
+		.my-portfolio .sec-head {
+			text-align: center;
+			max-width: 620px;
+			margin: 0 auto 34px
+		}
+
+		.my-portfolio .sec-head h2 {
+			font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+			line-height: 1.2;
+			font-weight: 600;
+			letter-spacing: -.02em;
+			margin-bottom: 12px;
+			color: light-dark(#0f1c2e, #fafafa)
+		}
+
+		.my-portfolio .sec-head h2 em {
+			font-style: normal;
+			color: var(--accent-deep)
+		}
+
+		.my-portfolio .sec-head p:not(.eyebrow) {
+			color: light-dark(#475467, #a3a3a3);
+			font-size: 1.02rem;
+			line-height: 1.7
+		}
+
+		.my-portfolio .sec-head .eyebrow {
+			color: var(--accent-deep)
+		}
+
+		.my-portfolio .sec-head .bar {
+			display: block;
+			width: 56px;
+			height: 3px;
+			border-radius: 3px;
+			margin: 18px auto 0;
+			background: linear-gradient(90deg, #8bb8e0, #8fcba7, #e8b878)
+		}
+
+		.my-portfolio .foot {
+			border-top: 1px solid var(--line);
+			margin-top: 24px;
+			padding: 22px 0 36px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 12px;
+			font-size: .88rem;
+			color: var(--mut)
+		}
+
+		.my-portfolio .foot ul {
+			list-style: none;
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+			padding: 0
+		}
+
+		.my-portfolio .foot a {
+			color: var(--mut);
+			text-decoration: none;
+			transition: color .25s
+		}
+
+		.my-portfolio .foot a:hover {
+			color: var(--ink)
+		}
+
+		.my-portfolio .foot .dv {
+			color: var(--line)
+		}
+
+		.my-portfolio .hx {
+			padding: 56px 0 24px
+		}
+
+		.my-portfolio .hx-grid {
+			display: grid;
+			grid-template-columns: 1.1fr .9fr;
+			gap: 36px;
+			align-items: center
+		}
+
+		.my-portfolio .hx h1 {
+			font-family: 'Space Grotesk', Inter, sans-serif;
+			font-size: clamp(2.2rem, 5.4vw, 3.8rem);
+			line-height: 1.05;
+			font-weight: 700;
+			letter-spacing: -.025em;
+			margin: 6px 0 16px;
+			color: var(--ink)
+		}
+
+		.my-portfolio .hx h1 span {
+			background: linear-gradient(100deg, var(--sky-deep), var(--sky-light));
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent
+		}
+
+		.my-portfolio .hx-roles {
+			color: var(--mut);
+			font-size: 1rem;
+			margin-bottom: 10px
+		}
+
+		.my-portfolio .hx-tag {
+			font-family: 'Hind Siliguri', sans-serif;
+			font-size: 1.1rem;
+			font-weight: 500;
+			color: var(--accent-deep);
+			margin-bottom: 18px
+		}
+
+		.my-portfolio .hx-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 7px 14px;
+			border-radius: 999px;
+			font-size: .82rem;
+			font-weight: 600;
+			color: var(--accent-deep);
+			background: rgba(14, 165, 233, .1);
+			box-shadow: inset 0 0 0 1px rgba(3, 105, 161, .15)
+		}
+
+		.my-portfolio .hx-dot {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: var(--accent);
+			animation: bpulse 2s ease-in-out infinite
+		}
+
+		@keyframes bpulse {
+			50% {
+				opacity: .35;
+				transform: scale(.8)
+			}
+		}
+
+		.my-portfolio .hx-vis {
+			display: flex;
+			flex-direction: column;
+			align-items: center
+		}
+
+		.my-portfolio .bot.lg {
+			width: min(100%, 400px);
+			--stroke-width: 3.5px
+		}
+
+		.my-portfolio .hx-cue {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			margin-top: 34px;
+			font-size: .78rem;
+			color: var(--mut);
+			letter-spacing: .08em;
+			text-transform: uppercase
+		}
+
+		.my-portfolio .hx-cue svg {
+			animation: bfloat 2.2s ease-in-out infinite
+		}
+
+		.my-portfolio .sec-head {
+			margin-bottom: 34px
+		}
+
+		.my-portfolio .sec-head .eyebrow {
+			font-size: .72rem;
+			letter-spacing: .16em;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 14px
+		}
+
+		.my-portfolio .sec-head h2 {
+			font-family: 'Space Grotesk', Inter, sans-serif
+		}
+
+		.my-portfolio .glance {
+			padding-block: 28px 72px
+		}
+
+		.my-portfolio .card .bot {
+			position: absolute;
+			top: 18px;
+			right: 18px;
+			width: 60px;
+			margin: 0;
+			--stroke-width: 14px;
+			--fy: -44px;
+			--sky: #d3d3d3;
+			--sky-light: #e4e4e4;
+			--sky-deep: #ececec;
+			--eye1: #d3d3d3;
+			--eye2: #d3d3d3;
+			--fill: rgba(211, 211, 211, .09);
+			--glow: rgba(211, 211, 211, .16)
+		}
+
+		.my-portfolio .card .bot rect {
+			fill: #d3d3d3
+		}
+
+		.my-portfolio .card:hover .bot .glow {
+			opacity: 1
+		}
+
+		.my-portfolio .card-about .bot {
+			top: 22px;
+			right: 24px;
+			width: 92px;
+			--stroke-width: 10px;
+			--fy: -30px
+		}
+
+		.my-portfolio .foot {
+			margin-top: 0
+		}
+
+		.my-portfolio .fx {
+			padding-bottom: 0
+		}
+
+		@media(max-width:860px) {
+			.my-portfolio .hx {
+				padding-top: 36px
+			}
+
+			.my-portfolio .hx-grid {
+				grid-template-columns: 1fr;
+				text-align: center;
+				gap: 20px
+			}
+
+			.my-portfolio .hx-grid>* {
+				min-width: 0
+			}
+
+			.my-portfolio .hx-vis {
+				order: -1
+			}
+
+			.my-portfolio .hx h1 {
+				text-wrap: balance
+			}
+
+			.my-portfolio .hx-cue {
+				justify-content: center
+			}
+
+			.my-portfolio .hx h1 span {
+				background: none;
+				-webkit-background-clip: border-box;
+				background-clip: border-box;
+				-webkit-text-fill-color: currentColor;
+				color: var(--accent-deep)
+			}
+
+			.my-portfolio .bot.lg {
+				width: min(80%, 320px)
+			}
+		}
+
+		@media(max-width:520px) {
+			.my-portfolio .hx h1 {
+				font-size: clamp(2rem, 9vw, 2.4rem)
+			}
+		}
+
+		.my-portfolio .card-about {
+			background-image: radial-gradient(90% 80% at 100% 0%, rgba(120, 170, 220, .16), transparent 60%), linear-gradient(145deg, #16283f, #0b1625);
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08), 0 22px 44px -28px rgba(12, 21, 36, .55)
+		}
+
+		.my-portfolio .card-projects {
+			background-image: radial-gradient(90% 70% at 100% 0%, rgba(170, 214, 236, .32), transparent 62%), radial-gradient(70% 60% at 0% 100%, rgba(186, 228, 208, .28), transparent 62%), linear-gradient(165deg, #fff, #f3f7fa);
+			border: 1px solid rgba(20, 33, 51, .08);
+			box-shadow: 0 14px 34px -26px rgba(20, 33, 51, .3)
+		}
+
+		.my-portfolio .card-focus {
+			background-image: linear-gradient(135deg, #3f78a6, #1f4a72)
+		}
+
+		.my-portfolio .card-journal {
+			background-image: linear-gradient(135deg, #bd7c57, #84492f)
+		}
+
+		.my-portfolio .card-status {
+			background-image: linear-gradient(135deg, #5b6b92, #2e3a58)
+		}
+
+		.my-portfolio .card-contact {
+			background-image: linear-gradient(135deg, #34373f, #15161b)
+		}
+
+		.my-portfolio .card-focus,
+		.my-portfolio .card-journal,
+		.my-portfolio .card-status,
+		.my-portfolio .card-contact {
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12), 0 16px 30px -22px rgba(20, 33, 51, .5)
+		}
+
+		.my-portfolio .card-focus::before,
+		.my-portfolio .card-journal::before,
+		.my-portfolio .card-status::before,
+		.my-portfolio .card-contact::before {
+			background: radial-gradient(circle at 85% 15%, rgba(255, 255, 255, .2), transparent 55%)
+		}
+
+		.my-portfolio .card-about:hover,
+		.my-portfolio .card-focus:hover,
+		.my-portfolio .card-journal:hover,
+		.my-portfolio .card-status:hover,
+		.my-portfolio .card-contact:hover {
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .16), 0 24px 44px -24px rgba(12, 21, 36, .5)
+		}
+
+		.my-portfolio .card-projects:hover {
+			border-color: rgba(20, 33, 51, .2);
+			box-shadow: 0 22px 42px -26px rgba(20, 33, 51, .38)
+		}
+
+		@media(prefers-reduced-motion:reduce) {
+
+			.my-portfolio *,
+			.my-portfolio *::before,
+			.my-portfolio *::after {
+				animation: none !important;
+				transition: none !important
+			}
+
+			.js .my-portfolio .rv {
+				opacity: 1;
+				transform: none
+			}
+
+			.my-portfolio .dome {
+				stroke-dashoffset: 0
+			}
+
+			.my-portfolio .pop {
+				opacity: 1
+			}
+
+			.my-portfolio .bot .glow {
+				opacity: .85
+			}
+		}
+
+		.js .my-portfolio .rv {
+			opacity: 0;
+			transform: translateY(18px);
+			transition: opacity .5s ease-out, transform .5s ease-out
+		}
+
+		.js .my-portfolio .rv.in {
+			opacity: 1;
+			transform: none
+		}
+
+		@media(prefers-reduced-motion:reduce) {
+			.js .my-portfolio .rv {
+				opacity: 1;
+				transform: none
+			}
+		}
+
+		/* ===== quote card + soft color refinements ===== */
+		.my-portfolio .sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			clip: rect(0 0 0 0);
+			white-space: nowrap
+		}
+
+		.my-portfolio .qx {
+			padding: 56px 0 24px
+		}
+
+		.my-portfolio .qcard {
+			position: relative;
+			overflow: hidden;
+			display: grid;
+			grid-template-columns: 1.3fr .7fr;
+			align-items: center;
+			gap: 24px;
+			padding: clamp(28px, 5vw, 56px);
+			border-radius: var(--radius-lg);
+			background: radial-gradient(120% 140% at 100% 0%, rgba(186, 224, 248, .5), transparent 58%), linear-gradient(160deg, #fff, #f4f8fc);
+			border: 1px solid rgba(20, 33, 51, .08);
+			box-shadow: 0 22px 50px -34px rgba(20, 33, 51, .35)
+		}
+
+		.my-portfolio .qcard-main {
+			position: relative;
+			z-index: 1
+		}
+
+		.my-portfolio .qmark {
+			display: block;
+			margin: 22px 0 14px;
+			color: #b9d9ee
+		}
+
+		.my-portfolio .qcard blockquote p {
+			font-family: var(--font-display);
+			font-size: clamp(1.3rem, 2.7vw, 1.9rem);
+			line-height: 1.34;
+			font-weight: 500;
+			letter-spacing: -.015em;
+			color: #0f1c2e;
+			max-width: 36ch;
+			text-wrap: balance
+		}
+
+		.my-portfolio .qcard figcaption {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-top: 22px;
+			font-size: .78rem;
+			font-weight: 600;
+			letter-spacing: .14em;
+			text-transform: uppercase;
+			color: #6b7a8c
+		}
+
+		.my-portfolio .qcard figcaption::before {
+			content: "";
+			width: 28px;
+			height: 1.5px;
+			border-radius: 2px;
+			background: linear-gradient(90deg, #9fcdeb, #cfe6f6)
+		}
+
+		.my-portfolio .qcard-vis {
+			display: flex;
+			justify-content: center
+		}
+
+		.my-portfolio .qcard .bot {
+			--sky: #4f9bc9;
+			--sky-light: #8ec5e6;
+			--sky-deep: #2f7bad;
+			--eye1: #4aa0d4;
+			--eye2: #1f648f;
+			--fill: rgba(142, 197, 230, .12);
+			--glow: rgba(142, 197, 230, .22);
+			width: min(100%, 300px)
+		}
+
+		.my-portfolio .hx-badge {
+			color: #fff;
+			background: linear-gradient(135deg, #4a93c4, #2a6592);
+			box-shadow: 0 8px 18px -10px rgba(42, 101, 146, .7), inset 0 0 0 1px rgba(255, 255, 255, .18)
+		}
+
+		.my-portfolio .hx-dot {
+			background: linear-gradient(135deg, #fff, #cfe9f9);
+			animation: qdot 2.4s ease-in-out infinite
+		}
+
+		@keyframes qdot {
+
+			0%,
+			100% {
+				box-shadow: 0 0 0 0 rgba(255, 255, 255, .55)
+			}
+
+			50% {
+				box-shadow: 0 0 0 6px rgba(255, 255, 255, 0)
+			}
+		}
+
+		.my-portfolio .status-line .dot {
+			background: linear-gradient(135deg, #a8d8f5, #c4b8f3);
+			animation: sdot 2.4s ease-in-out infinite
+		}
+
+		@keyframes sdot {
+
+			0%,
+			100% {
+				box-shadow: 0 0 0 0 rgba(176, 196, 245, .5)
+			}
+
+			50% {
+				box-shadow: 0 0 0 6px rgba(176, 196, 245, 0)
+			}
+		}
+
+		@media(max-width:860px) {
+			.my-portfolio .qx {
+				padding-top: 36px
+			}
+
+			.my-portfolio .qcard {
+				grid-template-columns: 1fr;
+				text-align: center;
+				gap: 8px
+			}
+
+			.my-portfolio .qcard-vis {
+				order: -1
+			}
+
+			.my-portfolio .qcard .bot {
+				width: min(70%, 220px)
+			}
+
+			.my-portfolio .qcard-main {
+				display: flex;
+				flex-direction: column;
+				align-items: center
+			}
+
+			.my-portfolio .qcard blockquote p {
+				max-width: 30ch
+			}
+
+			.my-portfolio .qbr {
+				display: none
+			}
+		}
+
+		/* ===== Journal page (simple editorial) ===== */
+		.my-portfolio .jh {
+			padding: 44px 0 2px
+		}
+
+		.my-portfolio .jh h1 {
+			font: 700 clamp(2rem, 4.8vw, 3.1rem)/1.08 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.028em;
+			color: #142133;
+			max-width: 18ch;
+			text-wrap: balance;
+			margin-bottom: 10px
+		}
+
+		.my-portfolio .jh h1 em {
+			font-style: normal;
+			color: var(--accent-deep)
+		}
+
+		.my-portfolio .jsub {
+			max-width: 48ch;
+			font-size: 1rem;
+			line-height: 1.6;
+			color: #566170
+		}
+
+		.my-portfolio .jhero {
+			display: grid;
+			grid-template-columns: 1.8fr 1fr;
+			gap: 40px;
+			align-items: start;
+			padding: 28px 0 40px
+		}
+
+		.my-portfolio .jfeat {
+			display: block;
+			text-decoration: none;
+			color: inherit
+		}
+
+		.my-portfolio .jimg {
+			position: relative;
+			overflow: hidden;
+			aspect-ratio: 16/10;
+			background: #16283f
+		}
+
+		.my-portfolio .jimg .art {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			display: block
+		}
+
+		.my-portfolio .jfeat .jimg {
+			aspect-ratio: 16/9;
+			border-radius: 22px
+		}
+
+		.my-portfolio .jtag {
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			z-index: 2;
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			padding: 4px 10px 4px 8px;
+			border-radius: 999px;
+			font-size: .62rem;
+			font-weight: 700;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			color: var(--c);
+			background: rgba(255, 255, 255, .92)
+		}
+
+		.my-portfolio .jtag i {
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--c)
+		}
+
+		.my-portfolio .bot.jb,
+		.my-portfolio .jimg .bot {
+			--stroke-width: 7.5px;
+			--fy: -20px;
+			--sky: #e8eaee;
+			--sky-light: #f3f4f6;
+			--sky-deep: #fff;
+			--fill: rgba(255, 255, 255, .14);
+			--glow: rgba(255, 255, 255, .3)
+		}
+
+		.my-portfolio .jimg .bot {
+			position: absolute;
+			right: 20px;
+			bottom: 10px;
+			width: 156px;
+			margin: 0;
+			z-index: 2
+		}
+
+		.my-portfolio .jimg .bot rect,
+		.my-portfolio .jcta .bot rect {
+			fill: #eceef1
+		}
+
+		.my-portfolio .jfbody {
+			padding: 18px 2px 0
+		}
+
+		.my-portfolio .jkick,
+		.my-portfolio .jmeta {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-size: .68rem;
+			font-weight: 600;
+			letter-spacing: .06em;
+			text-transform: uppercase;
+			color: #7a8696
+		}
+
+		.my-portfolio .jkick b {
+			color: var(--c);
+			letter-spacing: .1em
+		}
+
+		.my-portfolio .jkick span::before,
+		.my-portfolio .jmeta span+span::before {
+			content: "";
+			display: inline-block;
+			width: 3px;
+			height: 3px;
+			border-radius: 50%;
+			background: currentColor;
+			opacity: .5;
+			margin-right: 8px;
+			vertical-align: middle
+		}
+
+		.my-portfolio .jfeat h2 {
+			font: 600 clamp(1.45rem, 2.6vw, 2rem)/1.18 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.02em;
+			color: #142133;
+			max-width: 26ch;
+			margin: 8px 0;
+			text-wrap: balance
+		}
+
+		.my-portfolio .jdesc {
+			font-size: .9rem;
+			line-height: 1.6;
+			color: #566170;
+			max-width: 56ch
+		}
+
+		.my-portfolio .jmore {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			margin-top: 12px;
+			font-size: .82rem;
+			font-weight: 600;
+			color: var(--c)
+		}
+
+		.my-portfolio .jmore svg,
+		.my-portfolio .jct svg {
+			width: 13px;
+			height: 13px;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 1.7;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			transition: transform .25s
+		}
+
+		.my-portfolio .jfeat:hover .jmore svg,
+		.my-portfolio .jc:hover .jmore svg,
+		.my-portfolio .jcta:hover .jct svg {
+			transform: translateX(3px)
+		}
+
+		.my-portfolio .jlh {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			padding-bottom: 10px;
+			border-bottom: 1px solid rgba(20, 33, 51, .1)
+		}
+
+		.my-portfolio .jlh h3 {
+			font: 700 1.05rem 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.01em;
+			color: #142133
+		}
+
+		.my-portfolio .jlh a {
+			font-size: .78rem;
+			font-weight: 600;
+			color: var(--accent-deep);
+			text-decoration: none
+		}
+
+		.my-portfolio .jl {
+			display: flex;
+			gap: 12px;
+			align-items: center;
+			padding: 12px 0;
+			text-decoration: none;
+			color: inherit;
+			border-bottom: 1px solid rgba(20, 33, 51, .08)
+		}
+
+		.my-portfolio .jth {
+			flex: none;
+			position: relative;
+			width: 60px;
+			height: 60px;
+			border-radius: 12px;
+			overflow: hidden
+		}
+
+		.my-portfolio .jth .art {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%
+		}
+
+		.my-portfolio .jlt small {
+			display: flex;
+			gap: 8px;
+			font-size: .62rem;
+			font-weight: 700;
+			letter-spacing: .09em;
+			text-transform: uppercase;
+			color: var(--c);
+			margin-bottom: 3px
+		}
+
+		.my-portfolio .jlt small em {
+			font-style: normal;
+			font-weight: 600;
+			color: #8a95a4
+		}
+
+		.my-portfolio .jlt b {
+			display: block;
+			font: 600 .9rem/1.3 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.01em;
+			color: #142133;
+			transition: color .2s
+		}
+
+		.my-portfolio .jl:hover b {
+			color: var(--c)
+		}
+
+		.my-portfolio .jsec {
+			padding: 8px 0 40px
+		}
+
+		.my-portfolio .jsh {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 14px 24px;
+			flex-wrap: wrap;
+			margin-bottom: 20px
+		}
+
+		.my-portfolio .jsh h2 {
+			font: 600 1.35rem 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.02em;
+			color: #142133
+		}
+
+		.my-portfolio .jfs {
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap
+		}
+
+		.my-portfolio .jf {
+			padding: 6px 14px;
+			border-radius: 999px;
+			border: 1px solid rgba(20, 33, 51, .12);
+			background: transparent;
+			font: 600 .8rem Inter, sans-serif;
+			color: #33475b;
+			cursor: pointer;
+			transition: background .2s, color .2s, border-color .2s
+		}
+
+		.my-portfolio .jf:hover {
+			border-color: rgba(20, 33, 51, .3)
+		}
+
+		.my-portfolio .jf.on {
+			background: #16202c;
+			border-color: #16202c;
+			color: #fff
+		}
+
+		.my-portfolio .jgrid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 14px
+		}
+
+		.my-portfolio .jcw[hidden] {
+			display: none
+		}
+
+		.my-portfolio .jc {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			background: rgba(255, 255, 255, .9);
+			border: 1px solid rgba(20, 33, 51, .08);
+			border-radius: 16px;
+			overflow: hidden;
+			text-decoration: none;
+			color: inherit;
+			transition: translate .25s ease, border-color .25s ease
+		}
+
+		.my-portfolio .jc:hover {
+			translate: 0 -2px;
+			border-color: var(--bd)
+		}
+
+		.my-portfolio .jc .jimg {
+			aspect-ratio: 16/10
+		}
+
+		.my-portfolio .jbody {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			padding: 12px 14px 14px
+		}
+
+		.my-portfolio .jcat {
+			display: none;
+			color: var(--c);
+			font-weight: 700
+		}
+
+		.my-portfolio .jmeta {
+			margin-bottom: 6px;
+			font-size: .62rem
+		}
+
+		.my-portfolio .jc h3 {
+			font: 600 .95rem/1.3 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.01em;
+			color: #142133;
+			margin-bottom: 5px;
+			text-wrap: balance
+		}
+
+		.my-portfolio .jc .jdesc {
+			font-size: .8rem;
+			line-height: 1.5;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden
+		}
+
+		.my-portfolio .jc .jmore {
+			margin-top: auto;
+			padding-top: 10px;
+			font-size: .78rem
+		}
+
+		.my-portfolio .jcta {
+			display: flex;
+			align-items: center;
+			gap: 18px;
+			padding: 14px 22px 14px 14px;
+			margin-bottom: 56px;
+			border-radius: 20px;
+			text-decoration: none;
+			color: #fff;
+			background: linear-gradient(135deg, #2c2f38, #14161b)
+		}
+
+		.my-portfolio .jcta .bot {
+			position: relative;
+			flex: none;
+			width: 112px;
+			margin: 0;
+			--stroke-width: 8px;
+			--fy: -22px;
+			--sky: #e8eaee;
+			--sky-light: #f3f4f6;
+			--sky-deep: #fff;
+			--fill: rgba(255, 255, 255, .12);
+			--glow: rgba(255, 255, 255, .26)
+		}
+
+		.my-portfolio .jct b {
+			display: block;
+			font: 700 1.15rem 'Space Grotesk', Inter, sans-serif;
+			letter-spacing: -.015em
+		}
+
+		.my-portfolio .jct small {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			margin-top: 2px;
+			font-size: .8rem;
+			opacity: .8
+		}
+
+		@media(max-width:1000px) {
+			.my-portfolio .jhero {
+				grid-template-columns: 1fr;
+				gap: 20px
+			}
+
+			.my-portfolio .jgrid {
+				grid-template-columns: repeat(2, 1fr)
+			}
+		}
+
+		@media(max-width:640px) {
+			.my-portfolio .jh {
+				padding-top: 26px
+			}
+
+			.my-portfolio .jh h1 {
+				font-size: 1.75rem
+			}
+
+			.my-portfolio .jsub {
+				font-size: .92rem
+			}
+
+			.my-portfolio .jhero {
+				padding: 18px 0 22px
+			}
+
+			.my-portfolio .jfeat .jimg {
+				aspect-ratio: 16/10;
+				border-radius: 18px
+			}
+
+			.my-portfolio .jimg .bot {
+				width: 96px;
+				right: 10px;
+				bottom: 4px
+			}
+
+			.my-portfolio .jfbody {
+				padding-top: 14px
+			}
+
+			.my-portfolio .jfeat h2 {
+				font-size: 1.25rem
+			}
+
+			.my-portfolio .jdesc {
+				font-size: .86rem
+			}
+
+			.my-portfolio .jth {
+				width: 52px;
+				height: 52px;
+				border-radius: 10px
+			}
+
+			.my-portfolio .jl {
+				padding: 10px 0
+			}
+
+			.my-portfolio .jsh {
+				margin-bottom: 14px
+			}
+
+			.my-portfolio .jsh h2 {
+				font-size: 1.15rem
+			}
+
+			.my-portfolio .jfs {
+				flex-wrap: nowrap;
+				overflow-x: auto;
+				margin-inline: -20px;
+				padding: 2px 20px 4px;
+				width: calc(100% + 40px);
+				scrollbar-width: none
+			}
+
+			.my-portfolio .jf {
+				flex: none
+			}
+
+			.my-portfolio .jgrid {
+				grid-template-columns: 1fr;
+				gap: 8px
+			}
+
+			.my-portfolio .jsec {
+				padding-bottom: 28px
+			}
+
+			.my-portfolio .jc {
+				flex-direction: row;
+				border-radius: 14px
+			}
+
+			.my-portfolio .jc .jimg {
+				flex: none;
+				width: 84px;
+				aspect-ratio: auto;
+				min-height: 84px
+			}
+
+			.my-portfolio .jc .jtag,
+			.my-portfolio .jc .jdesc,
+			.my-portfolio .jc .jmore {
+				display: none
+			}
+
+			.my-portfolio .jbody {
+				padding: 9px 12px;
+				justify-content: center;
+				min-width: 0
+			}
+
+			.my-portfolio .jcat {
+				display: inline
+			}
+
+			.my-portfolio .jmeta {
+				margin-bottom: 4px;
+				font-size: .6rem
+			}
+
+			.my-portfolio .jc h3 {
+				font-size: .9rem;
+				margin: 0;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden
+			}
+
+			.my-portfolio .jcta {
+				gap: 12px;
+				padding: 10px 16px 10px 10px;
+				margin-bottom: 36px;
+				border-radius: 16px
+			}
+
+			.my-portfolio .jcta .bot {
+				width: 80px
+			}
+
+			.my-portfolio .jct b {
+				font-size: 1rem
+			}
+		}
+
+		@media(hover:none) {
+			.my-portfolio .jc:hover {
+				translate: none
+			}
+		}
+
+		/* ----- polish ----- */
+		.my-portfolio .jh {
+			padding: 52px 0 0
+		}
+
+		.my-portfolio .jh-in {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 40px
+		}
+
+		.my-portfolio .jh-t {
+			max-width: 580px
+		}
+
+		.my-portfolio .jh h1 {
+			font-size: clamp(2.1rem, 4.6vw, 3.2rem);
+			max-width: 17ch
+		}
+
+		.my-portfolio .jsub {
+			margin-top: 2px;
+			font-size: 1.02rem
+		}
+
+		.my-portfolio .jh-bot {
+			flex: none
+		}
+
+		.my-portfolio .jh-bot .bot {
+			width: 230px;
+			margin: 0;
+			--stroke-width: 4px;
+			--fy: -12px;
+			--sky: #4f9bc9;
+			--sky-light: #8ec5e6;
+			--sky-deep: #2f7bad;
+			--eye1: #4aa0d4;
+			--eye2: #1f648f;
+			--fill: rgba(14, 165, 233, .08);
+			--glow: rgba(14, 165, 233, .16)
+		}
+
+		.my-portfolio .jhero {
+			padding: 40px 0 52px
+		}
+
+		.my-portfolio .jfeat h2,
+		.my-portfolio .jc h3,
+		.my-portfolio .jlt b {
+			transition: color .25s
+		}
+
+		.my-portfolio .jfeat:hover h2,
+		.my-portfolio .jc:hover h3 {
+			color: var(--c)
+		}
+
+		.my-portfolio .jfeat .jimg {
+			box-shadow: 0 24px 48px -36px rgba(20, 33, 51, .55)
+		}
+
+		.my-portfolio .jck {
+			width: 11px;
+			height: 11px;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 1.5;
+			stroke-linecap: round;
+			margin-right: 5px;
+			vertical-align: -1px
+		}
+
+		.my-portfolio .jc {
+			background: #fff;
+			border-color: rgba(20, 33, 51, .07);
+			box-shadow: 0 1px 2px rgba(20, 33, 51, .04)
+		}
+
+		.my-portfolio .jc:hover {
+			box-shadow: 0 16px 30px -24px var(--g)
+		}
+
+		.my-portfolio .jf em {
+			font-style: normal;
+			margin-left: 7px;
+			font-size: .7rem;
+			font-weight: 600;
+			opacity: .5
+		}
+
+		.my-portfolio .jf.on em {
+			opacity: .7
+		}
+
+		.my-portfolio .jsec {
+			padding: 10px 0 56px
+		}
+
+		.my-portfolio .jsh h2 {
+			font-size: 1.45rem
+		}
+
+		.my-portfolio .jmeta,
+		.my-portfolio .jkick {
+			font-size: .66rem;
+			letter-spacing: .07em
+		}
+
+		@media(max-width:1000px) {
+			.my-portfolio .jh-bot .bot {
+				width: 170px
+			}
+
+			.my-portfolio .jhero {
+				padding: 30px 0 40px
+			}
+		}
+
+		@media(max-width:640px) {
+			.my-portfolio .jh {
+				padding-top: 26px
+			}
+
+			.my-portfolio .jh-in {
+				align-items: flex-start;
+				gap: 10px
+			}
+
+			.my-portfolio .jh h1 {
+				font-size: 1.55rem;
+				max-width: none
+			}
+
+			.my-portfolio .jsub {
+				font-size: .88rem
+			}
+
+			.my-portfolio .jh-bot .bot {
+				width: 84px;
+				margin-top: 2px
+			}
+
+			.my-portfolio .jhero {
+				padding: 20px 0 26px
+			}
+
+			.my-portfolio .jsec {
+				padding-bottom: 30px
+			}
+
+			.my-portfolio .jsh h2 {
+				font-size: 1.15rem
+			}
+
+			.my-portfolio .jf em {
+				margin-left: 5px
+			}
+		}
+
+		@media(hover:none) {
+
+			.my-portfolio .jfeat:hover h2,
+			.my-portfolio .jc:hover h3 {
+				color: inherit
+			}
+		}
+
+		/* ===== Responsive refinement (compact, Apple Newsroom-inspired) ===== */
+		.my-portfolio {
+			--jp: clamp(20px, 5vw, 64px)
+		}
+
+		.my-portfolio .jh h1 {
+			letter-spacing: -.03em
+		}
+
+		.my-portfolio .jsh h2 {
+			letter-spacing: -.025em
+		}
+
+		.my-portfolio .jc {
+			border-radius: 18px
+		}
+
+		.my-portfolio .jhero {
+			padding-block: 34px 52px
+		}
+
+		/* the section shorthands above zeroed the side padding: give every section the same gutter */
+		@media (max-width:1240px) {
+
+			.my-portfolio .jh,
+			.my-portfolio .jhero,
+			.my-portfolio .jsec {
+				padding-inline: var(--jp)
+			}
+		}
+
+		/* tablet: hero in two columns, three small cards per row */
+		@media (min-width:761px) and (max-width:1000px) {
+			.my-portfolio .jhero {
+				grid-template-columns: 1.3fr 1fr;
+				gap: 28px;
+				padding-block: 28px 40px
+			}
+
+			.my-portfolio .jfeat h2 {
+				font-size: 1.35rem
+			}
+
+			.my-portfolio .jimg .bot {
+				width: 110px;
+				right: 12px;
+				bottom: 6px
+			}
+		}
+
+		@media (min-width:520px) and (max-width:1000px) {
+			.my-portfolio .jgrid {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 14px
+			}
+		}
+
+		/* small tablet / large phone: single column hero with a wide, short image */
+		@media (max-width:760px) {
+			.my-portfolio .jhero {
+				grid-template-columns: 1fr;
+				gap: 20px;
+				padding-block: 18px 22px
+			}
+
+			.my-portfolio .jfeat .jimg {
+				aspect-ratio: 2/1;
+				border-radius: 18px
+			}
+
+			.my-portfolio .jimg .bot {
+				width: 96px;
+				right: 12px;
+				bottom: 4px
+			}
+		}
+
+		/* phone: compact tiles */
+		@media (max-width:640px) {
+			.my-portfolio .jh {
+				padding-block: 24px 0
+			}
+
+			.my-portfolio .jh h1 {
+				font-size: 1.5rem;
+				line-height: 1.12;
+				max-width: none
+			}
+
+			.my-portfolio .jsub {
+				font-size: .86rem;
+				line-height: 1.5
+			}
+
+			.my-portfolio .jh-bot .bot {
+				width: 76px
+			}
+
+			.my-portfolio .jfbody {
+				padding-top: 12px
+			}
+
+			.my-portfolio .jfeat h2 {
+				font-size: 1.15rem;
+				line-height: 1.22;
+				margin: 6px 0
+			}
+
+			.my-portfolio .jfeat .jdesc {
+				font-size: .82rem;
+				line-height: 1.5;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden
+			}
+
+			.my-portfolio .jfeat .jmore {
+				margin-top: 8px;
+				font-size: .78rem
+			}
+
+			.my-portfolio .jth {
+				width: 46px;
+				height: 46px;
+				border-radius: 10px
+			}
+
+			.my-portfolio .jlt b {
+				font-size: .84rem
+			}
+
+			.my-portfolio .jl {
+				gap: 10px;
+				padding: 9px 0
+			}
+
+			.my-portfolio .jsec {
+				padding-block: 6px 24px
+			}
+
+			.my-portfolio .jsh {
+				margin-bottom: 12px
+			}
+
+			.my-portfolio .jsh h2 {
+				font-size: 1.1rem
+			}
+
+			.my-portfolio .jfs {
+				margin-inline: calc(-1 * var(--jp));
+				padding: 2px var(--jp) 4px;
+				width: calc(100% + 2 * var(--jp))
+			}
+
+			.my-portfolio .jf {
+				padding: 5px 12px;
+				font-size: .76rem
+			}
+
+			.my-portfolio .jc {
+				flex-direction: column;
+				border-radius: 14px
+			}
+
+			.my-portfolio .jc .jimg {
+				width: auto;
+				min-height: 0;
+				aspect-ratio: 4/3
+			}
+
+			.my-portfolio .jc .jtag,
+			.my-portfolio .jc .jdesc,
+			.my-portfolio .jc .jmore {
+				display: none
+			}
+
+			.my-portfolio .jbody {
+				padding: 9px 11px 12px;
+				justify-content: flex-start
+			}
+
+			.my-portfolio .jmeta {
+				flex-wrap: wrap;
+				gap: 2px 6px;
+				font-size: .56rem;
+				margin-bottom: 5px
+			}
+
+			.my-portfolio .jmeta span:nth-child(3) {
+				display: none
+			}
+
+			.my-portfolio .jcat {
+				display: inline
+			}
+
+			.my-portfolio .jc h3 {
+				font-size: .84rem;
+				line-height: 1.3;
+				-webkit-line-clamp: 3
+			}
+
+			.my-portfolio .jcta {
+				gap: 10px;
+				padding: 8px 14px 8px 8px;
+				margin-bottom: 28px;
+				border-radius: 14px
+			}
+
+			.my-portfolio .jcta .bot {
+				width: 64px
+			}
+
+			.my-portfolio .jct b {
+				font-size: .95rem
+			}
+
+			.my-portfolio .jct small {
+				font-size: .74rem
+			}
+		}
+
+		@media (max-width:519px) {
+			.my-portfolio .jgrid {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 12px
+			}
+
+			.my-portfolio .jfeat .jimg {
+				aspect-ratio: 16/10
+			}
+		}
+
+		@media (max-width:360px) {
+			.my-portfolio .jgrid {
+				gap: 10px
+			}
+
+			.my-portfolio .jc h3 {
+				font-size: .8rem
+			}
+		}
+
+		/* ===== Article page (Apple Newsroom-style editorial) ===== */
+		html,
+		body {
+			background: #fff !important
+		}
+
+		.my-portfolio {
+			background: #fff !important;
+			background-image: none !important
+		}
+
+		.my-portfolio .ar,
+		.my-portfolio .arrel {
+			--ink: #1d1d1f;
+			--mut: #6e6e73;
+			--line: #d2d2d7;
+			color: #1d1d1f;
+			font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility
+		}
+
+		.my-portfolio .ar :is(h1, h2, h3, p, span, small, strong, a, button, time, figcaption, b, cite),
+		.my-portfolio .arrel :is(h2, h3, p, span, small, a, b) {
+			font-family: inherit
+		}
+
+		.my-portfolio .ar {
+			padding-bottom: 8px
+		}
+
+		.my-portfolio .arh {
+			width: min(980px, calc(100% - 2*var(--jp)));
+			margin: 0 auto;
+			padding-top: 44px;
+			text-align: center
+		}
+
+		.my-portfolio .armeta {
+			margin: 0;
+			font-size: .75rem;
+			line-height: 1.33;
+			letter-spacing: .01em;
+			text-transform: uppercase;
+			color: var(--mut)
+		}
+
+		.my-portfolio .armeta b {
+			margin-right: 10px;
+			font-weight: 600;
+			color: var(--ink)
+		}
+
+		.my-portfolio .armeta time {
+			text-transform: none;
+			letter-spacing: 0
+		}
+
+		.my-portfolio .arh h1 {
+			margin: 16px auto 14px;
+			max-width: 16em;
+			font-size: clamp(2rem, 5.6vw, 3.5rem);
+			line-height: 1.07;
+			font-weight: 700;
+			letter-spacing: -.005em;
+			color: var(--ink);
+			text-wrap: balance
+		}
+
+		.my-portfolio .arsub {
+			margin: 0 auto;
+			max-width: 31em;
+			font-size: clamp(1.08rem, 2.3vw, 1.5rem);
+			line-height: 1.28;
+			font-weight: 500;
+			letter-spacing: .004em;
+			color: var(--ink);
+			text-wrap: balance
+		}
+
+		.my-portfolio .arshare {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 6px;
+			margin-top: 26px
+		}
+
+		.my-portfolio .artip {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			translate: -50% 4px;
+			padding: 4px 10px;
+			border-radius: 999px;
+			background: #1d1d1f;
+			color: #fff;
+			font-size: .72rem;
+			font-weight: 500;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity .25s;
+			white-space: nowrap
+		}
+
+		.my-portfolio .artip.on {
+			opacity: 1
+		}
+
+		.my-portfolio .arhero {
+			width: min(860px, calc(100% - 2*var(--jp)));
+			margin: 36px auto 0
+		}
+
+		.my-portfolio .arimg {
+			position: relative;
+			overflow: hidden;
+			background: #f5f5f7
+		}
+
+		.my-portfolio .arimg .art,
+		.my-portfolio .arimg img {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover
+		}
+
+		.my-portfolio .arhero .arimg {
+			aspect-ratio: 2/1;
+			border-radius: 18px
+		}
+
+		.my-portfolio .arcap {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 16px;
+			width: min(692px, 100%);
+			margin: 12px auto 0;
+			font-size: .75rem;
+			line-height: 1.4;
+			color: var(--mut)
+		}
+
+		.my-portfolio .arcap span {
+			padding-top: 5px
+		}
+
+		.my-portfolio .ardl {
+			flex: none;
+			width: 28px;
+			height: 28px;
+			border: 0;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			background: #f5f5f7;
+			color: #1d1d1f;
+			cursor: pointer;
+			transition: background .2s
+		}
+
+		.my-portfolio .ardl:hover {
+			background: #e8e8ed
+		}
+
+		.my-portfolio .ardl svg,
+		.my-portfolio .argc button svg {
+			width: 14px;
+			height: 14px;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 1.7;
+			stroke-linecap: round;
+			stroke-linejoin: round
+		}
+
+		.my-portfolio .arcol {
+			width: min(692px, calc(100% - 2*var(--jp)));
+			margin: 34px auto 0
+		}
+
+		.my-portfolio .arcol p {
+			margin: 0 0 .95em;
+			font-size: 1.0625rem;
+			line-height: 1.5;
+			letter-spacing: -.01em;
+			color: var(--ink)
+		}
+
+		.my-portfolio .arcol p b {
+			font-weight: 600
+		}
+
+		.my-portfolio .arcol h2 {
+			margin: 2.3em 0 .55em;
+			font-size: clamp(1.45rem, 3vw, 1.75rem);
+			line-height: 1.14;
+			font-weight: 600;
+			letter-spacing: .007em;
+			color: var(--ink)
+		}
+
+		.my-portfolio .arfig {
+			margin: 2em 0 2.2em
+		}
+
+		.my-portfolio .arfig .arimg {
+			aspect-ratio: 2/1;
+			border-radius: 16px
+		}
+
+		.my-portfolio .arfig .arcap {
+			width: 100%;
+			margin-top: 10px
+		}
+
+		.my-portfolio .argal {
+			margin: 2em 0 2.2em
+		}
+
+		.my-portfolio .argt {
+			display: flex;
+			gap: 14px;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			scrollbar-width: none
+		}
+
+		.my-portfolio .argt::-webkit-scrollbar {
+			display: none
+		}
+
+		.my-portfolio .argt figure {
+			flex: 0 0 100%;
+			min-width: 0;
+			margin: 0;
+			scroll-snap-align: start
+		}
+
+		.my-portfolio .argt .arimg {
+			aspect-ratio: 2/1;
+			border-radius: 16px
+		}
+
+		.my-portfolio .argt .arcap {
+			width: 100%;
+			margin-top: 10px
+		}
+
+		.my-portfolio .argc {
+			display: flex;
+			justify-content: flex-end;
+			gap: 8px;
+			margin-top: 12px
+		}
+
+		.my-portfolio .argc button {
+			width: 32px;
+			height: 32px;
+			border: 0;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			background: #e8e8ed;
+			color: #1d1d1f;
+			cursor: pointer;
+			transition: background .2s, opacity .2s
+		}
+
+		.my-portfolio .argc button:hover:not(:disabled) {
+			background: #d2d2d7
+		}
+
+		.my-portfolio .argc button:disabled {
+			opacity: .35;
+			cursor: default
+		}
+
+		.my-portfolio .arabout {
+			margin-top: 1.5em;
+			padding-top: 1.6em;
+			border-top: 1px solid var(--line)
+		}
+
+		.my-portfolio .arabout h3 {
+			margin: 0 0 .5em;
+			font-size: .95rem;
+			line-height: 1.33;
+			font-weight: 600;
+			letter-spacing: .01em;
+			text-transform: uppercase;
+			color: var(--ink)
+		}
+
+		.my-portfolio .arcol .arabout p {
+			font-size: .95rem;
+			line-height: 1.5;
+			color: var(--mut)
+		}
+
+		.my-portfolio .arsh {
+			margin-top: 2.8em;
+			padding-top: 1.6em;
+			border-top: 1px solid var(--line)
+		}
+
+		.my-portfolio .arsh h3 {
+			margin: 0 0 4px;
+			font-size: 1.2rem;
+			line-height: 1.3;
+			font-weight: 600;
+			letter-spacing: -.01em;
+			color: var(--ink)
+		}
+
+		.my-portfolio .arsh .arshare {
+			justify-content: flex-start;
+			margin: 0 0 0 -11px
+		}
+
+		.my-portfolio .arrel {
+			width: min(980px, calc(100% - 2*var(--jp)));
+			margin: 72px auto 56px;
+			padding-top: 30px;
+			border-top: 1px solid var(--line)
+		}
+
+		.my-portfolio .arrel h2 {
+			margin: 0 0 22px;
+			font-size: clamp(1.45rem, 3vw, 1.75rem);
+			line-height: 1.14;
+			font-weight: 600;
+			letter-spacing: .007em;
+			color: var(--ink)
+		}
+
+		.my-portfolio .arrl {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 32px
+		}
+
+		.my-portfolio .arrl a {
+			display: block;
+			text-decoration: none;
+			color: var(--ink)
+		}
+
+		.my-portfolio .arrl small {
+			display: block;
+			margin-bottom: 6px;
+			font-size: .75rem;
+			line-height: 1.33;
+			font-weight: 600;
+			letter-spacing: .01em;
+			text-transform: uppercase;
+			color: var(--mut)
+		}
+
+		.my-portfolio .arrl strong {
+			display: block;
+			font-size: 1.0625rem;
+			line-height: 1.3;
+			font-weight: 600;
+			letter-spacing: -.01em;
+			transition: color .2s
+		}
+
+		.my-portfolio .arrl time {
+			display: block;
+			margin-top: 8px;
+			font-size: .75rem;
+			color: var(--mut)
+		}
+
+		.my-portfolio .arrl a:hover strong {
+			color: #0066cc
+		}
+
+		@media (max-width: 640px) {
+			.my-portfolio .arh {
+				padding-top: 26px
+			}
+
+			.my-portfolio .arh h1 {
+				margin: 12px auto 12px
+			}
+
+			.my-portfolio .arshare {
+				margin-top: 20px
+			}
+
+			.my-portfolio .arhero {
+				margin-top: 26px
+			}
+
+			.my-portfolio .arhero .arimg {
+				aspect-ratio: 3/2;
+				border-radius: 14px
+			}
+
+			.my-portfolio .arcol {
+				margin-top: 26px
+			}
+
+			.my-portfolio .arcol p {
+				font-size: 1rem
+			}
+
+			.my-portfolio .arfig .arimg,
+			.my-portfolio .argt .arimg {
+				aspect-ratio: 16/10;
+				border-radius: 12px
+			}
+
+			.my-portfolio .arrel {
+				margin-top: 52px
+			}
+
+			.my-portfolio .arrl {
+				grid-template-columns: 1fr;
+				gap: 0
+			}
+
+			.my-portfolio .arrl a {
+				padding: 16px 0;
+				border-bottom: 1px solid var(--line)
+			}
+
+			.my-portfolio .arrl a:last-child {
+				border-bottom: 0
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.my-portfolio .argt {
+				scroll-behavior: auto
+			}
+		}
+
+		/* ---- Apple Newsroom alignment ---- */
+		@media (min-width: 641px) {
+			.my-portfolio .arcol p {
+				font-size: 1.3125rem;
+				line-height: 1.381;
+				letter-spacing: .011em
+			}
+		}
+
+		@media (max-width: 640px) {
+			.my-portfolio .arcol p {
+				font-size: 1.0625rem;
+				line-height: 1.47;
+				letter-spacing: -.005em
+			}
+		}
+
+		.my-portfolio .arcol {
+			margin-top: 28px
+		}
+
+		.my-portfolio .arcol p a {
+			color: #06c;
+			text-decoration: none
+		}
+
+		.my-portfolio .arcol p a:hover {
+			text-decoration: underline
+		}
+
+		.my-portfolio .arhero .arcap {
+			width: min(692px, 100%);
+			margin: 12px auto 0
+		}
+
+		@media (min-width: 900px) {
+
+			.my-portfolio .arfig,
+			.my-portfolio .argal {
+				margin-left: -84px;
+				margin-right: -84px
+			}
+		}
+
+		.my-portfolio .ardl:focus-visible,
+		.my-portfolio .argc button:focus-visible {
+			outline: 2px solid #0071e3;
+			outline-offset: 2px;
+			border-radius: 50%
+		}
+
+
+		/* ---- Category / date line (matches the reference): small bold caps, dot, larger date, one grey, shared baseline ---- */
+		.my-portfolio .arh .armeta {
+			display: block;
+			font-size: 1.0625rem;
+			line-height: 1.3;
+			font-weight: 500;
+			letter-spacing: 0;
+			text-transform: none;
+			color: #6e6e73
+		}
+
+		.my-portfolio .arh .armeta b {
+			margin: 0;
+			font-size: .8125rem;
+			font-weight: 700;
+			letter-spacing: .02em;
+			text-transform: uppercase;
+			color: #6e6e73
+		}
+
+		.my-portfolio .arh .armeta b::after {
+			content: "";
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			margin: 0 13px;
+			border-radius: 50%;
+			background: currentColor;
+			vertical-align: 2.5px
+		}
+
+		.my-portfolio .arh .armeta time {
+			font-size: 1em;
+			font-weight: 500;
+			letter-spacing: 0;
+			text-transform: none;
+			color: #6e6e73
+		}
+
+		@media (max-width: 640px) {
+			.my-portfolio .arh .armeta {
+				font-size: 1rem
+			}
+
+			.my-portfolio .arh .armeta b {
+				font-size: .75rem
+			}
+
+			.my-portfolio .arh .armeta b::after {
+				margin: 0 10px
+			}
+		}
+
+		/* ---- Share icons: icon-only (no box / border / background), one consistent line style ---- */
+		.my-portfolio .arshare {
+			gap: 2px
+		}
+
+		.my-portfolio .arshare a,
+		.my-portfolio .arshare button {
+			position: relative;
+			display: grid;
+			place-items: center;
+			width: 44px;
+			height: 44px;
+			padding: 0;
+			margin: 0;
+			border: 0;
+			border-radius: 0;
+			background: none;
+			box-shadow: none;
+			color: #3c3c3f;
+			cursor: pointer;
+			text-decoration: none;
+			-webkit-appearance: none;
+			appearance: none;
+			-webkit-tap-highlight-color: transparent;
+			transition: color .25s ease, transform .35s cubic-bezier(.22, 1, .36, 1)
+		}
+
+		.my-portfolio .arshare a:hover,
+		.my-portfolio .arshare button:hover {
+			color: #000;
+			transform: translateY(-2px)
+		}
+
+		.my-portfolio .arshare a:active,
+		.my-portfolio .arshare button:active {
+			transform: translateY(0) scale(.94)
+		}
+
+		.my-portfolio .arshare svg {
+			display: block;
+			width: 21px;
+			height: 21px;
+			fill: currentColor;
+			stroke: none
+		}
+
+		.my-portfolio .arshare a:focus-visible,
+		.my-portfolio .arshare button:focus-visible {
+			outline: 2px solid #0071e3;
+			outline-offset: -3px;
+			border-radius: 50%
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+
+			.my-portfolio .arshare a,
+			.my-portfolio .arshare button {
+				transition: none
+			}
+
+			.my-portfolio .arshare a:hover,
+			.my-portfolio .arshare button:hover {
+				transform: none
+			}
+		}
+
+		/* ---- More from the journal: image tiles ---- */
+		.my-portfolio .arrl {
+			gap: 32px 24px
+		}
+
+		.my-portfolio .arrl a {
+			display: flex;
+			flex-direction: column
+		}
+
+		.my-portfolio .arrl a:focus-visible {
+			outline: 2px solid #0071e3;
+			outline-offset: 6px;
+			border-radius: 16px
+		}
+
+		.my-portfolio .arth {
+			position: relative;
+			aspect-ratio: 16/10;
+			margin-bottom: 14px;
+			border-radius: 16px;
+			overflow: hidden;
+			background: #f5f5f7
+		}
+
+		.my-portfolio .arth .art,
+		.my-portfolio .arth img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+			transition: transform .6s cubic-bezier(.2, .7, .2, 1)
+		}
+
+		.my-portfolio .arrl a:hover .arth .art,
+		.my-portfolio .arrl a:hover .arth img {
+			transform: scale(1.04)
+		}
+
+		@media (max-width: 640px) {
+			.my-portfolio .arrl {
+				grid-template-columns: 1fr;
+				gap: 30px
+			}
+
+			.my-portfolio .arrl a {
+				padding: 0;
+				border-bottom: 0
+			}
+
+			.my-portfolio .arth {
+				border-radius: 14px;
+				margin-bottom: 12px
+			}
+
+			.my-portfolio .ardl {
+				width: 32px;
+				height: 32px
+			}
+		}
+
+		/* ---- Icons: Apple Newsroom style (20px glyphs, 40px hit area, grey) ---- */
+		.my-portfolio .arshare {
+			gap: 0
+		}
+
+		.my-portfolio .arshare a,
+		.my-portfolio .arshare button {
+			width: 40px;
+			height: 40px;
+			color: #6e6e73
+		}
+
+		.my-portfolio .arshare a:hover,
+		.my-portfolio .arshare button:hover {
+			color: #1d1d1f
+		}
+
+		.my-portfolio .arshare svg {
+			width: 20px;
+			height: 20px
+		}
+
+		.my-portfolio .arshare svg.so {
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 1.5;
+			stroke-linecap: round;
+			stroke-linejoin: round
+		}
+
+		.my-portfolio .arshare svg.xo {
+			stroke-width: 1.15;
+			stroke-linejoin: miter
+		}
+
+		.my-portfolio .arsh .arshare {
+			margin-left: -10px
+		}
+
+		.my-portfolio .ardl svg {
+			stroke-width: 2.1
+		}
+
+		/* ---- No navbar: a little more room at the top ---- */
+		.my-portfolio .arh {
+			padding-top: 72px
+		}
+
+		@media (max-width: 640px) {
+			.my-portfolio .arh {
+				padding-top: 44px
+			}
+		}
+
+		/* ---- More from the journal: a card without href is not clickable ---- */
+		.my-portfolio .arrl a:not([href]) {
+			cursor: default
+		}
+	</style>
+</head>
+
+<body class="page-overview globalheader-dark" data-component-list="FocusManager" data-anim-scroll-group="body">
+
+	<script src="ac/includes/acmi_handler/scripts/acmi_head.built.js" type="text/javascript" charset="utf-8"></script>
+	<script src="metrics/ac_analytics/2.30.0/scripts/ac_analytics.js" type="text/javascript" charset="utf-8"></script>
+	<script src="metrics/ac_analytics/2.30.0/scripts/auto_init.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- ==================== MAIN CONTENT ==================== -->
+	<main id="main" class="main" role="main" data-page-type="article">
+		<div class="my-portfolio">
+			<article class="ar" id="ar" aria-live="polite"><noscript>
+					<p style="padding:60px 24px;text-align:center">Please enable JavaScript to read this article, or
+						return to the <a href="journal.html">Journal</a>.</p>
+				</noscript></article>
+			<section class="arrel" aria-labelledby="armore">
+				<h2 id="armore">More from the journal</h2>
+				<div class="arrl" id="arRel">
+					<!-- ===== CARD 1 =====
+		     LINK: type your page name between the quotes of href="" below, e.g.  href="my-article.html"
+		     (লিংক দিতে নিচের href="" এর কোটের ভেতরে পেজের নাম লিখুন। ফাঁকা রাখলে কার্ডে কোনো লিংক থাকবে না)
+		     PICTURE: to use your own picture, replace the whole <svg>…</svg> with  <img src="images/photo.jpg" alt=""> -->
+					<a href="">
+						<div class="arth"><svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice"
+								aria-hidden="true">
+								<defs>
+									<linearGradient id="rel1" x1="0" y1="0" x2="1" y2="1">
+										<stop offset="0" stop-color="#17506b" />
+										<stop offset="1" stop-color="#3aa7bd" />
+									</linearGradient>
+								</defs>
+								<rect width="800" height="500" fill="url(#rel1)" />
+								<circle cx="700" cy="60" r="190" fill="#fff" opacity=".07" />
+								<g fill="#fff">
+									<rect x="150" y="110" width="420" height="260" rx="28" opacity=".1"
+										transform="rotate(-8 360 240)" />
+									<rect x="230" y="150" width="420" height="260" rx="28" opacity=".14"
+										transform="rotate(5 440 280)" />
+									<rect x="300" y="190" width="300" height="180" rx="22" opacity=".2" />
+								</g>
+								<g fill="#fff">
+									<circle cx="350" cy="240" r="8" />
+									<circle cx="385" cy="240" r="8" opacity=".6" />
+									<rect x="350" y="280" width="170" height="10" rx="5" opacity=".5" />
+									<rect x="350" y="305" width="110" height="10" rx="5" opacity=".3" />
+								</g>
+							</svg></div>
+						<small>IT</small>
+						<strong>Studying for CompTIA A+ without burning out</strong>
+						<time>September 22, 2026</time>
+					</a>
+
+					<!-- ===== CARD 2 =====
+		     LINK: type your page name between the quotes of href="" below, e.g.  href="my-article.html"
+		     (লিংক দিতে নিচের href="" এর কোটের ভেতরে পেজের নাম লিখুন। ফাঁকা রাখলে কার্ডে কোনো লিংক থাকবে না)
+		     PICTURE: to use your own picture, replace the whole <svg>…</svg> with  <img src="images/photo.jpg" alt=""> -->
+					<a href="">
+						<div class="arth"><svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice"
+								aria-hidden="true">
+								<defs>
+									<linearGradient id="rel2" x1="0" y1="0" x2="1" y2="1">
+										<stop offset="0" stop-color="#3d3a8c" />
+										<stop offset="1" stop-color="#8a7fe0" />
+									</linearGradient>
+								</defs>
+								<rect width="800" height="500" fill="url(#rel2)" />
+								<circle cx="700" cy="60" r="190" fill="#fff" opacity=".07" />
+								<g fill="#fff">
+									<rect x="120" y="100" width="170" height="140" rx="20" opacity=".2" />
+									<rect x="310" y="100" width="170" height="140" rx="20" opacity=".12" />
+									<rect x="500" y="100" width="170" height="140" rx="20" opacity=".2" />
+									<rect x="120" y="260" width="360" height="130" rx="20" opacity=".12" />
+									<rect x="500" y="260" width="170" height="130" rx="20" opacity=".2" />
+									<circle cx="205" cy="170" r="22" opacity=".6" />
+								</g>
+							</svg></div>
+						<small>Frontend</small>
+						<strong>Building a portfolio that feels like one product</strong>
+						<time>September 9, 2026</time>
+					</a>
+
+					<!-- ===== CARD 3 =====
+		     LINK: type your page name between the quotes of href="" below, e.g.  href="my-article.html"
+		     (লিংক দিতে নিচের href="" এর কোটের ভেতরে পেজের নাম লিখুন। ফাঁকা রাখলে কার্ডে কোনো লিংক থাকবে না)
+		     PICTURE: to use your own picture, replace the whole <svg>…</svg> with  <img src="images/photo.jpg" alt=""> -->
+					<a href="">
+						<div class="arth"><svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice"
+								aria-hidden="true">
+								<defs>
+									<linearGradient id="rel3" x1="0" y1="0" x2="1" y2="1">
+										<stop offset="0" stop-color="#6b3a2a" />
+										<stop offset="1" stop-color="#d89570" />
+									</linearGradient>
+								</defs>
+								<rect width="800" height="500" fill="url(#rel3)" />
+								<circle cx="700" cy="60" r="190" fill="#fff" opacity=".07" />
+								<g fill="none" stroke="#fff">
+									<circle cx="520" cy="250" r="60" stroke-opacity=".5" stroke-width="3" />
+									<circle cx="520" cy="250" r="115" stroke-opacity=".3" stroke-width="2.5" />
+									<circle cx="520" cy="250" r="175" stroke-opacity=".18" stroke-width="2" />
+									<circle cx="520" cy="250" r="240" stroke-opacity=".1" stroke-width="2" />
+								</g>
+								<circle cx="520" cy="250" r="14" fill="#fff" />
+							</svg></div>
+						<small>Brand</small>
+						<strong>Why I started Liberate Minds</strong>
+						<time>August 28, 2026</time>
+					</a>
+				</div>
+			</section>
+			<footer class="wrap">
+				<div class="foot">
+					<ul>
+						<li>
+							<a href="https://en.wikipedia.org/wiki/Bangladesh" target="_blank"
+								rel="noopener noreferrer">
+								Bangladesh 🇧🇩
+							</a>
+						</li>
+						<li class="dv" aria-hidden="true">|</li>
+						<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						<li class="dv" aria-hidden="true">|</li>
+						<li><a href="./terms-of-service.html">Terms &amp; Conditions</a></li>
+					</ul>
+					<p>Copyright &copy; <span id="cpYear"></span> Nayeem Araf. All rights reserved.</p>
+				</div>
+			</footer>
+		</div>
+	</main>
+	<!--/main-->
+
+	<script>
+		/* ============ ARTICLES — edit the text, dates and images here ============
+		   Each post: cat, date, title, sub (subtitle), cap (hero caption), art (hero artwork), gal (two gallery captions), body[].
+		   body items:  ['p','text']  paragraph (HTML allowed) | ['h','Heading'] | ['fig','Image caption'] | ['q','Quote text']
+		   Real photos: add  img:'images/photo.jpg'  to a post (hero), or  ['fig','Caption','images/photo.jpg'] for the image in the text.
+		   */
+		const DL = '<b>DHAKA, BANGLADESH</b> ';
+		const POSTS = [
+			{
+				slug: 'switching-lanes', cat: 'Career', date: 'October 1, 2026', title: 'Switching lanes: from content design to IT, one certification at a time', sub: 'Why I am moving toward IT support and infrastructure, and how I keep my design skills sharp along the way.', cap: 'Two paths, one direction: design and IT can share the same road.', art: ['paths', '#1b3556', '#4a90c8'], gal: ['Design and IT meet in the details: both reward patience and clear thinking.', 'Notes, checklists, and small projects keep the learning visible.'], body: [
+					['p', DL + 'Most of my work so far has lived at the intersection of content, design, and social media. This year I decided to point that curiosity toward something more technical: IT support and infrastructure. This note is a record of how I am making that switch without throwing away what I already know.'],
+					['fig', 'Certifications give the learning a shape: a goal, a syllabus, and a date.'],
+					['q', 'Switching lanes does not mean starting over. It means bringing everything you have learned into a new place.'],
+					['h', 'Why Change Lanes at All'],
+					['p', 'Design taught me to notice small details and care about the person on the other side of the screen. IT support asks for the same habits, only the screen is a failing laptop and the person is waiting for it to work.'],
+					['p', 'I am studying computer science and technology while taking on practical projects, and every concept I learn makes the next one easier to place.'],
+					['h', 'One Certification at a Time'],
+					['p', 'Instead of trying to learn everything, I pick one certification, study it in small weekly blocks, and write down what I would explain to a beginner. If I cannot explain it, I have not learned it yet.'],
+					['h', 'Keeping the Design Side Alive'],
+					['p', 'I still build and design a little every week: this website, small layouts, and ideas for Liberate Minds. It keeps me creative and reminds me that good IT work is also good communication.'],
+					['p', 'If you are thinking about a similar move, start small, keep a notebook, and be patient with the first month.']]
+			},
+			{
+				slug: 'comptia-a-plus', cat: 'IT', date: 'September 22, 2026', title: 'Studying for CompTIA A+ without burning out', sub: 'A simple weekly rhythm for hardware, operating systems, and troubleshooting fundamentals.', cap: 'A steady weekly rhythm beats a last-minute sprint.', art: ['boards', '#17506b', '#3aa7bd'], gal: ['A weekly rhythm keeps hardware and OS topics from piling up.', 'Hands-on practice turns reading into real troubleshooting skill.'], body: [
+					['p', DL + 'CompTIA A+ covers a lot of ground, and it is easy to burn out by trying to read everything at once. Here is the rhythm I use to keep the preparation calm and consistent.'],
+					['fig', 'Short sessions with clear goals are easier to repeat.'],
+					['q', 'A good checklist turns panic into a process.'],
+					['h', 'Split the Week by Topic'], ['p', 'I give each day one theme: hardware, operating systems, networking basics, security, and troubleshooting. A fixed theme removes the daily question of what to study.'],
+					['h', 'Practice Like a Technician'], ['p', 'Reading is not enough. I open settings, break things in a safe test setup, and fix them again. The steps I write down become my own troubleshooting checklist.'],
+					['h', 'Rest Is Part of the Plan'], ['p', 'One lighter day each week keeps me fresh. Progress comes from repeating a small routine, not from one heroic weekend.']]
+			},
+			{
+				slug: 'portfolio-one-product', cat: 'Frontend', date: 'September 9, 2026', title: 'Building a portfolio that feels like one product', sub: 'Shared tokens, calm spacing, and a handful of components that keep every page connected.', cap: 'The same cards, buttons, and spacing appear on every page.', art: ['grid', '#3d3a8c', '#8a7fe0'], gal: ['Shared tokens keep every page in the same visual language.', 'The same components appear on the journal, about, and contact pages.'], body: [
+					['p', DL + 'A portfolio is often built page by page and ends up looking like separate sites. I wanted mine to feel like a single product, from the home page to the journal.'],
+					['fig', 'Repeated components make a site feel intentional.'],
+					['q', 'Consistency is a feature users feel before they can explain it.'],
+					['h', 'Start with Tokens'], ['p', 'Colors, type sizes, radii, and spacing live in one small set of variables. When a value changes, every page follows.'],
+					['h', 'Reuse a Few Components'], ['p', 'The navbar, footer, cards, and the little bot character repeat across pages. Repetition is what makes a site feel designed.'],
+					['h', 'Keep It Responsive from Day One'], ['p', 'I check every layout on a narrow screen first. If it works there, it usually grows well.']]
+			},
+			{
+				slug: 'liberate-minds', cat: 'Brand', date: 'August 28, 2026', title: 'Why I started Liberate Minds', sub: 'Technology, creativity, and digital solutions, together in one small digital agency.', cap: 'Small teams can do careful work when the scope is clear.', art: ['rings', '#6b3a2a', '#d89570'], gal: ['Technology and creativity work best when they share one brief.', 'Clear scope helps a small team deliver careful work.'], body: [
+					['p', DL + 'Liberate Minds started as a simple idea: bring technology, creativity, and digital solutions under one roof and make them useful for small teams and brands.'],
+					['fig', 'Good digital work begins with a clear brief.'],
+					['q', 'Good digital work begins with listening.'],
+					['h', 'What the Agency Is For'], ['p', 'We focus on practical digital work: websites, content, and the systems that support them. The goal is clarity, not complexity.'],
+					['h', 'Building It with a Team'], ['p', 'Working with other students and creators has taught me to explain ideas simply, share responsibility, and finish what we start.'],
+					['h', 'What Comes Next'], ['p', 'More projects, better processes, and a steady habit of documenting what we learn along the way.']]
+			},
+			{
+				slug: 'networking-basics', cat: 'IT', date: 'August 14, 2026', title: 'Networking basics, explained simply', sub: 'IP addresses, subnets, and DNS without the jargon wall. Notes from my Network+ prep.', cap: 'A network is a set of connections with a few clear rules.', art: ['nodes', '#0f4a5c', '#38a3b8'], gal: ['Simple diagrams make addresses and subnets easier to remember.', 'Tracing a request step by step shows where each rule applies.'], body: [
+					['p', DL + 'Networking can look like a wall of acronyms. These are the notes I wrote while preparing, rewritten the way I wish someone had explained them to me.'],
+					['fig', 'Every device on a network needs a unique address.'],
+					['q', 'Explain it simply first, then add the details.'],
+					['h', 'Addresses Are Just Labels'], ['p', 'An IP address tells devices where to send data, much like a house number. A subnet groups nearby addresses so traffic stays organized.'],
+					['h', 'DNS Is the Phone Book'], ['p', 'People remember names; computers use numbers. DNS translates one into the other every time you open a website.'],
+					['h', 'How I Practice'], ['p', 'I draw small diagrams, trace a request step by step, and test ideas on a home setup before trusting them.']]
+			},
+			{
+				slug: 'dour-brand', cat: 'Brand', date: 'July 30, 2026', title: 'Designing DOUR: a clothing brand from the ground up', sub: 'Fashion, creativity, and brand building: what I am learning from making something of my own.', cap: 'Shapes, folds, and texture shape the mood of a brand.', art: ['waves', '#8a4a33', '#e0a07a'], gal: ['Mood boards set the tone before any logo is drawn.', 'Small details such as labels and packaging carry the brand.'], body: [
+					['p', DL + 'DOUR is my clothing brand, and building it has been a different kind of design lesson: every choice becomes something people can hold and wear.'],
+					['fig', 'Mood first, details second.'],
+					['q', 'A brand is a promise you keep in small ways.'],
+					['h', 'Start with a Feeling'], ['p', 'Before colors or logos, I wrote down how I wanted people to feel when they saw the brand: calm, confident, and a little understated.'],
+					['h', 'Details Carry the Brand'], ['p', 'Labels, packaging, and the way a post is written all say something. Small details repeated well become an identity.'],
+					['h', 'Learning in Public'], ['p', 'Not everything works the first time. I keep notes, adjust, and try again.']]
+			},
+			{
+				slug: 'small-habits', cat: 'Notes', date: 'July 12, 2026', title: 'Small habits that keep learning continuous', sub: 'Short sessions, honest notes, and shipping something small every week.', cap: 'Progress is easier to see when it is written down.', art: ['bars', '#2f6b57', '#7fc4a3'], gal: ['Short sessions are easier to start and easier to repeat.', 'A visible checklist makes progress feel real.'], body: [
+					['p', DL + 'Learning sticks when it becomes a habit. These are the small routines that keep me moving, even on busy weeks.'],
+					['fig', 'A visible streak keeps the routine going.'],
+					['q', 'Ship something small every week.'],
+					['h', 'Short and Regular'], ['p', 'Twenty focused minutes beat two distracted hours. I keep sessions short enough that starting never feels heavy.'],
+					['h', 'Honest Notes'], ['p', 'At the end of each session I write what I understood and what I did not. The second list decides tomorrow\'s plan.'],
+					['h', 'Make It Visible'], ['p', 'A simple checklist on my desk reminds me what is done, and the streak is motivating without being stressful.']]
+			},
+			{
+				slug: 'security-plus', cat: 'IT', date: 'June 25, 2026', title: 'Security+ fundamentals: thinking like a defender', sub: 'Threats, controls, and the small habits that make everyday setups safer.', cap: 'Layers of protection work better than a single lock.', art: ['lock', '#183b5e', '#3f8fb8'], gal: ['Layers of protection cover different kinds of risk.', 'Backups and updates quietly do most of the work.'], body: [
+					['p', DL + 'Security can sound dramatic, but most of it is steady, careful habit. These are my notes on thinking like a defender.'],
+					['fig', 'Protection works in layers.'],
+					['q', 'Good security is mostly good habits, repeated.'],
+					['h', 'Know What You Protect'], ['p', 'Start with a list of accounts, devices, and data that matter. You cannot defend what you have not named.'],
+					['h', 'Layers, Not Magic'], ['p', 'Strong passwords, multi-factor sign-in, updates, and backups each cover a different gap, and together they make a setup much harder to break.'],
+					['h', 'Stay Curious, Stay Careful'], ['p', 'Learn how attacks work in order to spot them, and only practice in safe, permitted environments.']]
+			},
+			{
+				slug: 'clean-css', cat: 'Frontend', date: 'June 10, 2026', title: 'Clean CSS: tokens, spacing, and a calmer UI', sub: 'How a few shared variables keep a whole site consistent from page to page.', cap: 'A small design system keeps layouts predictable.', art: ['boards', '#4b3f9e', '#9a8de8'], gal: ['A small set of variables keeps spacing and color consistent.', 'Testing on narrow screens first keeps layouts calm everywhere.'], body: [
+					['p', DL + 'Clean CSS is less about clever tricks and more about a few decisions made once and reused everywhere.'],
+					['fig', 'Consistent spacing is half of a polished interface.'],
+					['q', 'A calmer interface is usually a simpler one.'],
+					['h', 'Variables First'], ['p', 'Colors, font sizes, radii, and spacing become custom properties. Changing a design later means editing one place.'],
+					['h', 'Spacing Creates Calm'], ['p', 'Generous, consistent spacing does more for polish than extra effects. When in doubt, add space and remove decoration.'],
+					['h', 'Test Small Screens Early'], ['p', 'Narrow layouts expose problems quickly. Fixing them first keeps larger screens easy.']]
+			}
+		];
+		const ABOUT = 'Short, honest entries on design, IT, and the small projects in between, written as I go.';
+		const ART = { "paths": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\"><path d=\"M-20 360C200 360 260 250 420 250S640 120 820 120\" stroke-opacity=\".5\" stroke-width=\"3\"/><path d=\"M-20 360C220 360 300 380 460 400S660 440 820 420\" stroke-opacity=\".28\" stroke-width=\"3\"/></g><circle cx=\"420\" cy=\"250\" r=\"9\" fill=\"#fff\"/><circle cx=\"640\" cy=\"148\" r=\"6\" fill=\"#fff\" opacity=\".7\"/><circle cx=\"460\" cy=\"400\" r=\"6\" fill=\"#fff\" opacity=\".5\"/></svg>", "boards": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"#fff\"><rect x=\"150\" y=\"110\" width=\"420\" height=\"260\" rx=\"28\" opacity=\".1\" transform=\"rotate(-8 360 240)\"/><rect x=\"230\" y=\"150\" width=\"420\" height=\"260\" rx=\"28\" opacity=\".14\" transform=\"rotate(5 440 280)\"/><rect x=\"300\" y=\"190\" width=\"300\" height=\"180\" rx=\"22\" opacity=\".2\"/></g><g fill=\"#fff\"><circle cx=\"350\" cy=\"240\" r=\"8\"/><circle cx=\"385\" cy=\"240\" r=\"8\" opacity=\".6\"/><rect x=\"350\" y=\"280\" width=\"170\" height=\"10\" rx=\"5\" opacity=\".5\"/><rect x=\"350\" y=\"305\" width=\"110\" height=\"10\" rx=\"5\" opacity=\".3\"/></g></svg>", "grid": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"#fff\"><rect x=\"120\" y=\"100\" width=\"170\" height=\"140\" rx=\"20\" opacity=\".2\"/><rect x=\"310\" y=\"100\" width=\"170\" height=\"140\" rx=\"20\" opacity=\".12\"/><rect x=\"500\" y=\"100\" width=\"170\" height=\"140\" rx=\"20\" opacity=\".2\"/><rect x=\"120\" y=\"260\" width=\"360\" height=\"130\" rx=\"20\" opacity=\".12\"/><rect x=\"500\" y=\"260\" width=\"170\" height=\"130\" rx=\"20\" opacity=\".2\"/><circle cx=\"205\" cy=\"170\" r=\"22\" opacity=\".6\"/></g></svg>", "rings": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"none\" stroke=\"#fff\"><circle cx=\"520\" cy=\"250\" r=\"60\" stroke-opacity=\".5\" stroke-width=\"3\"/><circle cx=\"520\" cy=\"250\" r=\"115\" stroke-opacity=\".3\" stroke-width=\"2.5\"/><circle cx=\"520\" cy=\"250\" r=\"175\" stroke-opacity=\".18\" stroke-width=\"2\"/><circle cx=\"520\" cy=\"250\" r=\"240\" stroke-opacity=\".1\" stroke-width=\"2\"/></g><circle cx=\"520\" cy=\"250\" r=\"14\" fill=\"#fff\"/></svg>", "nodes": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"none\" stroke=\"#fff\" stroke-opacity=\".4\" stroke-width=\"2.5\"><path d=\"M200 250L400 140L600 230L480 380L260 370Z\"/><path d=\"M400 140L480 380M200 250L600 230\"/></g><g fill=\"#fff\"><circle cx=\"200\" cy=\"250\" r=\"12\"/><circle cx=\"400\" cy=\"140\" r=\"16\"/><circle cx=\"600\" cy=\"230\" r=\"12\" opacity=\".8\"/><circle cx=\"480\" cy=\"380\" r=\"12\" opacity=\".8\"/><circle cx=\"260\" cy=\"370\" r=\"10\" opacity=\".6\"/></g></svg>", "waves": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-width=\"2.5\"><path d=\"M-20 200C150 120 250 280 420 200S690 120 820 200\" stroke-opacity=\".55\"/><path d=\"M-20 255C150 175 250 335 420 255S690 175 820 255\" stroke-opacity=\".38\"/><path d=\"M-20 310C150 230 250 390 420 310S690 230 820 310\" stroke-opacity=\".24\"/><path d=\"M-20 365C150 285 250 445 420 365S690 285 820 365\" stroke-opacity=\".14\"/></g></svg>", "bars": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"#fff\"><rect x=\"170\" y=\"300\" width=\"70\" height=\"100\" rx=\"18\" opacity=\".16\"/><rect x=\"270\" y=\"250\" width=\"70\" height=\"150\" rx=\"18\" opacity=\".22\"/><rect x=\"370\" y=\"195\" width=\"70\" height=\"205\" rx=\"18\" opacity=\".3\"/><rect x=\"470\" y=\"140\" width=\"70\" height=\"260\" rx=\"18\" opacity=\".4\"/><circle cx=\"505\" cy=\"108\" r=\"12\" opacity=\".9\"/></g></svg>", "lock": "<svg class=\"art\" viewBox=\"0 0 800 500\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\"><defs><linearGradient id=\"JAID\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"@@A@@\"/><stop offset=\"1\" stop-color=\"@@B@@\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#JAID)\"/><circle cx=\"700\" cy=\"60\" r=\"190\" fill=\"#fff\" opacity=\".07\"/><g fill=\"none\" stroke=\"#fff\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-opacity=\".55\"><path d=\"M335 205v-45a65 65 0 0 1 130 0v45\"/></g><rect x=\"300\" y=\"215\" width=\"200\" height=\"150\" rx=\"28\" fill=\"#fff\" opacity=\".22\"/><circle cx=\"400\" cy=\"272\" r=\"16\" fill=\"#fff\"/><rect x=\"392\" y=\"280\" width=\"16\" height=\"44\" rx=\"8\" fill=\"#fff\"/></svg>" };
+		const SUP = ['boards', 'grid', 'nodes', 'waves', 'bars', 'rings', 'lock'];
+		let uid = 0;
+		const art = (k, a, b) => ART[k].replace(/JAID/g, 'jr' + (++uid)).replace(/@@A@@/g, a).replace(/@@B@@/g, b);
+		const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+		const id = new URLSearchParams(location.search).get('post');
+		let i = POSTS.findIndex(p => p.slug === id); if (i < 0) i = 0;
+		const P = POSTS[i], root = document.getElementById('ar');
+		document.title = P.title + ' — Nayeem Araf';
+		const cu = 'https://www.theanaraf.com/article.html?post=' + P.slug, cl = document.querySelector('link[rel="canonical"]'); if (cl) cl.setAttribute('href', cu);
+		[['og:title', P.title], ['og:description', P.sub], ['og:url', cu], ['og:type', 'article']].forEach(function (k) { var m = document.querySelector('meta[property="' + k[0] + '"]'); if (!m) { m = document.createElement('meta'); m.setAttribute('property', k[0]); document.head.appendChild(m) } m.setAttribute('content', k[1]) });
+		const md = document.querySelector('meta[name="description" i]'); if (md) md.setAttribute('content', P.sub);
+		const media = (src, kind) => src ? '<img src="' + esc(src) + '" alt="" loading="lazy">' : art(kind, P.art[1], P.art[2]);
+		const DLI = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v8M4.7 7.9L8 11.2l3.3-3.3"/></svg>';
+		const cap = t => '<div class="arcap"><span>' + esc(t) + '</span><button type="button" class="ardl" data-dl aria-label="Download image">' + DLI + '</button></div>';
+		const SH = [['Facebook', 'https://www.facebook.com/sharer/sharer.php?u=', '<svg class="fl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg>'],
+		['X', 'https://twitter.com/intent/tweet?url=', '<svg class="fl so xo" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 4h2.9l-6.3 7.2L21.8 20h-5.8l-4.5-5.9L6.3 20H3.4l6.7-7.7L2.9 4h5.9l4.1 5.4zm-1 14.3h1.6L7.9 5.6H6.2z"/></svg>'],
+		['LinkedIn', 'https://www.linkedin.com/sharing/share-offsite/?url=', '<svg class="fl" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>'],
+		['Email', 'mailto:?body=', '<svg class="fl" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M3.6 6.6L12 13.4l8.4-6.8M3.8 18.2l6.4-6.2M20.2 18.2L13.8 12" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>']];
+		const shareRow = () => '<div class="arshare">' + SH.map(s => '<a href="#" data-sh="' + s[1] + '" target="_blank" rel="noopener" aria-label="Share on ' + s[0] + '">' + s[2] + '</a>').join('')
+			+ '<button type="button" data-copy aria-label="Copy link"><svg class="fl so" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.2" y="10.7" width="12" height="7" rx="3.5" transform="rotate(-40 8.2 14.2)"/><rect x="7.6" y="6.2" width="12" height="7" rx="3.5" transform="rotate(-40 13.6 9.7)"/></svg><span class="artip" role="status">Link copied</span></button></div>';
+		let sup = 0, body = '', galDone = false;
+		const gallery = () => {
+			const k1 = SUP[(i + 1) % SUP.length], k2 = SUP[(i + 2) % SUP.length];
+			return '<div class="argal rv"><div class="argt">' + [[k1, P.gal[0]], [k2, P.gal[1]]].map(s => '<figure><div class="arimg">' + media('', s[0]) + '</div>' + cap(s[1]) + '</figure>').join('')
+				+ '</div><div class="argc"><button type="button" data-p aria-label="Previous"><svg viewBox="0 0 16 16"><path d="M10 3L5 8l5 5"/></svg></button><button type="button" data-n aria-label="Next"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5"/></svg></button></div></div>'
+		};
+		P.body.forEach(b => {
+			if (b[0] === 'p') body += '<p>' + b[1] + '</p>';
+			else if (b[0] === 'h') body += '<h2>' + esc(b[1]) + '</h2>';
+			else if (b[0] === 'q') { body += '<p>&ldquo;' + esc(b[1]) + '&rdquo;</p>'; if (!galDone) { galDone = true; body += gallery() } }
+			else if (b[0] === 'fig') { const k = SUP[i % SUP.length]; body += '<figure class="arfig rv"><div class="arimg">' + media(b[2], k) + '</div>' + cap(b[1]) + '</figure>' }
+		});
+		root.innerHTML =
+			'<header class="arh rv"><p class="armeta"><b>' + P.cat + '</b><time>' + P.date + '</time></p>'
+			+ '<h1>' + esc(P.title) + '</h1><p class="arsub">' + esc(P.sub) + '</p>' + shareRow() + '</header>'
+			+ '<div class="arhero rv"><div class="arimg">' + media(P.img, P.art[0]) + '</div>' + cap(P.cap) + '</div>'
+			+ '<div class="arcol rv">' + body
+			+ '<div class="arsh"><h3>Share article</h3>' + shareRow() + '</div>'
+			+ '<div class="arabout"><h3>About this journal</h3><p>' + ABOUT + '</p></div></div>';
+		/* a card with an empty href="" is not a link */
+		document.querySelectorAll('#arRel a').forEach(a => { if (!a.getAttribute('href')) a.removeAttribute('href') });
+		/* share + copy */
+		const url = location.href, u = encodeURIComponent(url), t = encodeURIComponent(P.title);
+		document.querySelectorAll('[data-sh]').forEach(a => { let h = a.getAttribute('data-sh'); a.href = h.indexOf('mailto') === 0 ? 'mailto:?subject=' + t + '&body=' + u : h.indexOf('twitter') > 0 ? h + u + '&text=' + t : h + u });
+		document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', () => {
+			const tip = btn.querySelector('.artip'), ok = () => { tip.classList.add('on'); setTimeout(() => tip.classList.remove('on'), 1800) };
+			if (navigator.clipboard) navigator.clipboard.writeText(url).then(ok, ok); else { const x = document.createElement('textarea'); x.value = url; document.body.appendChild(x); x.select(); try { document.execCommand('copy') } catch (e) { } x.remove(); ok() }
+		}));
+		/* download the image shown in a figure (SVG artwork or <img>) */
+		document.querySelectorAll('[data-dl]').forEach(btn => btn.addEventListener('click', () => {
+			const box = (btn.closest('figure') || document.querySelector('.arhero')).querySelector('.arimg'), im = box.querySelector('img'), sv = box.querySelector('svg'), a = document.createElement('a');
+			if (im) { a.href = im.src; a.download = '' } else if (sv) { const x = sv.cloneNode(true); x.setAttribute('xmlns', 'http://www.w3.org/2000/svg'); x.setAttribute('width', '1600'); x.setAttribute('height', '1000'); a.href = URL.createObjectURL(new Blob([x.outerHTML], { type: 'image/svg+xml' })); a.download = P.slug + '.svg' }
+			document.body.appendChild(a); a.click(); a.remove();
+		}));
+		/* gallery arrows */
+		document.querySelectorAll('.argal').forEach(g => {
+			const tr = g.querySelector('.argt'), pv = g.querySelector('[data-p]'), nx = g.querySelector('[data-n]');
+			const upd = () => { pv.disabled = tr.scrollLeft < 4; nx.disabled = tr.scrollLeft + tr.clientWidth >= tr.scrollWidth - 4 };
+			pv.addEventListener('click', () => tr.scrollBy({ left: -tr.clientWidth, behavior: 'smooth' })); nx.addEventListener('click', () => tr.scrollBy({ left: tr.clientWidth, behavior: 'smooth' }));
+			tr.addEventListener('scroll', upd, { passive: true }); upd();
+		});
+		/* reveal on scroll (self-contained, so the article is always shown) */
+		(function () {
+			const els = document.querySelectorAll('#ar .rv');
+			if ('IntersectionObserver' in window) { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } }), { threshold: .05, rootMargin: '0px 0px -4% 0px' }); els.forEach(e => io.observe(e)) }
+			else els.forEach(e => e.classList.add('in'));
+			requestAnimationFrame(() => requestAnimationFrame(() => { ['.arh', '.arhero', '.arcol'].forEach(q => { const e = document.querySelector('#ar ' + q); if (e) e.classList.add('in') }) }));
+			setTimeout(() => els.forEach(e => e.classList.add('in')), 4000);
+		})();
+	</script>
+	<script>
+		(function () {
+			var y = document.getElementById('cpYear'); if (y) y.textContent = new Date().getFullYear();
+			var els = document.querySelectorAll('.my-portfolio .rv,.my-portfolio .bot');
+			if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in', 'go'); io.unobserve(e.target) } }) }, { threshold: .12 }); els.forEach(function (el) { io.observe(el) }) } else els.forEach(function (el) { el.classList.add('in', 'go') });
+			/* Bots: one shared timeline drives all three, so they always look the same way at the same time.
+			   The eyes mostly glance right and left, now and then look up in the middle, and blink together. Off under reduced motion. */
+			if (!matchMedia('(prefers-reduced-motion:reduce)').matches) {
+				/* Everything that moves (float, eye glance, blink, hover squint) is drawn as plain SVG transforms on every frame,
+				   so the bots are re-rendered as sharp vectors and never turn into a blurry cached bitmap. */
+				const bots = [...document.querySelectorAll('.bot')].map(b => {
+					const q = x => b.querySelector(x), bl = q('.blink'), bb = bl.getBBox(), cs = getComputedStyle(b), pop = q('.pop');
+					const o = { b, fl: q('.fl'), lk: q('.look'), bl, cx: bb.x + bb.width / 2, cy: bb.y + bb.height / 2, fy: parseFloat(cs.getPropertyValue('--fy')) || -7, sp: parseFloat(cs.getPropertyValue('--speed')) || 1, hv: 0, sq: 1, vis: true };
+					b.addEventListener('pointerenter', () => o.hv = 1); b.addEventListener('pointerleave', () => o.hv = 0);
+					pop.addEventListener('animationend', () => { pop.style.animation = 'none'; pop.style.opacity = '1' });
+					return o;
+				});
+				if ('IntersectionObserver' in window) { const vo = new IntersectionObserver(es => es.forEach(e => { const o = bots.find(x => x.b === e.target); if (o) o.vis = e.isIntersecting }), { rootMargin: '80px' }); bots.forEach(o => { o.vis = false; vo.observe(o.b) }) }
+				const P = { right: [0, 0], center: [-65, 5], left: [-121, 1], up: [-65, -19] }, pool = ['right', 'right', 'left', 'left', 'center', 'up'];
+				let cur = 'right', from = [0, 0], to = [0, 0], t0 = -1e9, b0 = -1e9;
+				const posNow = n => { const u = Math.min(1, (n - t0) / 800), e = 1 - Math.pow(1 - u, 3); return [from[0] + (to[0] - from[0]) * e, from[1] + (to[1] - from[1]) * e] };
+				const go = k => { const n = performance.now(); from = posNow(n); cur = k; to = P[k]; t0 = n };
+				const next = () => { let k; do { k = pool[Math.floor(Math.random() * pool.length)] } while (k === cur); go(k); setTimeout(next, 1600 + Math.random() * 1600) };
+				setTimeout(next, 2800);
+				const blink = () => setTimeout(() => { b0 = performance.now(); blink() }, 3500 + Math.random() * 2500);
+				blink();
+				const f2 = v => v.toFixed(2);
+				const frame = n => {
+					const [x, y] = posNow(n), bu = (n - b0) / 240, bp = bu >= 0 && bu < 1 ? 1 - .9 * Math.sin(Math.PI * bu) : 1;
+					bots.forEach(o => {
+						if (!o.vis) return;
+						o.fl.setAttribute('transform', 'translate(0 ' + f2(o.fy * (.5 - .5 * Math.cos(2 * Math.PI * (n / 1000 * o.sp) / 4.5))) + ')');
+						o.lk.setAttribute('transform', 'translate(' + f2(x) + ' ' + f2(y) + ')');
+						o.sq += ((o.hv ? .55 : 1) - o.sq) * .2;
+						o.bl.setAttribute('transform', 'translate(' + o.cx + ' ' + o.cy + ') scale(1 ' + (o.sq * bp).toFixed(3) + ') translate(' + (-o.cx) + ' ' + (-o.cy) + ')');
+					});
+					requestAnimationFrame(frame);
+				};
+				requestAnimationFrame(frame);
+			}
+		})();
+	</script>
+</body>
+
+</html>
